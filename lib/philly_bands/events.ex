@@ -7,9 +7,33 @@ defmodule PhillyBands.Events do
   alias PhillyBands.Repo
   alias PhillyBands.Events.Event
 
-  def list_events do
+  def list_events(params \\ %{}) do
+    page = String.to_integer(params["page"] || "1")
+    per_page = 30
+    offset = (page - 1) * per_page
+    region = params["region"]
+
     Event
+    |> filter_by_region(region)
     |> order_by([e], [asc: e.date, asc: e.external_artist])
+    |> limit(^per_page)
+    |> offset(^offset)
+    |> Repo.all()
+  end
+
+  defp filter_by_region(query, nil), do: query
+  defp filter_by_region(query, ""), do: query
+  defp filter_by_region(query, "all"), do: query
+  defp filter_by_region(query, region) do
+    from e in query, where: e.region == ^region
+  end
+
+  def list_regions do
+    Event
+    |> where([e], not is_nil(e.region) and e.region != "")
+    |> select([e], e.region)
+    |> distinct(true)
+    |> order_by([e], asc: e.region)
     |> Repo.all()
   end
 

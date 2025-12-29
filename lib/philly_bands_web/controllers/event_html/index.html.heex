@@ -2,6 +2,21 @@
   Listing Events
 </.header>
 
+<div class="mt-8">
+  <form method="get" action={~p"/events"} class="flex gap-4 items-end">
+    <div class="flex-grow">
+      <.label for="region">Filter by Region</.label>
+      <select name="region" id="region" class="mt-2 block w-full rounded-md border-zinc-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+        <option value="all" selected={@region == "all"}>All Regions</option>
+        <%= for r <- @regions do %>
+          <option value={r} selected={r == @region}><%= r %></option>
+        <% end %>
+      </select>
+    </div>
+    <.button type="submit">Filter</.button>
+  </form>
+</div>
+
 <.table id="events" rows={@events}>
   <:col :let={event} label="Date">{Calendar.strftime(event.date, "%Y-%m-%d")}</:col>
   <:col :let={event} label="Artist">{event.external_artist}</:col>
@@ -13,3 +28,23 @@
     </.link>
   </:action>
 </.table>
+
+<div class="mt-8 flex justify-between items-center">
+  <div>
+    <%= if @page > 1 do %>
+      <.link navigate={~p"/events?page={@page - 1}&region={@region}"} class="text-sm font-semibold leading-6 text-zinc-900">
+        &larr; Previous Page
+      </.link>
+    <% end %>
+  </div>
+  <div class="text-sm text-zinc-600">
+    Page <%= @page %>
+  </div>
+  <div>
+    <%= if length(@events) == 30 do %>
+      <.link navigate={~p"/events?page={@page + 1}&region={@region}"} class="text-sm font-semibold leading-6 text-zinc-900">
+        Next Page &rarr;
+      </.link>
+    <% end %>
+  </div>
+</div>
