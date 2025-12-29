@@ -8,7 +8,9 @@ defmodule PhillyBands.Events do
   alias PhillyBands.Events.Event
 
   def list_events do
-    Repo.all(Event)
+    Event
+    |> order_by([e], [asc: e.date, asc: e.external_artist])
+    |> Repo.all()
   end
 
   def get_event!(id), do: Repo.get!(Event, id)
