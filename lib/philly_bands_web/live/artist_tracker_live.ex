@@ -35,14 +35,25 @@ defmodule PhillyBandsWeb.ArtistTrackerLive do
 
     <div class="mt-10">
       <div class="flex flex-wrap gap-2">
-        <%= for tracking <- @trackings do %>
-          <span class="inline-flex items-center gap-x-2 rounded-md bg-indigo-100 px-3 py-1.5 text-base font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+        <%= for {tracking, i} <- Enum.with_index(@trackings) do %>
+          <%
+            colors = [
+              {"bg-indigo-100", "text-indigo-700", "ring-indigo-700/10", "hover:bg-indigo-600/20"},
+              {"bg-rose-100", "text-rose-700", "ring-rose-700/10", "hover:bg-rose-600/20"},
+              {"bg-emerald-100", "text-emerald-700", "ring-emerald-700/10", "hover:bg-emerald-600/20"},
+              {"bg-amber-100", "text-amber-700", "ring-amber-700/10", "hover:bg-amber-600/20"},
+              {"bg-sky-100", "text-sky-700", "ring-sky-700/10", "hover:bg-sky-600/20"},
+              {"bg-violet-100", "text-violet-700", "ring-violet-700/10", "hover:bg-violet-600/20"}
+            ]
+            {bg, text, ring, hover} = Enum.at(colors, rem(i, length(colors)))
+          %>
+          <span class={["inline-flex items-center gap-x-2 rounded-md px-3 py-1.5 text-base font-medium ring-1 ring-inset", bg, text, ring]}>
             {tracking.artist}
             <button
               type="button"
               phx-click="delete"
               phx-value-id={tracking.id}
-              class="group relative -mr-1 h-5 w-5 flex items-center justify-center rounded-sm hover:bg-indigo-600/20"
+              class={["group relative -mr-1 h-5 w-5 flex items-center justify-center rounded-sm", hover]}
             >
               <span class="sr-only">Remove {tracking.artist}</span>
               <.icon name="hero-x-mark-mini" class="h-4 w-4" />
