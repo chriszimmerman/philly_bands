@@ -1,4 +1,7 @@
 defmodule PhillyBands.Accounts.UserToken do
+  @moduledoc """
+  Schema for storing user tokens.
+  """
   use Ecto.Schema
   import Ecto.Query
   alias PhillyBands.Accounts.UserToken

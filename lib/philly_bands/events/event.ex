@@ -1,4 +1,7 @@
 defmodule PhillyBands.Events.Event do
+  @moduledoc """
+  Schema for storing concert events.
+  """
   use Ecto.Schema
   import Ecto.Changeset
 

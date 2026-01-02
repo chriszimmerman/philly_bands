@@ -1,4 +1,7 @@
 defmodule PhillyBands.Events.FetchJob do
+  @moduledoc """
+  Background job to fetch events from the WXPN API and store them in the database.
+  """
   require Logger
   alias PhillyBands.Events
 
@@ -16,7 +19,7 @@ defmodule PhillyBands.Events.FetchJob do
     url = "#{@base_url}?page=#{page}&per_page=#{@per_page}&_embed=true&order=asc&orderby=date"
 
     case make_request(url) do
-      {:ok, events} when is_list(events) and length(events) > 0 ->
+      {:ok, [_ | _] = events} ->
         process_events(events)
         fetch_page(page + 1)
 
@@ -98,23 +101,20 @@ defmodule PhillyBands.Events.FetchJob do
     # Replace space with T for ISO8601 compliance if needed
     date_str = String.replace(date_str, " ", "T")
 
-    case NaiveDateTime.from_iso8601(date_str) do
-      {:ok, ndt} ->
-        ndt
+    with {:error, _} <- NaiveDateTime.from_iso8601(date_str),
+         {:error, _} <- NaiveDateTime.from_iso8601(date_str <> ":00"),
+         {:error, _} <- parse_only_date(date_str) do
+      nil
+    else
+      {:ok, %NaiveDateTime{} = ndt} -> ndt
+      ndt when is_struct(ndt, NaiveDateTime) -> ndt
+    end
+  end
 
-      {:error, _} ->
-        # Try parsing without seconds if it's just YYYY-MM-DD HH:MM
-        case NaiveDateTime.from_iso8601(date_str <> ":00") do
-          {:ok, ndt} ->
-            ndt
-
-          {:error, _} ->
-            # If it's just YYYY-MM-DD
-            case Date.from_iso8601(date_str) do
-              {:ok, date} -> NaiveDateTime.new!(date, ~T[00:00:00])
-              {:error, _} -> nil
-            end
-        end
+  defp parse_only_date(date_str) do
+    case Date.from_iso8601(date_str) do
+      {:ok, date} -> {:ok, NaiveDateTime.new!(date, ~T[00:00:00])}
+      error -> error
     end
   end
 end

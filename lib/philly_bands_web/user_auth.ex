@@ -1,4 +1,7 @@
 defmodule PhillyBandsWeb.UserAuth do
+  @moduledoc """
+  Authentication and authorization utilities for the web layer.
+  """
   use PhillyBandsWeb, :verified_routes
 
   import Plug.Conn

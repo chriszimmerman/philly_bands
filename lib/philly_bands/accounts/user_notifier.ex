@@ -1,4 +1,7 @@
 defmodule PhillyBands.Accounts.UserNotifier do
+  @moduledoc """
+  Sends email notifications to users.
+  """
   import Swoosh.Email
 
   alias PhillyBands.Mailer

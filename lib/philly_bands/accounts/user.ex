@@ -1,4 +1,7 @@
 defmodule PhillyBands.Accounts.User do
+  @moduledoc """
+  Schema for storing user information.
+  """
   use Ecto.Schema
   import Ecto.Changeset
 

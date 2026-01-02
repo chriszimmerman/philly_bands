@@ -1,9 +1,15 @@
 defmodule PhillyBands.HTTPClient do
+  @moduledoc """
+  Behavior for HTTP requests.
+  """
   @callback request(method :: atom(), url :: String.t()) ::
               {:ok, %{status: integer(), body: String.t()}} | {:error, any()}
 end
 
 defmodule PhillyBands.HTTPClient.Finch do
+  @moduledoc """
+  Finch implementation of the HTTPClient behavior.
+  """
   @behaviour PhillyBands.HTTPClient
 
   def request(:get, url) do
