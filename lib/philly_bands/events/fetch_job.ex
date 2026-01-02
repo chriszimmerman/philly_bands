@@ -76,21 +76,24 @@ defmodule PhillyBands.Events.FetchJob do
   defp process_events(events) do
     Enum.reduce(events, 0, fn event_data, acc ->
       attrs = map_event_data(event_data)
-
-      if valid_event_attrs?(attrs) do
-        case Events.upsert_event(attrs) do
-          {:ok, _event} ->
-            acc + 1
-
-          {:error, changeset} ->
-            Logger.error("Failed to insert event: #{inspect(changeset.errors)}")
-            acc
-        end
-      else
-        Logger.debug("Skipping invalid event data: #{inspect(attrs)}")
-        acc
-      end
+      acc + maybe_insert_event(attrs)
     end)
+  end
+
+  defp maybe_insert_event(attrs) do
+    if valid_event_attrs?(attrs) do
+      case Events.upsert_event(attrs) do
+        {:ok, _event} ->
+          1
+
+        {:error, changeset} ->
+          Logger.error("Failed to insert event: #{inspect(changeset.errors)}")
+          0
+      end
+    else
+      Logger.debug("Skipping invalid event data: #{inspect(attrs)}")
+      0
+    end
   end
 
   defp valid_event_attrs?(attrs) do

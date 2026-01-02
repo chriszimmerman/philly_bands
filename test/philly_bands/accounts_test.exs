@@ -505,4 +505,66 @@ defmodule PhillyBands.AccountsTest do
       refute inspect(%User{password: "123456"}) =~ "password: \"123456\""
     end
   end
+
+  describe "trackings" do
+    alias PhillyBands.Accounts.Tracking
+
+    import PhillyBands.AccountsFixtures
+
+    @invalid_attrs %{artist: nil}
+
+    test "list_user_trackings/1 returns all trackings for a user" do
+      user = user_fixture()
+      tracking = tracking_fixture(user_id: user.id)
+      assert Accounts.list_user_trackings(user.id) == [tracking]
+    end
+
+    test "get_user_tracking!/2 returns the tracking with given id" do
+      user = user_fixture()
+      tracking = tracking_fixture(user_id: user.id)
+      assert Accounts.get_user_tracking!(user.id, tracking.id) == tracking
+    end
+
+    test "create_tracking/1 with valid data creates a tracking" do
+      user = user_fixture()
+      valid_attrs = %{artist: "some artist", user_id: user.id}
+
+      assert {:ok, %Tracking{} = tracking} = Accounts.create_tracking(valid_attrs)
+      assert tracking.artist == "some artist"
+      assert tracking.user_id == user.id
+    end
+
+    test "create_tracking/1 with invalid data returns error changeset" do
+      assert {:error, %Ecto.Changeset{}} = Accounts.create_tracking(@invalid_attrs)
+    end
+
+    test "update_tracking/2 with valid data updates the tracking" do
+      user = user_fixture()
+      tracking = tracking_fixture(user_id: user.id)
+      update_attrs = %{artist: "some updated artist"}
+
+      assert {:ok, %Tracking{} = tracking} = Accounts.update_tracking(tracking, update_attrs)
+      assert tracking.artist == "some updated artist"
+    end
+
+    test "update_tracking/2 with invalid data returns error changeset" do
+      user = user_fixture()
+      tracking = tracking_fixture(user_id: user.id)
+      assert {:error, %Ecto.Changeset{}} = Accounts.update_tracking(tracking, @invalid_attrs)
+      assert tracking == Accounts.get_user_tracking!(user.id, tracking.id)
+    end
+
+    test "delete_tracking/1 deletes the tracking" do
+      user = user_fixture()
+      tracking = tracking_fixture(user_id: user.id)
+      assert {:ok, %Tracking{}} = Accounts.delete_tracking(tracking)
+      assert_raise Ecto.NoResultsError, fn -> Accounts.get_user_tracking!(user.id, tracking.id) end
+    end
+
+    test "change_tracking/1 returns a tracking changeset" do
+      user = user_fixture()
+      tracking = tracking_fixture(user_id: user.id)
+      assert %Ecto.Changeset{} = Accounts.change_tracking(tracking)
+    end
+  end
 end

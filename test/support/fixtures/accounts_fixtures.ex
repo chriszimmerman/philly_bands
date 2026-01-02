@@ -28,4 +28,18 @@ defmodule PhillyBands.AccountsFixtures do
     [_, token | _] = String.split(captured_email.text_body, "[TOKEN]")
     token
   end
+
+  @doc """
+  Generate a tracking.
+  """
+  def tracking_fixture(attrs \\ %{}) do
+    {:ok, tracking} =
+      attrs
+      |> Enum.into(%{
+        artist: "some artist"
+      })
+      |> PhillyBands.Accounts.create_tracking()
+
+    tracking
+  end
 end

@@ -69,6 +69,8 @@ defmodule PhillyBandsWeb.Router do
       on_mount: [{PhillyBandsWeb.UserAuth, :ensure_authenticated}] do
       live "/users/settings", UserSettingsLive, :edit
       live "/users/settings/confirm_email/:token", UserSettingsLive, :confirm_email
+      live "/artist_tracker", ArtistTrackerLive, :index
+      get "/my_events", MyEventController, :index
     end
   end
 

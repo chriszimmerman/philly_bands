@@ -350,4 +350,88 @@ defmodule PhillyBands.Accounts do
       {:error, :user, changeset, _} -> {:error, changeset}
     end
   end
+
+  alias PhillyBands.Accounts.Tracking
+
+  @doc """
+  Returns the list of trackings for a user.
+  """
+  def list_user_trackings(user_id) do
+    Tracking
+    |> where([t], t.user_id == ^user_id)
+    |> order_by([t], asc: t.artist)
+    |> Repo.all()
+  end
+
+  @doc """
+  Gets a single tracking for a user.
+  """
+  def get_user_tracking!(user_id, id) do
+    Repo.get_by!(Tracking, id: id, user_id: user_id)
+  end
+
+  @doc """
+  Creates a tracking.
+
+  ## Examples
+
+      iex> create_tracking(%{field: value})
+      {:ok, %Tracking{}}
+
+      iex> create_tracking(%{field: bad_value})
+      {:error, %Ecto.Changeset{}}
+
+  """
+  def create_tracking(attrs \\ %{}) do
+    %Tracking{}
+    |> Tracking.changeset(attrs)
+    |> Repo.insert()
+  end
+
+  @doc """
+  Updates a tracking.
+
+  ## Examples
+
+      iex> update_tracking(tracking, %{field: new_value})
+      {:ok, %Tracking{}}
+
+      iex> update_tracking(tracking, %{field: bad_value})
+      {:error, %Ecto.Changeset{}}
+
+  """
+  def update_tracking(%Tracking{} = tracking, attrs) do
+    tracking
+    |> Tracking.changeset(attrs)
+    |> Repo.update()
+  end
+
+  @doc """
+  Deletes a tracking.
+
+  ## Examples
+
+      iex> delete_tracking(tracking)
+      {:ok, %Tracking{}}
+
+      iex> delete_tracking(tracking)
+      {:error, %Ecto.Changeset{}}
+
+  """
+  def delete_tracking(%Tracking{} = tracking) do
+    Repo.delete(tracking)
+  end
+
+  @doc """
+  Returns an `%Ecto.Changeset{}` for tracking tracking changes.
+
+  ## Examples
+
+      iex> change_tracking(tracking)
+      %Ecto.Changeset{data: %Tracking{}}
+
+  """
+  def change_tracking(%Tracking{} = tracking, attrs \\ %{}) do
+    Tracking.changeset(tracking, attrs)
+  end
 end

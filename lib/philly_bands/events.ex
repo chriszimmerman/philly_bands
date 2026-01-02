@@ -16,6 +16,7 @@ defmodule PhillyBands.Events do
 
     Event
     |> filter_by_region(region)
+    |> filter_by_user_trackings(params["user_id"])
     |> where([e], e.date >= ^now)
     |> order_by([e], asc: e.date, asc: e.external_artist)
     |> limit(^per_page)
@@ -29,6 +30,33 @@ defmodule PhillyBands.Events do
 
   defp filter_by_region(query, region) do
     from e in query, where: e.region == ^region
+  end
+
+  defp filter_by_user_trackings(query, nil), do: query
+
+  defp filter_by_user_trackings(query, user_id) do
+    trackings = PhillyBands.Accounts.list_user_trackings(user_id)
+    artist_names = Enum.map(trackings, & &1.artist)
+
+    do_filter_by_artist_names(query, artist_names)
+  end
+
+  defp do_filter_by_artist_names(query, []), do: from(e in query, where: false)
+
+  defp do_filter_by_artist_names(query, artist_names) do
+    # Case insensitive substring match for any of the tracked artists
+    conditions =
+      Enum.reduce(artist_names, nil, fn artist, acc ->
+        condition = dynamic([e], ilike(e.external_artist, ^"%#{artist}%"))
+
+        if acc do
+          dynamic([e], ^acc or ^condition)
+        else
+          condition
+        end
+      end)
+
+    from e in query, where: ^conditions
   end
 
   def list_regions do
