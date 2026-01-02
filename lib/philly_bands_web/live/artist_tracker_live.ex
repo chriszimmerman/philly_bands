@@ -36,16 +36,16 @@ defmodule PhillyBandsWeb.ArtistTrackerLive do
     <div class="mt-10">
       <div class="flex flex-wrap gap-2">
         <%= for tracking <- @trackings do %>
-          <span class="inline-flex items-center gap-x-1.5 rounded-md bg-indigo-100 px-2 py-1 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+          <span class="inline-flex items-center gap-x-2 rounded-md bg-indigo-100 px-3 py-1.5 text-base font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
             {tracking.artist}
             <button
               type="button"
               phx-click="delete"
               phx-value-id={tracking.id}
-              class="group relative -mr-1 h-3.5 w-3.5 rounded-sm hover:bg-indigo-600/20"
+              class="group relative -mr-1 h-5 w-5 flex items-center justify-center rounded-sm hover:bg-indigo-600/20"
             >
               <span class="sr-only">Remove {tracking.artist}</span>
-              <.icon name="hero-x-mark-mini" class="h-3.5 w-3.5" />
+              <.icon name="hero-x-mark-mini" class="h-4 w-4" />
             </button>
           </span>
         <% end %>
