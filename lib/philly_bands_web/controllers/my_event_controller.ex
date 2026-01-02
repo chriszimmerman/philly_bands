@@ -6,7 +6,7 @@ defmodule PhillyBandsWeb.MyEventController do
   def index(conn, params) do
     user = conn.assigns.current_user
     params = Map.put(params, "user_id", user.id)
-    
+
     events = Events.list_events(params)
     regions = Events.list_regions()
     page = String.to_integer(params["page"] || "1")

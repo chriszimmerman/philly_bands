@@ -558,7 +558,10 @@ defmodule PhillyBands.AccountsTest do
       user = user_fixture()
       tracking = tracking_fixture(user_id: user.id)
       assert {:ok, %Tracking{}} = Accounts.delete_tracking(tracking)
-      assert_raise Ecto.NoResultsError, fn -> Accounts.get_user_tracking!(user.id, tracking.id) end
+
+      assert_raise Ecto.NoResultsError, fn ->
+        Accounts.get_user_tracking!(user.id, tracking.id)
+      end
     end
 
     test "change_tracking/1 returns a tracking changeset" do

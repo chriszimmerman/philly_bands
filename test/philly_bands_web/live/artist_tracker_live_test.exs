@@ -18,13 +18,15 @@ defmodule PhillyBandsWeb.ArtistTrackerLiveTest do
       |> render_submit()
 
       assert render(lv) =~ "Green Day"
-      
+
       # Check if the input is cleared
-      assert lv |> element("#tracking-form input[name=\"tracking[artist]\"]") |> render() =~ "value=\"\"" or
-             not (lv |> element("#tracking-form input[name=\"tracking[artist]\"]") |> render() =~ "value=")
+      assert lv |> element("#tracking-form input[name=\"tracking[artist]\"]") |> render() =~
+               "value=\"\"" or
+               not (lv |> element("#tracking-form input[name=\"tracking[artist]\"]") |> render() =~
+                      "value=")
 
       lv |> element("button", "Remove Green Day") |> render_click()
-      
+
       # The artist should no longer be in the list of badges
       refute lv |> has_element?("span", "Green Day")
     end

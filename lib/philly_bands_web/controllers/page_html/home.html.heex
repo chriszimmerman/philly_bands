@@ -1,3 +1,61 @@
-<div class="flex justify-center items-center">
-  <h1 class="text-2xl font-bold text-slate-800">Bands</h1>
+<div class="space-y-12">
+  <div class="flex justify-center items-center">
+    <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+      PhillyBands
+    </h1>
+  </div>
+
+  <%= if @current_user do %>
+    <div>
+      <.header>
+        My Upcoming Events
+        <:actions>
+          <.link href={~p"/my_events"} class="text-sm font-semibold leading-6 text-zinc-900">
+            View all &rarr;
+          </.link>
+        </:actions>
+      </.header>
+
+      <%= if Enum.any?(@events) do %>
+        <.table id="my-events" rows={@events}>
+          <:col :let={event} label="Date">{Calendar.strftime(event.date, "%Y-%m-%d")}</:col>
+          <:col :let={event} label="Artist">{event.external_artist}</:col>
+          <:col :let={event} label="Venue">{event.venue}</:col>
+          <:action :let={event}>
+            <.link
+              href={event.external_link}
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Tickets
+            </.link>
+          </:action>
+        </.table>
+      <% else %>
+        <p class="mt-4 text-slate-600">
+          No upcoming events found for your tracked artists.
+          <.link href={~p"/artist_tracker"} class="text-indigo-600 hover:underline">
+            Track more artists
+          </.link>
+        </p>
+      <% end %>
+    </div>
+  <% else %>
+    <div class="text-center">
+      <p class="text-lg text-slate-600">
+        Discover upcoming concerts in the Philadelphia area.
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <.link
+          href={~p"/users/register"}
+          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        >
+          Get started
+        </.link>
+        <.link href={~p"/events"} class="text-sm font-semibold leading-6 text-slate-900">
+          View all events <span aria-hidden="true">→</span>
+        </.link>
+      </div>
+    </div>
+  <% end %>
 </div>
