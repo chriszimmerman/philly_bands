@@ -17,7 +17,7 @@ defmodule PhillyBands.Events do
     Event
     |> filter_by_region(region)
     |> where([e], e.date >= ^now)
-    |> order_by([e], [asc: e.date, asc: e.external_artist])
+    |> order_by([e], asc: e.date, asc: e.external_artist)
     |> limit(^per_page)
     |> offset(^offset)
     |> Repo.all()
@@ -26,6 +26,7 @@ defmodule PhillyBands.Events do
   defp filter_by_region(query, nil), do: query
   defp filter_by_region(query, ""), do: query
   defp filter_by_region(query, "all"), do: query
+
   defp filter_by_region(query, region) do
     from e in query, where: e.region == ^region
   end

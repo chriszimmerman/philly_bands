@@ -13,7 +13,7 @@ defmodule PhillyBandsWeb.EventControllerTest do
       conn = get(conn, ~p"/events")
       response = html_response(conn, 200)
       assert response =~ "Listing Events"
-      
+
       # Should only show 30 events
       assert response |> Floki.parse_document!() |> Floki.find("tbody tr") |> length() == 30
       assert response =~ "Next Page"
@@ -47,7 +47,7 @@ defmodule PhillyBandsWeb.EventControllerTest do
       conn = get(conn, ~p"/events")
       response = html_response(conn, 200)
       assert response =~ "Listing Events"
-      
+
       assert response =~ ~r/2026-01-09.*2026-01-10.*2026-01-10/s
       assert response =~ ~r/C.*A.*B/s
     end
@@ -56,12 +56,14 @@ defmodule PhillyBandsWeb.EventControllerTest do
       # Mock current date to 2026-01-01
       Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
 
-      future_event = event_fixture(external_artist: "Future Artist", date: ~N[2026-01-02 20:00:00])
+      future_event =
+        event_fixture(external_artist: "Future Artist", date: ~N[2026-01-02 20:00:00])
+
       past_event = event_fixture(external_artist: "Past Artist", date: ~N[2025-12-31 20:00:00])
 
       conn = get(conn, ~p"/events")
       response = html_response(conn, 200)
-      
+
       assert response =~ future_event.external_artist
       refute response =~ past_event.external_artist
     end

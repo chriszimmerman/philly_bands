@@ -9,604 +9,5104 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
-PhillyBands.Events.upsert_event(%{external_artist: "Maná", venue: "Xfinity Mobile Center", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://www.wellsfargocenterphilly.com/events/detail/mana-03-2026"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ray LaMontagne", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-09-12 00:00:00], external_link: "https://concerts.livenation.com/wxpn-welcomes-ray-lamontagne-trouble-20th-philadelphia-pennsylvania-09-13-2025/event/020062679D025F0F?_gl=1*1r8uqeg*_ga*Mzc0NTgyNDM5LjE3MzEwOTQyMDk.*_ga_0CBQHKECVW*MTc0MjQwOTE4NS4xNC4xLjE3NDI0MDkxODguMC4wLjA.*_gcl_au*MTczNTc0NDc1NS4xNzQyNDA5MTg1*_ga_H1KKSGW33X*MTc0MjQwOTE4NS4xNC4xLjE3NDI0MDkxODguNTcuMC4w*_ga_C1T806G4DF*MTc0MjQwOTE4NS4xMi4xLjE3NDI0MDkxODguNTcuMC4w"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ray LaMontagne", venue: "F.M. Kirby Center for the Performing Arts", region: "Lehigh Valley", date: ~N[2026-09-09 02:00:00], external_link: "https://kirbycenter.org/show/ray-lamontagne/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Church", venue: "The Colonial Theatre", region: "Philadelphia Area", date: ~N[2026-06-27 00:00:00], external_link: "https://thecolonialtheatre.com/events/live-music/the-church-the-singles-1980-2025/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Calum Scott", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-04-22 00:00:00], external_link: "https://concerts.livenation.com/calum-scott-the-avenoir-tour-2026-philadelphia-pennsylvania-04-22-2026/event/02006284B0576A3B?_gl=1*chghdp*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_0V4QWN65W8*MTc0NTQ1NzMxNS4zLjEuMTc0NTQ1NzU1Ni4wLjAuMA..*_gcl_au*MTA0MTQyMjU3MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*MTc0NTQ1NzMxNS4zLjEuMTc0NTQ1NzM3OC41OS4wLjA.*_ga_H1KKSGW33X*MTc0NTQ1NzMxNS4zLjEuMTc0NTQ1NzM3OC41OS4wLjA.&_ga=2.137287216.1256760193.1745457398-2115339791.1741457100"})
-PhillyBands.Events.upsert_event(%{external_artist: "Brandon Lake", venue: "Xfinity Mobile Arena", region: "Philadelphia Area", date: ~N[2026-03-12 00:00:00], external_link: "https://www.wellsfargocenterphilly.com/events/detail/brandon-lake-3-12"})
-PhillyBands.Events.upsert_event(%{external_artist: "Yo-Yo Ma / Dalia Stasevska", venue: "Marian Anderson Hall @ The Kimmel Center", region: "Philadelphia Area", date: ~N[2026-01-14 00:00:00], external_link: "https://www.ensembleartsphilly.org/tickets-and-events/philadelphia-orchestra/2025-26-season/yo-yo-ma-returns"})
-PhillyBands.Events.upsert_event(%{external_artist: "Cate Le Bon", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-01-13 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1006285"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lord of the Lost / The Birthday Massacre", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-01-20 00:00:00], external_link: "https://www.ticketmaster.com/lord-of-the-lost-the-birthday-philadelphia-pennsylvania-01-20-2026/event/020062B5C8B35121?_gl=1*wxzhs7*_gcl_au*MTg0NTY3MjY3Ny4xNzQ5MjQzMjM4*_ga*MTAzMjIzMDQxNy4xNzQ5MjQzMjM4*_ga_C1T806G4DF*czE3NDkyNDMyMzgkbzEkZzEkdDE3NDkyNDMyNTMkajQ1JGwwJGgw*_ga_H1KKSGW33X*czE3NDkyNDMyMzgkbzEkZzEkdDE3NDkyNDMyNTMkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kim Richey", venue: "Jersey Shore Arts Center - Palaia Theater", region: "New Jersey", date: ~N[2026-05-16 00:00:00], external_link: "https://jerseyshoreartscenter.ticketleap.com/kim-richey/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lucy Kaplansky", venue: "Jersey Shore Arts Center - Palaia Theater", region: "New Jersey", date: ~N[2026-04-18 00:00:00], external_link: "https://jerseyshoreartscenter.ticketleap.com/lucy-kaplansky/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Joy Clark", venue: "Jersey Shore Arts Center - Palaia Theater", region: "New Jersey", date: ~N[2026-03-21 00:00:00], external_link: "https://jerseyshoreartscenter.ticketleap.com/joy-clark/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Shannon McNally and Band", venue: "Jersey Shore Arts Center - Palaia Theater", region: "New Jersey", date: ~N[2026-02-28 00:00:00], external_link: "https://jerseyshoreartscenter.ticketleap.com/shannon-mcnally/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Anthony D'Amato of Fantastic Cat (solo) ", venue: "Jersey Shore Arts Center - Palaia Theater", region: "New Jersey", date: ~N[2026-01-24 00:00:00], external_link: "https://jerseyshoreartscenter.ticketleap.com/nathan-graham-and-band/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Barr Brothers", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-02-19 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/the-barr-brothers-141921"})
-PhillyBands.Events.upsert_event(%{external_artist: "Levity", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://www.ticketmaster.com/levity-presents-lasership-philadelphia-pennsylvania-01-23-2026/event/020062D7ECAE66DB?_gl=1*u0i99h*_gcl_au*MzgzMTc4Nzg3LjE3NTA5Nzg2Mzc.*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NTMyOTE2MzUkbzExJGcxJHQxNzUzMjkxNjU4JGozNyRsMCRoMA..*_ga_H1KKSGW33X*czE3NTMyOTE2MzUkbzExJGcxJHQxNzUzMjkxNjU4JGozNyRsMCRoMA..&_ga=2.7645810.1182538113.1753291682-2115339791.1741457100"})
-PhillyBands.Events.upsert_event(%{external_artist: "Loudon Wainwright III / Chris Smither", venue: "Zellerbach Theater at Penn Live Arts", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://pennlivearts.org/event/LoudonChris"})
-PhillyBands.Events.upsert_event(%{external_artist: "Low Cut Connie", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2025-12-30 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/low-cut-connie-151802"})
-PhillyBands.Events.upsert_event(%{external_artist: "Low Cut Connie", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2025-12-31 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/low-cut-connie-151802"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lettuce", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/lettuce-148712"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lettuce", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/lettuce-148712"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jared Freid", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://www.ticketmaster.com/jared-freid-the-table-for-one-philadelphia-pennsylvania-01-09-2026/event/020062D49FC96BCE?_gl=1*1g5yoyj*_gcl_au*MTUwMzQzNTczOC4xNzU1MTAwMDcy*_ga*NzcyNjkzMDM1LjE3NTUxMDAwNzE.*_ga_C1T806G4DF*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw*_ga_H1KKSGW33X*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lauren Spencer Smith", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-02-18 00:00:00], external_link: "https://www.ticketmaster.com/lauren-spencer-smith-the-art-of-philadelphia-pennsylvania-02-18-2026/event/020062BD2C0081BA?_gl=1*1g5yoyj*_gcl_au*MTUwMzQzNTczOC4xNzU1MTAwMDcy*_ga*NzcyNjkzMDM1LjE3NTUxMDAwNzE.*_ga_C1T806G4DF*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw*_ga_H1KKSGW33X*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "shame", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-01-16 00:00:00], external_link: "https://www.etix.com/ticket/p/89317572/shame-philadelphia-the-first-unitarian-church?partner_id=100&_gl=1*73blye*_ga*OTQ3OTIwMzMxLjE3NTU1NTAyOTI.*_ga_6T50PMF8HM*czE3NTU1NTAyOTIkbzEkZzEkdDE3NTU1NTA1MTQkajYwJGwwJGgw*_ga_20QQYQHBVX*czE3NTU1NTAyOTIkbzEkZzEkdDE3NTU1NTA1MTQkajYwJGwwJGgxMTY5NDY1OTQw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Modern Nature", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/modern-nature-152999"})
-PhillyBands.Events.upsert_event(%{external_artist: "Marissa Nadler", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-15 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/marissa-nadler-153713"})
-PhillyBands.Events.upsert_event(%{external_artist: "Vertical Current", venue: "The Clef Club", region: "Philadelphia Area", date: ~N[2026-02-26 00:00:00], external_link: "https://clefclubofjazz.org/event/vertical-current-jazz-cultural-voices-concert-series"})
-PhillyBands.Events.upsert_event(%{external_artist: "112", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://www.ticketmaster.com/112-room-112-tour-philadelphia-pennsylvania-01-30-2026/event/02006315C1944447?_gl=1*ngiko5*_gcl_au*NzYwNDc4MTUxLjE3NTIzNjAyMTk.*_ga*NDg2MjYyNjA4LjE3NTIzNjAyMTg.*_ga_C1T806G4DF*czE3NTYxNjQ5NDAkbzMkZzEkdDE3NTYxNjQ5NjkkajMxJGwwJGgw*_ga_H1KKSGW33X*czE3NTYxNjQ5NDEkbzMkZzEkdDE3NTYxNjQ5NjgkajMzJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Julianna Riolino", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-02-18 00:00:00], external_link: "https://kungfunecktie.com/event/julianna-riolino/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Peter Hook & The Light", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-09-07 00:00:00], external_link: "https://www.axs.com/events/1097905/peter-hook-the-light-tickets"})
-PhillyBands.Events.upsert_event(%{external_artist: "Eliza McLamb", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-04-26 00:00:00], external_link: "https://www.ticketmaster.com/eliza-mclamb-good-story-tour-philadelphia-pennsylvania-04-26-2026/event/02006308F537461B?_gl=1*11kljlw*_gcl_au*MTM3OTM3MTkwMS4xNzU0NjA5NDc5*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NTY0NDYzMTEkbzEwJGcxJHQxNzU2NDQ2MzM0JGozNyRsMCRoMA..*_ga_H1KKSGW33X*czE3NTY0NDYzMTEkbzExJGcxJHQxNzU2NDQ2MzM0JGozNyRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "East Nash Grass", venue: "Weis Center Concert Hall", region: "Central PA", date: ~N[2026-02-05 00:00:00], external_link: "https://www.bucknell.edu/life-bucknell/arts-performances/weis-center-performing-arts/2025-26-season/east-nash-grass"})
-PhillyBands.Events.upsert_event(%{external_artist: "Author / Punisher / King Yosef / Black Magnet", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-03-01 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-mfzfd"})
-PhillyBands.Events.upsert_event(%{external_artist: "bbno$", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-03-10 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1095101-bbno"})
-PhillyBands.Events.upsert_event(%{external_artist: "The High Kings", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-03-12 00:00:00], external_link: "https://www.keswicktheatre.com/events/detail/1129931"})
-PhillyBands.Events.upsert_event(%{external_artist: "Youth Fountain", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-01-08 00:00:00], external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n"})
-PhillyBands.Events.upsert_event(%{external_artist: "Curtis Harding", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-22 00:00:00], external_link: "https://johnnybrendas.com/event/curtis-harding/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Margo Price", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://www.ticketmaster.com/margo-price-wild-at-heart-tour-philadelphia-pennsylvania-02-20-2026/event/02006341A32D3B23"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Belair Lip Bombs / dust", venue: "PhilaMOCA", region: "Philadelphia Area", date: ~N[2026-04-11 00:00:00], external_link: "https://r5productions.com/event/the-belair-lip-bombs/philamoca/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Jacksons", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-02-21 00:00:00], external_link: "https://www.bergenpac.org/events/detail/the-jacksons"})
-PhillyBands.Events.upsert_event(%{external_artist: "Acid Bath / Baroness / The Skull", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-03-07 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1125853"})
-PhillyBands.Events.upsert_event(%{external_artist: "Steve Forbert & The New Renditions", venue: "New Hope Winery", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://newhopewinery.com/event/steve-forbert-the-new-renditions/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Greg Freeman", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-01-27 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-6dpwf-x559b"})
-PhillyBands.Events.upsert_event(%{external_artist: "Moonchild", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-03 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moonchild-161376"})
-PhillyBands.Events.upsert_event(%{external_artist: "Electric Light Orchestra", venue: "Lansdowne Theater", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://thelansdownetheater.com/event/the-orchestra-starring-electric-light-orchestra-elo-part-ii-former-members/lansdowne-theater/lansdowne-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Last Dinner Party / Florence Road", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-04-15 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1178609-the-last-dinner-party"})
-PhillyBands.Events.upsert_event(%{external_artist: "Last Dinosaurs", venue: "The Stone Pony", region: "New Jersey", date: ~N[2026-03-26 00:00:00], external_link: "https://www.ticketmaster.com/event/0000634ED0077788"})
-PhillyBands.Events.upsert_event(%{external_artist: "Letdown. / Blame My Youth / YOUTHYEAR / LUCHIANO", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-19 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/letdown--160237"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jillith Fair", venue: "The Fallser Club", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://thefallserclub.com/event/jillith-fair-loving-jill-sobule/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gary Numan", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-03-18 00:00:00], external_link: "https://www.keswicktheatre.com/events/detail/1183845"})
-PhillyBands.Events.upsert_event(%{external_artist: "Foo Fighters / Queens of the Stone Age", venue: "Lincoln Financial Field", region: "Philadelphia Area", date: ~N[2026-08-13 00:00:00], external_link: "https://www.ticketmaster.com/event/02006355290D9782"})
-PhillyBands.Events.upsert_event(%{external_artist: "Conan Gray / Esha Tewari", venue: "Xfinity Mobile Arena", region: "Philadelphia Area", date: ~N[2026-03-02 00:00:00], external_link: "https://www.ticketmaster.com/event/30006351286181F9?utm_source=WEB&utm_medium=XMAWEBSITE&utm_campaign=CONANGRAY0302&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mat Kerekes / Shallow Alcove / Beeson", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-09 00:00:00], external_link: "https://www.ticketmaster.com/mat-kerekes-luna-and-the-wild-philadelphia-pennsylvania-02-09-2026/event/02006342E7DF7690?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Mary Fahl", venue: "New Hope Winery", region: "Philadelphia Area", date: ~N[2026-02-14 00:00:00], external_link: "https://newhopewinery.com/event/mary-fahl-3/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Louis Tomlinson / The Beaches", venue: "Skyline Stage @ The Mann Center", region: "Philadelphia Area", date: ~N[2026-07-11 00:00:00], external_link: "https://highmarkmann.org/events/2026-07-11/louis-tomlinson"})
-PhillyBands.Events.upsert_event(%{external_artist: "Vincent Mason", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-25 00:00:00], external_link: "https://www.ticketmaster.com/monster-energy-outbreak-tour-presents-vincent-philadelphia-pennsylvania-04-25-2026/event/0200635016EEB772?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Machine Girl", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-02-28 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1183855"})
-PhillyBands.Events.upsert_event(%{external_artist: "Snarky Puppy", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1154993"})
-PhillyBands.Events.upsert_event(%{external_artist: "Melody's Echo Chamber", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-05-13 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1157064"})
-PhillyBands.Events.upsert_event(%{external_artist: "Nathan Evans and the Saint Phnx Band", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-02 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/nathan-evans-and-the-saint-phnx-band-160219"})
-PhillyBands.Events.upsert_event(%{external_artist: "JOSEPH", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-01 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/joseph-163692"})
-PhillyBands.Events.upsert_event(%{external_artist: "HighSchool", venue: "PhilaMOCA", region: "Philadelphia Area", date: ~N[2026-03-27 00:00:00], external_link: "https://r5productions.com/event/highschool/philamoca/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Endea Owens & The Cookout", venue: "Perelman Theater", region: "Philadelphia Area", date: ~N[2026-03-28 00:00:00], external_link: "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/endea-owens-and-the-cookout"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lady Blackbird", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-07 00:00:00], external_link: "https://citywinery.com/philadelphia/events/lady-blackbird-8466im"})
-PhillyBands.Events.upsert_event(%{external_artist: "Algebra Blessett", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-18 00:00:00], external_link: "https://citywinery.com/philadelphia/events/algebra-blessett-5f4pfn"})
-PhillyBands.Events.upsert_event(%{external_artist: "Aliah Sheffield", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-02-15 00:00:00], external_link: "https://citywinery.com/philadelphia/events/aliah-sheffield-piyvmz"})
-PhillyBands.Events.upsert_event(%{external_artist: "Neko Case", venue: "The Queen", region: "Philadelphia Area", date: ~N[2026-01-16 00:00:00], external_link: "https://thequeenwilmington.com/events/neko-case-neon-grey-midnight-green-tour/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Whitney", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-14 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/whitney-157061"})
-PhillyBands.Events.upsert_event(%{external_artist: "Zara Larsson / Amelia Moore", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-03-30 00:00:00], external_link: "https://www.ticketmaster.com/zara-larsson-midnight-sun-tour-2026-philadelphia-pennsylvania-03-30-2026/event/0200631BBC05293C?_gl=1*1jpmej7*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NTc2MjEwOTQkbzE0JGcxJHQxNzU3NjIxMTEzJGo0MSRsMCRoMA..*_ga_H1KKSGW33X*czE3NTc2MjEwOTQkbzE0JGcxJHQxNzU3NjIxMTEzJGo0MSRsMCRoMA..&_ga=2.195362281.431103427.1757621430-2115339791.1741457100"})
-PhillyBands.Events.upsert_event(%{external_artist: "mclusky", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-04-10 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/mclusky-157306"})
-PhillyBands.Events.upsert_event(%{external_artist: "Yonder Mountain String Band", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-02-21 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/yonder-mountain-string-band-156553"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Teeth", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-03-27 00:00:00], external_link: "https://johnnybrendas.com/event/the-teeth/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mariah the Scientist", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-02-24 00:00:00], external_link: "https://www.ticketmaster.com/mariah-the-scientist-hearts-sold-separately-philadelphia-pennsylvania-02-24-2026/event/02006322F3E08661?_gl=1*1upjp8b*_ga*NDg2MjYyNjA4LjE3NTIzNjAyMTg.*_ga_C1T806G4DF*czE3NTg5MTI3MTQkbzQkZzEkdDE3NTg5MTI3MjQkajUwJGwwJGgw*_ga_H1KKSGW33X*czE3NTg5MTI3MTQkbzQkZzEkdDE3NTg5MTI3MjMkajUxJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Opeth / Katatonia", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-02-07 00:00:00], external_link: "https://www.ticketmaster.com/opeth-the-last-will-and-testament-philadelphia-pennsylvania-02-07-2026/event/02006333948840D1?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Gurriers", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-14 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/gurriers-151128"})
-PhillyBands.Events.upsert_event(%{external_artist: "Chris Thile", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-04-06 00:00:00], external_link: "https://www.keswicktheatre.com/events/detail/1138037"})
-PhillyBands.Events.upsert_event(%{external_artist: "Westerman", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-03-20 00:00:00], external_link: "https://www.ticketmaster.com/westerman-philadelphia-pennsylvania-03-20-2026/event/0200633A90004033?_gl=1*yl3855*_ga*MTIwNjYyODk1OC4xNzU5NDM5NzY1*_ga_C1T806G4DF*czE3NTk0Mzk3NjUkbzEkZzEkdDE3NTk0Mzk3NzgkajQ3JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0Mzk3NjUkbzEkZzEkdDE3NTk0Mzk3NzgkajQ3JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Taper's Choice / Rich Ruth", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/taper-s-choice-154608"})
-PhillyBands.Events.upsert_event(%{external_artist: "Don Was & The Pan-Detroit Ensemble", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-14 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/don-was-the-pan-detroit-ensemble-154604"})
-PhillyBands.Events.upsert_event(%{external_artist: "Julianna Barwick / Mary Lattimore", venue: "The Sanctuary @ The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-03-20 00:00:00], external_link: "https://r5productions.com/event/julianna-barwick-mary-lattimore/the-sanctuary-of-the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Rural Alberta Advantage", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-18 00:00:00], external_link: "https://johnnybrendas.com/event/the-rural-alberta-advantage-2/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "CIV / Into Another / Orange 9mm / The Great American Typewriter / Wild Reed", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/civ-161917"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Movement / Tropidelic", venue: "The Stone Pony", region: "New Jersey", date: ~N[2026-01-29 00:00:00], external_link: "https://www.ticketmaster.com/event/00006333B40B1EBE"})
-PhillyBands.Events.upsert_event(%{external_artist: "Landon Conrath / Abby Holliday", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-06 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/landon-conrath-157575"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tinzo + Jojo", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-03-06 00:00:00], external_link: "https://www.ticketmaster.com/tinzo-jojo-plur-tour-philadelphia-pennsylvania-03-06-2026/event/02006344FD128250?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Paper Kites", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-05-08 00:00:00], external_link: "https://www.ticketmaster.com/the-paper-kites-if-you-go-philadelphia-pennsylvania-05-08-2026/event/02006338A4603D88?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Peaches / Model/Actriz", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-01 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1171657"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lotus", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-18 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1198184"})
-PhillyBands.Events.upsert_event(%{external_artist: "Wolfmother", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-06-30 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1210655"})
-PhillyBands.Events.upsert_event(%{external_artist: "moe.", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-04 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moe--159836"})
-PhillyBands.Events.upsert_event(%{external_artist: "Goldie Boutilier", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://r5productions.com/event/goldie-boutilier/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ben Arnold", venue: "The Kelly Center", region: "Philadelphia Area", date: ~N[2025-12-31 00:00:00], external_link: "https://www.ticketleap.events/tickets/kellycenter/12312025"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Adam Ezra Group", venue: "City Winery", region: "Philadelphia Area", date: ~N[2025-12-29 00:00:00], external_link: "https://citywinery.com/philadelphia/events/the-adam-ezra-group-pmcgmn"})
-PhillyBands.Events.upsert_event(%{external_artist: "El Debarge", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-08 00:00:00], external_link: "https://citywinery.com/philadelphia/events/el-debarge-z8kthp"})
-PhillyBands.Events.upsert_event(%{external_artist: "Najee", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://citywinery.com/philadelphia/events/najee-iokeua"})
-PhillyBands.Events.upsert_event(%{external_artist: "Eric Hutchinson", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://citywinery.com/philadelphia/events/eric-hutchinson-repeating-myself-tour-5uocgo"})
-PhillyBands.Events.upsert_event(%{external_artist: "Hayley Williams / Water From Your Eyes", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-04-06 00:00:00], external_link: "https://www.bowerypresents.com/greater-philly/shows/detail/1219919-hayley-williams-at-a-bachelorette-party"})
-PhillyBands.Events.upsert_event(%{external_artist: "Blackwater Holylight", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-26 00:00:00], external_link: "https://johnnybrendas.com/event/blackwater-holylight-2/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Schur", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-14 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/schur-160651"})
-PhillyBands.Events.upsert_event(%{external_artist: "Nobu Woods", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-08 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/nobu-woods-165341"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dale Watson and His Lone Stars", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://www.st94.com/events/dale-watson/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jesse Welles", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-03-04 00:00:00], external_link: "https://www.ticketmaster.com/jesse-welles-under-the-powerlines-2026-philadelphia-pennsylvania-03-04-2026/event/0200630DB714292D"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dark Star Orchestra", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2025-12-30 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1132559-dark-star-orchestra"})
-PhillyBands.Events.upsert_event(%{external_artist: "dodie", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-02-27 00:00:00], external_link: "https://www.ticketmaster.com/dodie-philadelphia-pennsylvania-02-27-2026/event/0200630CE3192EB0?_gl=1*8ffqyv*_ga*MTU2MDc1MjIwNy4xNzUzMzI0OTAx*_ga_C1T806G4DF*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw*_ga_H1KKSGW33X*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rascal Flatts / Chris Lane / Lauren Alaina", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-01-30 00:00:00], external_link: "https://www.prucenter.com/events/rascal-flatts"})
-PhillyBands.Events.upsert_event(%{external_artist: "Madison Cunningham", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-02 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/madison-cunningham-156899"})
-PhillyBands.Events.upsert_event(%{external_artist: "49th & Main", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-04-03 00:00:00], external_link: "https://www.ticketmaster.com/49th-main-philadelphia-pennsylvania-04-03-2026/event/0200632C927B2150?_gl=1*1mpqyg9*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NTg5MDc4NjgkbzEzJGcxJHQxNzU4OTA3ODg3JGo0MSRsMCRoMA..*_ga_H1KKSGW33X*czE3NTg5MDc4NjgkbzE0JGcxJHQxNzU4OTA3ODg3JGo0MSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Alex Sampson", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-18 00:00:00], external_link: "https://www.ticketmaster.com/alex-sampson-philadelphia-pennsylvania-02-18-2026/event/020063429BB14A41?_gl=1*dfifkk*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NjAwNDk3MDUkbzE0JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA..*_ga_H1KKSGW33X*czE3NjAwNDk3MDUkbzE1JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "The Bacon Brothers", venue: "Strand Theatre @ Appell Center for the Performing Arts", region: "Central PA", date: ~N[2026-01-23 00:00:00], external_link: "https://appellcenter.org/show/the-bacon-brothers/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kenny Wayne Shepherd Band", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-03-10 00:00:00], external_link: "https://www.bergenpac.org/events/detail/kenny-wayne-shepherd-band"})
-PhillyBands.Events.upsert_event(%{external_artist: "Nine Inch Nails", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-02-14 00:00:00], external_link: "https://www.prucenter.com/events/nine-inch-nails"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jeremy Jordan / Age of Madness", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://www.ticketmaster.com/jeremy-jordan-age-of-madness-philadelphia-pennsylvania-04-17-2026/event/02006349B8A55127?_gl=1*vh1idf*_ga*MTIwNjYyODk1OC4xNzU5NDM5NzY1*_ga_C1T806G4DF*czE3NjA1NTY2MDckbzIkZzEkdDE3NjA1NTY2ODYkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjA1NTY2MDckbzIkZzEkdDE3NjA1NTY2ODYkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Acopia", venue: "Warehouse on Watts", region: "Philadelphia Area", date: ~N[2026-03-14 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-kyb83-ceds7-4n7xr-2b3wp-ft2b2"})
-PhillyBands.Events.upsert_event(%{external_artist: "Glitterer / Graham Hunt / Prize Horse", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-03-12 00:00:00], external_link: "https://r5productions.com/event/glitterer-3/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Runo Plum", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-10 00:00:00], external_link: "https://johnnybrendas.com/event/runo-plum/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rich Vos / Jim Florentine", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://www.keswicktheatre.com/events/detail/1137151"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kayo Dot", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-10 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/kayo-dot-157715"})
-PhillyBands.Events.upsert_event(%{external_artist: "Briscoe", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-25 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/briscoe-160288"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sudan Archives", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-01-27 00:00:00], external_link: "https://www.axs.com/nz/events/1165462/sudan-archives-tickets?_gl=1*19ydxez*_gcl_au*ODk0NTE3MTAxLjE3NjA0NTQ5MzU."})
-PhillyBands.Events.upsert_event(%{external_artist: "Echo & The Bunnymen", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-06-07 00:00:00], external_link: "https://www.ticketmaster.com/echo-the-bunnymen-more-songs-to-philadelphia-pennsylvania-06-07-2026/event/0200634F937780CD"})
-PhillyBands.Events.upsert_event(%{external_artist: "Florence + The Machine / Sofia Isella", venue: "Xfinity Mobile Arena", region: "Philadelphia Area", date: ~N[2026-04-25 00:00:00], external_link: "https://www.ticketmaster.com/event/30006356EAB56F66?utm_source=WEB&utm_medium=XMAWEBSITE&utm_campaign=FLORENCE0425&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Seahaven", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-05 00:00:00], external_link: "https://www.ticketmaster.com/seahaven-performing-winter-forever-in-full-philadelphia-pennsylvania-02-05-2026/event/0200635492C3249C?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Griffin House", venue: "New Hope Winery", region: "Philadelphia Area", date: ~N[2026-03-21 00:00:00], external_link: "https://newhopewinery.com/event/griffin-house-2/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Chet Faker", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-05-29 00:00:00], external_link: "https://utphilly.com/events/detail/?event_id=1192936"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rich Brian", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-02-24 00:00:00], external_link: "https://www.ticketmaster.com/rich-brian-where-is-my-head-philadelphia-pennsylvania-02-24-2026/event/02006331BFA243B7?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Liz Longley", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-04-19 00:00:00], external_link: "https://citywinery.com/philadelphia/events/rising-sun-presents-liz-longley-4i56en"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ye Vagabonds", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-02 00:00:00], external_link: "https://johnnybrendas.com/event/ye-vagabonds/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Wild Pink / Dead Gowns", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/wild-pink-164530"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Ramona Flowers", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/the-ramona-flowers-164486"})
-PhillyBands.Events.upsert_event(%{external_artist: "Livingston Taylor", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-01-08 00:00:00], external_link: "https://www.st94.com/events/livingston-taylor-3/"})
-PhillyBands.Events.upsert_event(%{external_artist: "State Champs", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-01-18 00:00:00], external_link: "https://www.ticketmaster.com/state-champs-around-the-world-and-philadelphia-pennsylvania-01-18-2026/event/0200634AB9A75739?_gl=1*v4xxgo*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "PONY / Star 99", venue: "Warehouse on Watts", region: "Philadelphia Area", date: ~N[2026-02-26 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-fphsl"})
-PhillyBands.Events.upsert_event(%{external_artist: "Josh Ritter", venue: "The Grand", region: "Philadelphia Area", date: ~N[2026-02-06 00:00:00], external_link: "https://www.thegrandwilmington.org/productions/9182-josh-ritter/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Neko Case", venue: "Archer Music Hall", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://www.ticketmaster.com/wxpn-welcomes-neko-case-neon-grey-allentown-pennsylvania-01-17-2026/event/30006307FCFB5FEC?_gl=1*p4ex2t*_ga*OTU2MjgwNTY5LjE3NTY4NDUwNTU.*_ga_C1T806G4DF*czE3NTY4NDUwNTQkbzEkZzEkdDE3NTY4NDUwNTYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NTY4NDUwNTQkbzEkZzEkdDE3NTY4NDUwNTYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Elovaters / Collie Buddz / JARV", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1133193-the-elovaters"})
-PhillyBands.Events.upsert_event(%{external_artist: "Peter McPoland", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-02-28 00:00:00], external_link: "https://www.ticketmaster.com/peter-mcpoland-big-lucky-tour-philadelphia-pennsylvania-02-28-2026/event/0200631A31116A93?_gl=1*8ffqyv*_ga*MTU2MDc1MjIwNy4xNzUzMzI0OTAx*_ga_C1T806G4DF*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw*_ga_H1KKSGW33X*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Cardi B", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-03-28 00:00:00], external_link: "https://www.prucenter.com/events/cardi-b"})
-PhillyBands.Events.upsert_event(%{external_artist: "HEALTH x Carpenter Brut / Desire", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-04-19 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1147874-health-x-carpenter-brut"})
-PhillyBands.Events.upsert_event(%{external_artist: "Afternoon Bike Ride", venue: "Silk City", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://www.silkcityphilly.com/events/1645/afternoon-bike-ride"})
-PhillyBands.Events.upsert_event(%{external_artist: "Motion City Soundtrack / Say Anything", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://www.ticketmaster.com/say-anything-and-motion-city-soundtrack-philadelphia-pennsylvania-01-31-2026/event/02006333A1E94CC4?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Mike Viola / Drumming Bird", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-04 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/mike-viola-157568"})
-PhillyBands.Events.upsert_event(%{external_artist: "Saxsquatch", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-12 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/saxsquatch-159280"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kayhan Kalhor", venue: "Annenberg Center", region: "Philadelphia Area", date: ~N[2026-03-08 00:00:00], external_link: "https://pennlivearts.org/event/KayhanKalhor"})
-PhillyBands.Events.upsert_event(%{external_artist: "Beats Antique", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-21 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/beats-antique-159607"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sing Us Home Festival feat. The Menzingers, The Mountain Goats, Dave Hause & The Mermaid, and more", venue: "Venice Island", region: "Philadelphia Area", date: ~N[2026-05-03 00:00:00], external_link: "https://www.tixr.com/groups/singushomefest/events/sing-us-home-festival-2026-159027"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dry Cleaning / YHWH Nailgun", venue: "Union Trnasfer", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://www.axs.com/nz/events/1174868/dry-cleaning-tickets?_gl=1*13ylp84*_gcl_au*ODk0NTE3MTAxLjE3NjA0NTQ5MzU."})
-PhillyBands.Events.upsert_event(%{external_artist: "Jason Isbell and the 400 Unit", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-02-18 00:00:00], external_link: "https://www.ticketmaster.com/wxpn-welcomes-jason-isbell-and-the-philadelphia-pennsylvania-02-18-2026/event/02006354EAC27343"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mia Asano", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-03-26 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/mia-asano-162673"})
-PhillyBands.Events.upsert_event(%{external_artist: "Samm Henshaw", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-03-06 00:00:00], external_link: "https://www.ticketmaster.com/samm-henshaw-presents-it-could-be-philadelphia-pennsylvania-03-06-2026/event/0200635094D78253?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Iron Maiden", venue: "Hersheypark Stadium", region: "Central PA", date: ~N[2026-09-15 00:00:00], external_link: "https://www.hersheyentertainment.com/hersheypark-stadium/events/iron-maiden/"})
-PhillyBands.Events.upsert_event(%{external_artist: "O.A.R. / Gavin DeGraw / Lisa Loeb", venue: "TD Pavilion @ The Mann Center", region: "Philadelphia Area", date: ~N[2026-07-25 00:00:00], external_link: "https://highmarkmann.org/events/2026-07-25/oar"})
-PhillyBands.Events.upsert_event(%{external_artist: "Amber Mark", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://www.ticketmaster.com/amber-mark-presents-the-pretty-idea-philadelphia-pennsylvania-03-07-2026/event/02006348CD8665E2?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "ALLEYCVT / Steller / Tazu", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1146705"})
-PhillyBands.Events.upsert_event(%{external_artist: "Evan Honer / Nicholas Jamerson", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-10 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1150430"})
-PhillyBands.Events.upsert_event(%{external_artist: "Oklou", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-28 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1203572"})
-PhillyBands.Events.upsert_event(%{external_artist: "Getdown Services", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-55fh6-3te8k-dnmyb-9kyj5-2jml3"})
-PhillyBands.Events.upsert_event(%{external_artist: "moe.", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-05 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moe--159836"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rio Kosta", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-24 00:00:00], external_link: "https://r5productions.com/event/rio-kosta/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kurt Elling", venue: "Perelman Theater @ The Kimmel Center", region: "Philadelphia Area", date: ~N[2026-02-27 00:00:00], external_link: "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/kurt-elling"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kindred The Family Soul", venue: "City Winery", region: "Philadelphia Area", date: ~N[2025-12-31 00:00:00], external_link: "https://citywinery.com/philadelphia/events/kindred-the-family-soul-nye-mjnucv"})
-PhillyBands.Events.upsert_event(%{external_artist: "Los Lonely Boys", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-10 00:00:00], external_link: "https://citywinery.com/philadelphia/events/an-evening-of-song-and-stories-with-los-lonely-b-95lg9w"})
-PhillyBands.Events.upsert_event(%{external_artist: "Heather Maloney / Hayley Reardon", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://citywinery.com/philadelphia/events/heather-maloney-quu26y"})
-PhillyBands.Events.upsert_event(%{external_artist: "Todd Barry", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-04-03 00:00:00], external_link: "https://citywinery.com/philadelphia/events/todd-barry-8drr1b"})
-PhillyBands.Events.upsert_event(%{external_artist: "Prison Affair / Snõõper ", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-03-05 00:00:00], external_link: "https://r5productions.com/event/prison-affair-sn%c3%b5%c3%b5per/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "KANSAS", venue: "The Grand", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://www.thegrandwilmington.org/productions/9153-kansas/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gabe Dixon / Cumberland Honey", venue: "Strand Theatre @ Appell Center for the Performing Arts", region: "Central PA", date: ~N[2026-01-30 00:00:00], external_link: "https://appellcenter.org/show/caplive-gabe-dixon/"})
-PhillyBands.Events.upsert_event(%{external_artist: "ZZ Ward / McKinley James", venue: "Musikfest Café", region: "Lehigh Valley", date: ~N[2026-03-19 00:00:00], external_link: "https://www.artsquest.org/event/zz-ward/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kenny Wayne Shepherd", venue: "Wind Creek Event Center", region: "Lehigh Valley", date: ~N[2026-03-06 00:00:00], external_link: "https://www.windcreekeventcenter.com/events/kenny-wayne-shepherd/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Strumbellas", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/the-strumbellas-148553"})
-PhillyBands.Events.upsert_event(%{external_artist: "SPRINTS", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-07 00:00:00], external_link: "https://johnnybrendas.com/event/sprints/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Weval", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://www.ticketmaster.com/weval-chorophobia-album-release-tour-philadelphia-pennsylvania-01-30-2026/event/0200631CBD0F2F15?_gl=1*xsiv5x*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NTc2MzYxNjYkbzEyJGcxJHQxNzU3NjM2MTgzJGo0MyRsMCRoMA..*_ga_H1KKSGW33X*czE3NTc2MzYxNjYkbzEzJGcxJHQxNzU3NjM2MTgzJGo0MyRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Drink The Sea", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-02-19 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/drink-the-sea-156786"})
-PhillyBands.Events.upsert_event(%{external_artist: "Michael Nau / Magic Tuber Stringband", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-27 00:00:00], external_link: "https://johnnybrendas.com/event/michael-nau-2/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Electric Guest / SNACKTIME", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-02-07 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1124160"})
-PhillyBands.Events.upsert_event(%{external_artist: "Michael Shannon & Jason Narducy and Friends play R.E.M.’s Lifes Rich Pageant", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-04 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1138019"})
-PhillyBands.Events.upsert_event(%{external_artist: "GoldFord", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-19 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1146309"})
-PhillyBands.Events.upsert_event(%{external_artist: "JADE", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-02-16 00:00:00], external_link: "https://www.ticketmaster.com/jade-thats-showbiz-baby-the-tour-philadelphia-pennsylvania-02-16-2026/event/02006333AA4553C4?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Ashnikko", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-05-13 00:00:00], external_link: "https://www.ticketmaster.com/ashnikko-smoochies-tour-philadelphia-pennsylvania-05-13-2026/event/0200632C9ACC269B?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "God Bullies", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-16 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/god-bullies-158371"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ratboys / Florry", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-03-03 00:00:00], external_link: "https://r5productions.com/event/ratboys-2/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Patrick Watson", venue: "Arden Gild Hall", region: "Philadelphia Area", date: ~N[2026-03-21 00:00:00], external_link: "https://dice.fm/event/xe5ypa-patrick-watson-uh-oh-tour-21st-mar-arden-gild-hall-wilmington-tickets?pid=36d2aee9&_branch_match_id=1489821457631060515&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S8xNzc1TjJNTEy2NLYvyEyxNTZLMUpMTbVUqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAmw%2BD7EgAAAA%3D"})
-PhillyBands.Events.upsert_event(%{external_artist: "Yonder Mountain String Band", venue: "XL Live", region: "Central PA", date: ~N[2026-02-18 00:00:00], external_link: "https://www.ticketmaster.com/event/0200633697051ECF"})
-PhillyBands.Events.upsert_event(%{external_artist: "Spiritual Camp", venue: "PhilaMOCA", region: "Philadelphia Area", date: ~N[2026-03-01 00:00:00], external_link: "https://r5productions.com/event/spiritual-cramp/philamoca/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Isaiah Collier / Keyon Harrold", venue: "Annenberg Center", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://pennlivearts.org/event/IsaiahKeyon"})
-PhillyBands.Events.upsert_event(%{external_artist: "Loudon Wainwright III / Chris Smither", venue: "Annenberg Center", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://pennlivearts.org/event/LoudonChris"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gregory Alan Isakov", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-01-22 00:00:00], external_link: "https://www.ticketmaster.com/an-intimate-acoustic-evening-with-gregory-philadelphia-pennsylvania-01-22-2026/event/0200632BED954DE7?_gl=1*1deaku5*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sabaton", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-03-11 00:00:00], external_link: "https://www.ticketmaster.com/sabaton-legends-on-tour-philadelphia-pennsylvania-03-11-2026/event/0200632AC5B43896?_gl=1*1deaku5*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Raye", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-04-19 00:00:00], external_link: "https://www.ticketmaster.com/raye-this-tour-may-contain-new-philadelphia-pennsylvania-04-19-2026/event/02006330BB5E4270?_gl=1*1deaku5*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Say She She / Katzú Oso", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-02-18 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/say-she-she-156557"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sing Us Home Festival feat. The Menzingers, The Mountain Goats, Dave Hause & The Mermaid, and more", venue: "Venice Island", region: "Philadelphia Area", date: ~N[2026-05-01 00:00:00], external_link: "https://www.tixr.com/groups/singushomefest/events/sing-us-home-festival-2026-159027"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sing Us Home Festival feat. The Menzingers, The Mountain Goats, Dave Hause & The Mermaid, and more", venue: "Venice Island", region: "Philadelphia Area", date: ~N[2026-05-02 00:00:00], external_link: "https://www.tixr.com/groups/singushomefest/events/sing-us-home-festival-2026-159027"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Felice Brothers", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-01-02 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/wxpn-welcomes-the-felice-brothers-vv1aezkgygkd-cghb"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mo Lowda & the Humble", venue: "Tellus 360", region: "Central PA", date: ~N[2026-05-09 00:00:00], external_link: "https://www.tellus360.com/events/wxpn-welcomes-mo-lowda-the-humble-tailing-the-ghost-tour/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sam Greenfield", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-04-24 00:00:00], external_link: "https://www.ticketmaster.com/sam-greenfield-philadelphia-pennsylvania-04-24-2026/event/0200633A9BB74FEF?_gl=1*dfifkk*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NjAwNDk3MDUkbzE0JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA..*_ga_H1KKSGW33X*czE3NjAwNDk3MDUkbzE1JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Melrose Avenue / Autumn Kings / Stray View", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-04-24 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/melrose-avenue-160209"})
-PhillyBands.Events.upsert_event(%{external_artist: "Arturo O'Farrill", venue: "Annenberg Center", region: "Philadelphia Area", date: ~N[2026-05-08 00:00:00], external_link: "https://pennlivearts.org/event/ArturoOFarrill"})
-PhillyBands.Events.upsert_event(%{external_artist: "Margo Price", venue: "Strand Theatre at Appell Center for Performing Arts", region: "Central PA", date: ~N[2026-02-12 00:00:00], external_link: "https://appellcenter.org/show/margo-price-wild-at-heart-tour/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Maddie & Tae", venue: "Sherman Theater", region: "Lehigh Valley", date: ~N[2026-02-28 00:00:00], external_link: "https://shermantheater.com/event/maddie-tae-love-light-tour/sherman-theater/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Nothing More / Catch Your Breath / Archers / Doobie", venue: "Wind Creek Event Center", region: "Lehigh Valley", date: ~N[2026-02-21 00:00:00], external_link: "https://www.windcreekeventcenter.com/events/nothing-more/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Queensrÿche", venue: "The Newton Theatre", region: "New Jersey", date: ~N[2026-01-15 00:00:00], external_link: "https://skypac.org/queensryche/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Wakeman & Son", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-03-25 00:00:00], external_link: "https://www.bergenpac.org/events/detail/rick-wakeman-1"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Format / Ben Kweller / Adult Moms", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-03-28 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1165157-the-format"})
-PhillyBands.Events.upsert_event(%{external_artist: "Subtronics / Juelz / Seth David / Blossom", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-03-06 00:00:00], external_link: "https://www.ticketmaster.com/subtronics-fibonacci-tour-2026-with-special-philadelphia-pennsylvania-03-06-2026/event/02006346D99734FD?_gl=1*h77d1e*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw*_ga_H1KKSGW33X*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tim Kubart and the Space Cadets", venue: "Annenberg Center", region: "Philadelphia Area", date: ~N[2026-05-03 00:00:00], external_link: "https://pennlivearts.org/event/timkubart"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sabrina Claudio", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-03-28 00:00:00], external_link: "https://www.ticketmaster.com/sabrina-claudio-fall-in-love-with-philadelphia-pennsylvania-03-28-2026/event/0200635DD620CB06?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dry Cleaning / YHWH Nailgun", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1174868"})
-PhillyBands.Events.upsert_event(%{external_artist: "Alice Phoebe Lou / John Andrews", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-14 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1188572"})
-PhillyBands.Events.upsert_event(%{external_artist: "CMAT", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-05-12 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1210736"})
-PhillyBands.Events.upsert_event(%{external_artist: "Railroad Earth", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/railroad-earth-162444"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Joy Formidable / Shy Western / Rhydian Dafydd", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-08 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/the-joy-formidable-160339"})
-PhillyBands.Events.upsert_event(%{external_artist: "Maria Somerville", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-03-25 00:00:00], external_link: "https://r5productions.com/event/maria-somerville/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rhiannon Giddens", venue: "Miller Theater @ The Kimmel Center", region: "Philadelphia Area", date: ~N[2026-05-05 00:00:00], external_link: "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/rhiannon-giddens"})
-PhillyBands.Events.upsert_event(%{external_artist: "Joseph Arthur", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-01 00:00:00], external_link: "https://citywinery.com/philadelphia/events/joseph-arthur-h8pqil"})
-PhillyBands.Events.upsert_event(%{external_artist: "Maysa", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://citywinery.com/philadelphia/events/maysas-blue-velvet-soul-experience-l9j7lj"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mohini Dey", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-02-11 00:00:00], external_link: "https://citywinery.com/philadelphia/events/mohini-dey-x3hw8n"})
-PhillyBands.Events.upsert_event(%{external_artist: "Emily Scott Robinson", venue: "City Winery", region: nil, date: ~N[2026-04-03 00:00:00], external_link: "https://citywinery.com/philadelphia/events/emily-scott-robinson-tzxo90"})
-PhillyBands.Events.upsert_event(%{external_artist: "Noah Rinker", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-21 00:00:00], external_link: "https://www.ticketmaster.com/noah-rinker-philadelphia-pennsylvania-02-21-2026/event/02006363C7F2A45A?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Mei Semones", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-04-16 00:00:00], external_link: "https://www.ticketmaster.com/mei-semones-philadelphia-pennsylvania-04-16-2026/event/02006365970D8CCD?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Eidola / Nerv / Astronoid", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/eidola-148310"})
-PhillyBands.Events.upsert_event(%{external_artist: "Turnpike Troubadours / Robert Earl Keen", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-02-05 00:00:00], external_link: "https://www.ticketmaster.com/turnpike-troubadours-wild-america-tour-philadelphia-pennsylvania-02-05-2026/event/0200635E0D16C2C2?_gl=1*odtwxf*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "EMM / Bentley Robles", venue: "Nikki Lopez", region: "Philadelphia Area", date: ~N[2026-01-22 00:00:00], external_link: "https://www.ticketweb.com/event/emm-bentley-robles-nikki-lopez-philly-tickets/14579533"})
-PhillyBands.Events.upsert_event(%{external_artist: "Hudson Freeman", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-04-02 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-mfzfd-9st44"})
-PhillyBands.Events.upsert_event(%{external_artist: "Say Anything / Motion City Soundtrack", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-02-06 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1146302"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Outlaws / Artimus Pyle Band", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-03-27 00:00:00], external_link: "https://www.keswicktheatre.com/events/detail/1178428"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sports", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-04-04 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/sports-160526"})
-PhillyBands.Events.upsert_event(%{external_artist: "LaMP", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-22 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/lamp-russ-lawton-scott-metzger-ray-paczkowski--159659"})
-PhillyBands.Events.upsert_event(%{external_artist: "Matt Pryor / Small Uncle", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-04-10 00:00:00], external_link: "https://r5productions.com/event/matt-pryor-2/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Teeth", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-03-28 00:00:00], external_link: "https://johnnybrendas.com/event/the-teeth-night-two/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rainbow Kitten Surprise / Common People", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-03-14 00:00:00], external_link: "https://www.ticketmaster.com/rainbow-kitten-surprise-bones-north-american-philadelphia-pennsylvania-03-14-2026/event/02006350E85BA600?_gl=1*8usaly*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjE1MDAwMjckbzEkZzEkdDE3NjE1MDAwMzMkajU0JGwwJGgw*_ga_H1KKSGW33X*czE3NjE1MDAwMjckbzEkZzEkdDE3NjE1MDAwMzMkajU0JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dean Johnson / Lily Seabird", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/dean-johnson-160840"})
-PhillyBands.Events.upsert_event(%{external_artist: "Divorce / MacBuck", venue: "Milkboy", region: "Philadelphia Area", date: ~N[2026-04-02 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/divorce-139289"})
-PhillyBands.Events.upsert_event(%{external_artist: "St. Paul & the Broken Bones", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-04-23 00:00:00], external_link: "https://www.ticketmaster.com/st-paul-the-broken-bones-philadelphia-pennsylvania-04-23-2026/event/02006343943F2F40"})
-PhillyBands.Events.upsert_event(%{external_artist: "Doja Cat", venue: "Xfinity Mobile Arena", region: "Philadelphia Area", date: ~N[2026-11-29 00:00:00], external_link: "https://www.ticketmaster.com/event/3000633AC3E34D89?utm_source=WEB&utm_medium=XMAWEB&utm_campaign=DOJACAT1129&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Natalie Jane", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-03-22 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/natalie-jane-158468"})
-PhillyBands.Events.upsert_event(%{external_artist: "Alexander Stewart", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-03-18 00:00:00], external_link: "https://www.ticketmaster.com/alexander-stewart-what-if-tour-philadelphia-pennsylvania-03-18-2026/event/02006356C13E850F?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "The Record Company", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-02-27 00:00:00], external_link: "http://utphilly.com/events/detail/?event_id=1186014"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gary Numan", venue: "The Queen", region: "Philadelphia Area", date: ~N[2026-03-15 00:00:00], external_link: "https://thequeenwilmington.com/events/gary-numan/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Hayley Williams / Water From Your Eyes", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-04-07 00:00:00], external_link: "https://www.bowerypresents.com/greater-philly/shows/detail/1219921-hayley-williams-at-a-bachelorette-party"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sheer Mag / Dirty Fences / Nancy / The Smarthearts", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-03-01 00:00:00], external_link: "https://johnnybrendas.com/event/sheer-mag-3/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tyler Ramsey / Carl Broemel ", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-22 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/tyler-ramsey-carl-broemel-celestun-tour-163443"})
-PhillyBands.Events.upsert_event(%{external_artist: "Cory Branan", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-04-01 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/cory-branan-164088"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ana Popovic", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-01-10 00:00:00], external_link: "https://www.st94.com/events/ana-popovic-4/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Umphrey's McGEE", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-02-13 00:00:00], external_link: "https://www.ticketmaster.com/umphreys-mcgee-skys-the-limit-tour-philadelphia-pennsylvania-02-13-2026/event/02006350D4F29FE4?_gl=1*2dxw0w*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jack Johnson / Hermanos Gutiérrez", venue: "TD Pavilion @ The Mann Center", region: "Philadelphia Area", date: ~N[2026-06-27 00:00:00], external_link: "https://highmarkmann.org/events/2026-06-27/jack-johnson"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ruel", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-02-23 00:00:00], external_link: "https://www.ticketmaster.com/ruel-kicking-my-feet-tour-philadelphia-pennsylvania-02-23-2026/event/02006365C8DE96C4?_gl=1*14jeebr*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "INJI", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-06-13 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1225288"})
-PhillyBands.Events.upsert_event(%{external_artist: "Melvin Seals / JGB", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-01 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/melvin-seals-jgb-159614"})
-PhillyBands.Events.upsert_event(%{external_artist: "Duane Betts / Palmetto Motel", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-23 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/duane-betts-palmetto-motel-163690"})
-PhillyBands.Events.upsert_event(%{external_artist: "Arts Fishing Club", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-06-19 00:00:00], external_link: "https://johnnybrendas.com/event/arts-fishing-club/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dinosaur Pile-Up ", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://www.ticketmaster.com/dinosaur-pileup-philadelphia-pennsylvania-02-20-2026/event/0200636E9824BB16?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Bryant Barnes / RealestK", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-03-25 00:00:00], external_link: "https://www.ticketmaster.com/bryant-barnes-presents-solace-tour-philadelphia-pennsylvania-03-25-2026/event/02006354DCE46AAF?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Dirty Three", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-04-02 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/dirty-three-146886"})
-PhillyBands.Events.upsert_event(%{external_artist: "Agriculture/ Knoll / Nina Ryser", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/agriculture-147082"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bandits On The Run / Driftwood Soldier", venue: "Nikki Lopez", region: "Philadelphia Area", date: ~N[2026-01-08 00:00:00], external_link: "https://www.ticketweb.com/event/bandits-on-the-run-driftwood-nikki-lopez-philly-tickets/14727623"})
-PhillyBands.Events.upsert_event(%{external_artist: "Buffalo Traffic Jam", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-04-18 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/buffalo-traffic-jam-sold-out--165809"})
-PhillyBands.Events.upsert_event(%{external_artist: "Skullcrusher", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://johnnybrendas.com/event/skullcrusher-2/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Subtronics / AHEE / Dennett / St. Mary", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://www.ticketmaster.com/subtronics-fibonacci-tour-2026-with-special-philadelphia-pennsylvania-03-07-2026/event/02006346DA673520?_gl=1*h77d1e*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw*_ga_H1KKSGW33X*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Yumi Zouma / Ducks Ltd.", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-05-01 00:00:00], external_link: "https://r5productions.com/event/yumi-zouma/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Noah Guthrie", venue: "The Kelly Center", region: "Philadelphia Area", date: ~N[2026-02-07 00:00:00], external_link: "https://www.ticketleap.events/tickets/kellycenter/02072026"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Slambovian Circus of Dreams", venue: "City Winery", region: "Philadelphia Area", date: ~N[2025-12-30 00:00:00], external_link: "https://citywinery.com/philadelphia/events/the-slambovian-circus-zlwiwx"})
-PhillyBands.Events.upsert_event(%{external_artist: "El Debarge", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://citywinery.com/philadelphia/events/el-debarge-lwyigl"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ariella & Nicholas", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://citywinery.com/philadelphia/events/ariella-nicolaas-7yxqbu"})
-PhillyBands.Events.upsert_event(%{external_artist: "Daniel Powter", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-03-22 00:00:00], external_link: "https://citywinery.com/philadelphia/events/daniel-powter-20-year-anniversary-of-bad-day-lvi9lb"})
-PhillyBands.Events.upsert_event(%{external_artist: "MIKA", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-05-05 00:00:00], external_link: "https://www.ticketmaster.com/mika-spinning-out-tour-north-america-philadelphia-pennsylvania-05-05-2026/event/0200636D928AB445?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "HANABIE.", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-03-21 00:00:00], external_link: "https://www.ticketmaster.com/hanabie-north-america-tour-2026-philadelphia-pennsylvania-03-21-2026/event/02006365360DA235?_gl=1*mqqcjg*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Drain / No Pressure / Haywire / Secret World", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-27 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1220824"})
-PhillyBands.Events.upsert_event(%{external_artist: "Fat Mezz / Apple Juice Jones", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-15 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/fat-mezz-164508"})
-PhillyBands.Events.upsert_event(%{external_artist: "Keller Williams", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-04 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/keller-williams-154674"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sessa / Kolumbo", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-05-08 00:00:00], external_link: "https://johnnybrendas.com/event/sessa/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Antarctigo Vespucci / Golden Apples", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-02-07 00:00:00], external_link: "https://r5productions.com/event/antarctigo-vespucci/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Billy F Gibbons and the BFG Band", venue: "The Grand", region: "Philadelphia Area", date: ~N[2026-02-06 00:00:00], external_link: "https://www.thegrandwilmington.org/productions/9168-billy-gibbons/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Hives", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-03-16 00:00:00], external_link: "https://www.ticketmaster.com/the-hives-philadelphia-pennsylvania-03-16-2026/event/02006343B01750A3?_gl=1*d4lghr*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjQ1NTQ5NTEkbzMkZzEkdDE3NjQ1NTQ5NTkkajUyJGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1NTQ5NTEkbzMkZzEkdDE3NjQ1NTQ5NTkkajUyJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Daniel Donato's Cosmic Country", venue: "XL Live", region: "Philadelphia Area", date: ~N[2026-04-03 00:00:00], external_link: "https://www.ticketmaster.com/event/0200636A1A708F2C"})
-PhillyBands.Events.upsert_event(%{external_artist: "Boy George / Culture Club", venue: "Wind Creek Event Center", region: "Lehigh Valley", date: ~N[2026-02-28 00:00:00], external_link: "https://www.windcreekeventcenter.com/events/boy-george-culture-club/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Moontower", venue: "Nikki Lopez", region: "Philadelphia Area", date: ~N[2026-03-21 00:00:00], external_link: "https://www.ticketweb.com/event/moontower-nikki-lopez-philly-tickets/14703143"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mike Dawes", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/mike-dawes-160446"})
-PhillyBands.Events.upsert_event(%{external_artist: "Brandi Carlile / The Head And The Heart", venue: "Xfinity Mobil Arena", region: "Philadelphia Area", date: ~N[2026-02-10 00:00:00], external_link: nil})
-PhillyBands.Events.upsert_event(%{external_artist: "Just Mustard", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-05-29 00:00:00], external_link: "https://johnnybrendas.com/event/just-mustard/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Joe Russo's Almost Dead", venue: "Stone Pony Summer Stage", region: "New Jersey", date: ~N[2026-05-22 00:00:00], external_link: "https://www.ticketmaster.com/event/00006331D7F03427"})
-PhillyBands.Events.upsert_event(%{external_artist: "Twen ", venue: "Milkboy", region: "Philadelphia Area", date: ~N[2026-02-18 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/twen-146584"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Samples", venue: "118 North", region: "Philadelphia Area", date: ~N[2025-12-31 00:00:00], external_link: "https://www.tixr.com/groups/118north/events/the-samples-new-years-eve-celebration-158527"})
-PhillyBands.Events.upsert_event(%{external_artist: "Melissa Etheridge", venue: "The Hershey Theatre", region: "Central PA", date: ~N[2026-05-08 00:00:00], external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/melissa-etheridge/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bad Omens / Beartooth / PRESIDENT", venue: "Xfinity Mobile Arena", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://www.ticketmaster.com/event/30006356DDD46AB8?utm_source=WEB&utm_medium=XMAWEBSITE&utm_campaign=BADOMENS0313&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Elucid / DJ Haram", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-04 00:00:00], external_link: "https://www.ticketmaster.com/elucid-dj-haram-philadelphia-pennsylvania-02-04-2026/event/0200635BA74F85B4?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "WITCHZ", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-04-02 00:00:00], external_link: "https://www.ticketmaster.com/witchz-presents-enter-afterlife-world-tour-philadelphia-pennsylvania-04-02-2026/event/02006356AA8E733A?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Chris Barron (of Spin Doctors)", venue: "118 North", region: "Philadelphia Area", date: ~N[2026-02-25 00:00:00], external_link: "https://www.tixr.com/groups/118north/events/chris-barron-of-spin-doctors--162521"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jessie J", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-01-27 00:00:00], external_link: "https://www.ticketmaster.com/jessie-j-no-secrets-tour-philadelphia-pennsylvania-01-27-2026/event/02006357AAF06C53?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jim E. Brown / My Wife's An Angel", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-16 00:00:00], external_link: "https://johnnybrendas.com/event/jim-e-brown/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Art Brut", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-04-06 00:00:00], external_link: "https://johnnybrendas.com/event/art-brut-bang-bang-rock-and-roll-plus-greatest-hits/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Dirty Grass Players", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-27 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/the-dirty-grass-players-161803"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jamie Fine", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-04-03 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/jamie-fine-163789"})
-PhillyBands.Events.upsert_event(%{external_artist: "Chávez / Ismaily / Saunier", venue: "Solar Myth", region: "Philadelphia Area", date: ~N[2026-01-08 00:00:00], external_link: "https://dice.fm/event/mx5xmk-chvez-ismaily-saunier-8th-jan-solar-myth-philadelphia-tickets?pid=efdf5368&_branch_match_id=1520547053822000896&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S8yTDVLSzEzTEpLMrIvyEyxTU1LSTM1NrNQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAFsHgxkgAAAA%3D"})
-PhillyBands.Events.upsert_event(%{external_artist: "Joyce Manor / Militarie Gun / Teen Mortgage / Combat", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-03-22 00:00:00], external_link: "https://www.ticketmaster.com/alt-1045-presents-joyce-manor-militarie-philadelphia-pennsylvania-03-22-2026/event/02006342DE8C73C6?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Two Feet", venue: "The Queen", region: "Philadelphia Area", date: ~N[2026-04-16 00:00:00], external_link: "https://thequeenwilmington.com/events/two-feet-the-next-steps-tour/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Quarters", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-03-14 00:00:00], external_link: "https://www.ticketmaster.com/quarters-philadelphia-pennsylvania-03-14-2026/event/02006366BC91C2A6?_gl=1*14jeebr*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Peter Hook & the Light", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-09-07 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1097905"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Infamous Stringdusters / Fireside Collective", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-21 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/the-infamous-stringdusters-160319"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Thing", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-04-29 00:00:00], external_link: "https://johnnybrendas.com/event/the-thing-2/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Marlon Magnée (of La Femme)", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-09-09 00:00:00], external_link: "https://johnnybrendas.com/event/marlon-magn%c3%a9e-of-la-femme/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Capstan", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-03-15 00:00:00], external_link: "https://www.ticketmaster.com/capstan-cultural-divide-10-year-anniversary-philadelphia-pennsylvania-03-15-2026/event/0200636DA24EC998?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Naïka", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-04-11 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/na-ka-165559"})
-PhillyBands.Events.upsert_event(%{external_artist: "Caiola (of Mo Lowda & The Humble)", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-03-20 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/caiola-of-mo-lowda-the-humble--165410"})
-PhillyBands.Events.upsert_event(%{external_artist: "Boys Like Girls / iDKHOW / Arrows In Action", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-04-09 00:00:00], external_link: "https://www.ticketmaster.com/boys-like-girls-the-soundtrack-of-philadelphia-pennsylvania-04-09-2026/event/02006354EBA3738C?_gl=1*1to4tkw*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Wheel / Sound and Shape", venue: "Nikki Lopez", region: nil, date: ~N[2026-02-16 00:00:00], external_link: "https://www.ticketweb.com/event/wheel-sound-and-nikki-lopez-philly-tickets/14707813"})
-PhillyBands.Events.upsert_event(%{external_artist: "Buffchick / Ezra Glatt", venue: "Warehouse on Watts", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-mgny5"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Summer Set", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://www.ticketmaster.com/the-summer-set-philadelphia-pennsylvania-03-13-2026/event/0200635CE339B8F1?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "DRAMA", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1157604"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Brook & The Bluff", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-31 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1192971"})
-PhillyBands.Events.upsert_event(%{external_artist: "NewDad / Freak Slug", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-30 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1168745"})
-PhillyBands.Events.upsert_event(%{external_artist: "Luciano / Tabernacle Band / Luv Smith", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-01-11 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/luciano-163207"})
-PhillyBands.Events.upsert_event(%{external_artist: "moe. ", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moe--159836"})
-PhillyBands.Events.upsert_event(%{external_artist: "Monaleo", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-02-15 00:00:00], external_link: "https://www.ticketmaster.com/monaleo-philadelphia-pennsylvania-02-15-2026/event/0200635009F3B16D?_gl=1*2dxw0w*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "redveil", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-02-21 00:00:00], external_link: "https://www.ticketmaster.com/redveil-philadelphia-pennsylvania-02-21-2026/event/02006365A688B927?_gl=1*14jeebr*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Growlers", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-21 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1229685"})
-PhillyBands.Events.upsert_event(%{external_artist: "Langhorne Slim", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-02-15 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/langhorne-slim-156668"})
-PhillyBands.Events.upsert_event(%{external_artist: "Shadowgrass", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-10 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/shadowgrass-163139"})
-PhillyBands.Events.upsert_event(%{external_artist: "Traitrs", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-05-12 00:00:00], external_link: "https://johnnybrendas.com/event/traitrs/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dexter and The Moonrocks", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-03-05 00:00:00], external_link: "https://www.ticketmaster.com/dexter-and-the-moonrocks-philadelphia-pennsylvania-03-05-2026/event/0200636697329B80?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Red Rum Club", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-04-30 00:00:00], external_link: "https://www.ticketmaster.com/red-rum-club-philadelphia-pennsylvania-04-30-2026/event/0200636AD738DF55?_gl=1*1r5t4fy*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Ediola / Nerv / Astronoid", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-03-14 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/eidola-148310"})
-PhillyBands.Events.upsert_event(%{external_artist: "Miguel", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-02-21 00:00:00], external_link: "https://www.ticketmaster.com/miguel-caos-tour-philadelphia-pennsylvania-02-21-2026/event/02006354EB4A7365?_gl=1*1to4tkw*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Murder Junkies / Rubbish / Sloppy Bitches / Bad To Worse", venue: "Nikki Lopez", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://www.ticketweb.com/event/hostile-city-oi-council-presents-nikki-lopez-philly-tickets/14721393"})
-PhillyBands.Events.upsert_event(%{external_artist: "Fireworks Gospel", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-05-13 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-55fh6-3te8k-dnmyb-9kyj5-hbe3d"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jonathan Butler", venue: "City Winery", region: "Philadelphia Area", date: ~N[2026-04-04 00:00:00], external_link: "https://citywinery.com/philadelphia/events/jonathan-butler-4hwrgf"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bad Bad Hats", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-01 00:00:00], external_link: "https://johnnybrendas.com/event/bad-bad-hats-2/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Magnolia & Johnson Electric Co.", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-04-09 00:00:00], external_link: "https://johnnybrendas.com/event/magnolia-johnson-electric-co/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Anthms / Cheer Up Dusty / Altarboy / My Cousin's Girlfriend's House", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-28 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/anthms-164949"})
-PhillyBands.Events.upsert_event(%{external_artist: "Adjust the Sails", venue: "Nikki Lopez", region: "Philadelphia Area", date: ~N[2026-01-15 00:00:00], external_link: "https://www.ticketweb.com/event/adjust-the-sails-nikki-lopez-philly-tickets/14711973"})
-PhillyBands.Events.upsert_event(%{external_artist: "Snow Strippers", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-01-14 00:00:00], external_link: "https://www.ticketmaster.com/snow-strippers-philadelphia-pennsylvania-01-14-2026/event/02006365E691D2F3?_gl=1*v4xxgo*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Stephen Wilson Jr.", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-03-25 00:00:00], external_link: "https://www.ticketmaster.com/stephen-wilson-jr-gary-the-torch-philadelphia-pennsylvania-03-25-2026/event/02006366CBA3CF45?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Perfume Genius", venue: "The Sanctuary @ The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-04-01 00:00:00], external_link: "https://r5productions.com/event/perfume-genius-duo/the-sanctuary-of-the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jimmy Webb", venue: "The Grand", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://www.thegrandwilmington.org/productions/8951-jimmy-webb/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Marty Stuart & His Fabulous Superlatives / Molly Tuttle", venue: "Strand Theatre", region: "Central PA", date: ~N[2026-02-14 00:00:00], external_link: "https://appellcenter.org/show/marty-stuart-molly-tuttle/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tom Rush", venue: "Musikfest Café", region: "Lehigh Valley", date: ~N[2026-03-21 00:00:00], external_link: "https://www.artsquest.org/event/an-evening-with-tom-rush-accompanied-by-matt-nakoa/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Charley Crockett", venue: "Wind Creek Event Center", region: "Lehigh Valley", date: ~N[2026-03-07 00:00:00], external_link: "https://www.windcreekeventcenter.com/events/charley-crockett/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Everything Yes", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-07 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/everything-yes-160301"})
-PhillyBands.Events.upsert_event(%{external_artist: "Del Water Gap", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://www.ticketmaster.com/del-water-gap-chasing-the-chimera-philadelphia-pennsylvania-01-24-2026/event/02006348274D8832?_gl=1*v4xxgo*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bob Moses / Cannons", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-04-10 00:00:00], external_link: "https://www.ticketmaster.com/bob-moses-cannons-afterglow-tour-philadelphia-pennsylvania-04-10-2026/event/0200634F3302B783?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jordan Ward", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-03-20 00:00:00], external_link: "https://www.ticketmaster.com/jordan-ward-presents-the-apartment-tour-philadelphia-pennsylvania-03-20-2026/event/02006366E835E4F7?_gl=1*mqqcjg*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gogol Bordello", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-24 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1229711"})
-PhillyBands.Events.upsert_event(%{external_artist: "Big Benny Bailey / The Hill Country Devil / Reese Florence", venue: "The Fallser Club", region: "Philadelphia Area", date: ~N[2026-02-13 00:00:00], external_link: "https://thefallserclub.com/event/big-benny-bailey-ep-release-party-with-the-hill-country-devil-and-reese-florence/"})
-PhillyBands.Events.upsert_event(%{external_artist: "James McMurtry", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-26 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/james-mcmurtry-160344"})
-PhillyBands.Events.upsert_event(%{external_artist: "Flyte", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-05-07 00:00:00], external_link: "https://johnnybrendas.com/event/flyte/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Fire From The Gods/ For the Fallen Dreams / VRSTY / Divide The Fall", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-03 00:00:00], external_link: "https://www.ticketmaster.com/fire-from-the-gods-the-human-philadelphia-pennsylvania-02-03-2026/event/0200636DF9FEC294?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "Yellow Days", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-03-17 00:00:00], external_link: "https://www.ticketmaster.com/yellow-days-rock-and-a-hard-philadelphia-pennsylvania-03-17-2026/event/0200635C953C893C?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."})
-PhillyBands.Events.upsert_event(%{external_artist: "The Nude Party / Tobacco City", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-04-27 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/the-nude-party-161547"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Annual Marley Birthday Bash ft. Mighty Mystic / Wareika Hill / Ras Jem / Solomonic Sound\u00A0", venue: "Underground Arts", region: "Philadelphia Area", date: ~N[2026-02-05 00:00:00], external_link: "https://www.tixr.com/groups/undergroundarts/events/the-annual-marley-birthday-bash-ft-mighty-mystic-164774"})
-PhillyBands.Events.upsert_event(%{external_artist: "Waxahatchee / MJ Lenderman / Brennan Wedl", venue: "The Met", region: "Philadelphia Area", date: ~N[2026-04-18 00:00:00], external_link: "https://www.ticketmaster.com/waxahatchee-mj-lenderman-with-special-guest-philadelphia-pennsylvania-04-18-2026/event/02006367AA36BE5E?_gl=1*1to4tkw*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Anastasia Coope / Autobahn / Body Liars / The Place Lives", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-01-19 00:00:00], external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-x5f8c"})
-PhillyBands.Events.upsert_event(%{external_artist: "Flyingfish / Loveletter", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-03-17 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sword II", venue: "Warehouse on Watts", region: "Philadelphia Area", date: ~N[2026-02-19 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-xwswh"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sharp Pins / Te Vista", venue: "Jerry's on Front", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://r5productions.com/event/sharp-pins/jerrys-on-front/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Leo Kottke", venue: "The Grand", region: "Philadelphia Area", date: ~N[2026-04-14 00:00:00], external_link: "https://www.thegrandwilmington.org/productions/9085-leo-kottke/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tom Hamilton", venue: "XL Live", region: "Central PA", date: ~N[2026-01-29 00:00:00], external_link: "https://www.ticketmaster.com/event/0200634DC7F16C48"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rob Thomas", venue: "Wind Creek Event Center", region: "Lehigh Valley", date: ~N[2026-01-16 00:00:00], external_link: "https://www.windcreekeventcenter.com/events/rob-thomas/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dead Boys", venue: "Nikki Lopez", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://www.ticketweb.com/event/dead-boys-nikki-lopez-philly-tickets/14667893"})
-PhillyBands.Events.upsert_event(%{external_artist: "Riverside / My Favorite / Polaroid Fade", venue: "PhilaMOCA", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://www.etix.com/ticket/p/45294056?_gl=1*9th8wo*_ga*NjgzNzc2NzcwLjE3NjQ1NTQyODQ.*_ga_YQH4P4GGFF*czE3NjQ1NTQyODQkbzEkZzAkdDE3NjQ1NTQyODQkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Shane Smith and the Saints", venue: "XL Live", region: "Central PA", date: ~N[2026-02-12 00:00:00], external_link: "https://www.ticketmaster.com/event/0200635482A51BAF"})
-PhillyBands.Events.upsert_event(%{external_artist: "Diana Krall", venue: "Wind Creek Event Center", region: "Lehigh Valley", date: ~N[2026-02-13 00:00:00], external_link: "https://www.windcreekeventcenter.com/events/diana-krall-2/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Addison Grace / Sushi Soucy", venue: "Nikki Lopez", region: "Philadelphia Area", date: ~N[2026-03-08 00:00:00], external_link: "https://www.ticketweb.com/event/addison-grace-sushi-soucy-nikki-lopez-philly-tickets/14703463"})
-PhillyBands.Events.upsert_event(%{external_artist: "Nunslaughter", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/nunslaughter-158490"})
-PhillyBands.Events.upsert_event(%{external_artist: "76th Street", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-04-19 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/76th-street-164517"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Scratch", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-05-10 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/the-scratch-164125"})
-PhillyBands.Events.upsert_event(%{external_artist: "Snacktime", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2025-12-31 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/snacktime-21-vv1aovnbwgagacnj"})
-PhillyBands.Events.upsert_event(%{external_artist: "Clap Your Hands Say Yeah", venue: "Philadelphia Ethical Society", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://r5productions.com/event/clap-your-hands-say-yeah-piano-voice/philadelphia-ethical-society/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "On A Winter's Night feat. Cliff Eberhardt, John Gorka, Lucy Kaplansky & Patty Larkin", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-01-25 00:00:00], external_link: "https://www.st94.com/events/on-a-winters-night-featuring-cliff-eberhardt-john-gorka-lucy-kaplansky-patty-larkin/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Josh Ritter", venue: "West Art", region: "Central PA", date: ~N[2026-01-25 00:00:00], external_link: "https://www.westartlanc.com/events/live-at-west-art-an-evening-with-josh-ritter"})
-PhillyBands.Events.upsert_event(%{external_artist: "G. Love & Special Sauce / Makua Rothman", venue: "Mickey's Black Box", region: "Central PA", date: ~N[2026-01-27 00:00:00], external_link: "https://mickeysblackbox.com/event/g-love-special-sauce/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ben Arnold / James Maddock", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-02-27 00:00:00], external_link: "https://www.st94.com/events/wxpn-welcomes-ben-arnold-james-maddock/"})
-PhillyBands.Events.upsert_event(%{external_artist: "G. Love & Special Sauce / Makua Rothman", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://www.st94.com/events/g-love-special-sauce-lemonade-20th-anniversary-tour-with-special-guest-makua/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Marty Stuart & Molly Tuttle", venue: "F.M. Kirby Center", region: "Philadelphia Area", date: ~N[2026-02-13 00:00:00], external_link: "https://kirbycenter.org/show/marty-stuart-molly-tuttle-cosmic-twang-guitars-on-fire/?gad_source=1&gad_campaignid=23277202791&gbraid=0AAAAADAXqhz02HR6DywzxlUkfTZ8HAfoM&gclid=Cj0KCQiAubrJBhCbARIsAHIdxD9XAN1632cwqwc6ZqokY9r9svZ177WQQjoKnKG5mVgV2EQ32ej-U7gaAsPIEALw_wcB"})
-PhillyBands.Events.upsert_event(%{external_artist: "Alejandro Escovedo & The Electric Saints", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-02-19 00:00:00], external_link: "https://www.etix.com/ticket/p/78995150/wxpn-welcomes-alejandro-escovedo-the-electric-saints-sellersville-sellersville-theater-1894?_gl=1*1prmcvf*_gcl_au*OTg5MDcxMDQ0LjE3NjQ2OTg3Mjc.*_ga*NTcxMDg4NjQ2LjE3NjQ2OTg3Mjc.*_ga_4PHVE2WDGX*czE3NjQ2OTg3MjYkbzEkZzEkdDE3NjQ3MDA3NzkkajMzJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Heavenly / Lightheaded / Swansea Sound", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://www.etix.com/ticket/p/78665011/heavenly-philadelphia-johnny-brendas?partner_id=100&_gl=1*13968s*_ga*MTkyNzM4MzkzNC4xNzYwNDU1MDAw*_ga_QG5WHQ48L9*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMA..*_ga_ZN6VN3GQER*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMTQ1MzM1NjA3NQ..*_ga_FCSCLPJM3L*czE3NjQ3MDExNDAkbzE1JGcxJHQxNzY0NzAxMTgyJGoxOCRsMCRoMA..&_ga=2.78809492.1247178320.1764701140-1927383934.1760455000"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dominic Angelella & Eric Slick / The Tisburys / Twin Princess", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://www.etix.com/ticket/p/48473965/hardcore-friends-show-philadelphia-johnny-brendas?partner_id=100&_gl=1*13968s*_ga*MTkyNzM4MzkzNC4xNzYwNDU1MDAw*_ga_QG5WHQ48L9*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMA..*_ga_ZN6VN3GQER*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMTQ1MzM1NjA3NQ..*_ga_FCSCLPJM3L*czE3NjQ3MDExNDAkbzE1JGcxJHQxNzY0NzAxMTgyJGoxOCRsMCRoMA..&_ga=2.78809492.1247178320.1764701140-1927383934.1760455000"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lyle Lovett and John Hiatt", venue: "Lansdowne Theater", region: "Philadelphia Area", date: ~N[2026-03-12 00:00:00], external_link: "https://www.etix.com/ticket/p/99769488/lyle-lovett-and-john-hiatt-together-on-stage-lansdowne-lansdowne-theater?partner_id=100&_gl=1*1d3bqk*_ga*NTUzNDc4MzgyLjE3NjQ3MDEwNjQ.*_ga_SPX33KW1CK*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxODk0NDE5MDQz*_ga_CZDZTZF9HG*czE3NjQ3MDEwNjQkbzEkZzEkdDE3NjQ3MDEwNzMkajUxJGwwJGgw*_ga_XPKMCZJK6D*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxNjYxOTY2MzE.*_gcl_au*OTQwNzg1MS4xNzY0NzAxMDY0"})
-PhillyBands.Events.upsert_event(%{external_artist: "Graham Nash", venue: "Lansdowne Theater", region: "Philadelphia Area", date: ~N[2026-04-04 00:00:00], external_link: "https://www.etix.com/ticket/p/55094314/graham-nash-lansdowne-lansdowne-theater?partner_id=100&_gl=1*wjgsns*_ga*NTUzNDc4MzgyLjE3NjQ3MDEwNjQ.*_ga_SPX33KW1CK*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwOTQkajI5JGwwJGgxODk0NDE5MDQz*_ga_CZDZTZF9HG*czE3NjQ3MDEwNjQkbzEkZzEkdDE3NjQ3MDEwOTQkajMwJGwwJGgw*_ga_XPKMCZJK6D*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxNjYxOTY2MzE.*_gcl_au*OTQwNzg1MS4xNzY0NzAxMDY0"})
-PhillyBands.Events.upsert_event(%{external_artist: "Joe Jackson", venue: "Lansdowne Theater", region: "Philadelphia Area", date: ~N[2026-07-17 00:00:00], external_link: "https://www.etix.com/ticket/p/54681773/joe-jackson-lansdowne-lansdowne-theater?partner_id=100&_gl=1*5tvhdt*_ga*NTUzNDc4MzgyLjE3NjQ3MDEwNjQ.*_ga_SPX33KW1CK*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwOTQkajI5JGwwJGgxODk0NDE5MDQz*_ga_CZDZTZF9HG*czE3NjQ3MDEwNjQkbzEkZzEkdDE3NjQ3MDEwOTQkajMwJGwwJGgw*_ga_XPKMCZJK6D*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxNjYxOTY2MzE.*_gcl_au*OTQwNzg1MS4xNzY0NzAxMDY0"})
-PhillyBands.Events.upsert_event(%{external_artist: "Cat Power", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-08 00:00:00], external_link: "https://www.axs.com/events/1210724/cat-power-tickets?_gl=1*imzb55*_gcl_au*ODk0NTE3MTAxLjE3NjA0NTQ5MzU."})
-PhillyBands.Events.upsert_event(%{external_artist: "Alejandro Escovedo & The Electric Saints", venue: "Arden Gild Hall", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://dice.fm/event/6dxn82-wxpn-welcomes-alejandro-escovedo-the-electric-saints-20th-feb-arden-gild-hall-wilmington-tickets?pid=36d2aee9&_branch_match_id=1364963258442528850&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c8wt7A0TzNItDQwsbQvyEyxNTZLMUpMTbVUqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAKHNokEgAAAA%3D"})
-PhillyBands.Events.upsert_event(%{external_artist: "Shemekia Copeland", venue: "Sellersville Theater", region: "Philadelphia Area", date: ~N[2026-04-18 00:00:00], external_link: "https://www.etix.com/ticket/p/88134560/wxpn-welcomes-shemekia-copeland-sellersville-sellersville-theater-1894?_gl=1*1rz2xxi*_gcl_au*OTg5MDcxMDQ0LjE3NjQ2OTg3Mjc.*_ga*NTcxMDg4NjQ2LjE3NjQ2OTg3Mjc.*_ga_4PHVE2WDGX*czE3NjQ2OTg3MjYkbzEkZzEkdDE3NjQ3MDA5NTEkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tyler Childers", venue: "Hersheypark Stadium", region: "Central PA", date: ~N[2026-06-11 00:00:00], external_link: "https://www.ticketmaster.com/event/0200637ABB20C7BA"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rhiannon Giddens", venue: "Miller Theater @ Ensemble Arts Philly", region: "Philadelphia Area", date: ~N[2026-05-05 00:00:00], external_link: "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/rhiannon-giddens"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mt. Joy", venue: "Freedom Mortgage Pavilion", region: "New Jersey", date: ~N[2026-09-25 00:00:00], external_link: "https://www.ticketmaster.com/mt-joy-2026-celebrating-10-years-camden-new-jersey-09-25-2026/event/0200637490A59865?_gl=1*10i5bfy*_ga*NTM2NTkyNzA4LjE3NjQ3MDY5NDc.*_ga_H1KKSGW33X*czE3NjQ3MDY5NDckbzEkZzEkdDE3NjQ3MDY5NDkkajU4JGwwJGgw*_ga_C1T806G4DF*czE3NjQ3MDY5NDckbzEkZzEkdDE3NjQ3MDY5NDkkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Band Perry", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-01-11 00:00:00], external_link: "https://www.bergenpac.org/events/detail/the-band-perry"})
-PhillyBands.Events.upsert_event(%{external_artist: "Melissa Etheridge", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-04-10 00:00:00], external_link: "https://www.bergenpac.org/events/detail/melissa-etheridge-2"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bad Omens", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-03-10 00:00:00], external_link: "https://www.prucenter.com/events/bad-omens"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Early November / Hellogoodbye", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-02-27 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1231964"})
-PhillyBands.Events.upsert_event(%{external_artist: "St. Lucia", venue: "White Eagle Hall", region: "New Jersey", date: ~N[2026-03-13 00:00:00], external_link: "https://wl.eventim.us/event/st-lucia/672183?afflky=WhiteEagleHall"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ben Quad / Riley! / Footballhead / Aren't We Amphibians", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-y9cm7"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bone Weapon / Dridge / Spellhammer / Nunnery", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://johnnybrendas.com/event/bone-weapon-dridge/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Antlers", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-04-22 00:00:00], external_link: "https://johnnybrendas.com/event/the-antlers/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Blood Cultures", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-05 00:00:00], external_link: "https://johnnybrendas.com/event/blood-cultures/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ryan Davis & The Roadhouse Band / Rosali", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-03 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1242079"})
-PhillyBands.Events.upsert_event(%{external_artist: "Born Without Bones / twentythreenineteen", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-02-27 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-7dkyg"})
-PhillyBands.Events.upsert_event(%{external_artist: "Treasure Pains / Lowercoaster / Boy Name Sue / At Night", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://4333collective.net/gigs/l8kwzfebctmtlfg-ayyhp-2bne2-jhxrt-lda4y-f3wn6-kkd7f"})
-PhillyBands.Events.upsert_event(%{external_artist: "Oceanator / Hit Like A Girl / Universal Girlfriend / Frances Quinlan", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-03-06 00:00:00], external_link: "https://r5productions.com/event/no-more-dysphoria-vii/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "White Reaper / Drug Church / Public Opinion", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-05-02 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1265254"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jake Owen / Kendell Marvel", venue: "Strand Theatre @ Appell Center for the Performing Arts", region: "Central PA", date: ~N[2026-02-28 00:00:00], external_link: "https://appellcenter.org/show/jake-owen/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Puscifer / Dave Hill", venue: "Hershey Theatre", region: "Central PA", date: ~N[2026-04-08 00:00:00], external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/puscifer/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Slick Rick / Shaw Calhoune", venue: "Phantom Power", region: "Central PA", date: ~N[2026-01-11 00:00:00], external_link: "https://www.eventbrite.com/e/slick-rick-w-shaw-calhoune-tickets-1967180777661?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ballyhoo! / Artikal Sound System", venue: "XL Live", region: "Central PA", date: ~N[2026-03-07 00:00:00], external_link: "https://www.ticketmaster.com/event/02006378EB38BACC"})
-PhillyBands.Events.upsert_event(%{external_artist: "Slaughter To Prevail / Whitechapel / Attila", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-04-10 00:00:00], external_link: "https://www.axs.com/events/1253413/slaughter-to-prevail-north-america-2026-tickets?skin=fmh"})
-PhillyBands.Events.upsert_event(%{external_artist: "Al Olender", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-26 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/al-olender-168895"})
-PhillyBands.Events.upsert_event(%{external_artist: "Train / George Pippen", venue: "Wind Creek Steel Stage at PNC Plaza", region: "Lehigh Valley", date: ~N[2026-08-03 00:00:00], external_link: "https://www.artsquest.org/event/train/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dogs In A Pile", venue: "Sherman Theater", region: "Lehigh Valley", date: ~N[2026-04-11 00:00:00], external_link: "https://shermantheater.com/event/dogs-in-a-pile-saturday/sherman-theater/"})
-PhillyBands.Events.upsert_event(%{external_artist: "South Orange International Blues Fest", venue: "SOPAC", region: "New Jersey", date: ~N[2026-02-06 00:00:00], external_link: "https://sopacnow.my.salesforce-sites.com/ticket/?_gl=1*1vssmh4*_ga*ODUyODgyNDQ2LjE3NjY0NDUxNjA.*_ga_QHQ5G80DZ3*czE3NjY0NDUxNTkkbzEkZzEkdDE3NjY0NDUxNjQkajU1JGwwJGgw#/instances/a0FPa0000035mNFMAY/sectionGroups/a0bPa000004GT5NIAW"})
-PhillyBands.Events.upsert_event(%{external_artist: "Reverend Horton Heat / Black Joe Lewis / Piñata Protest", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-04-15 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1261318"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sun God / Lowercase Roses / Pontiac Flare / Milk Dud", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-01-25 00:00:00], external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-x5f8c-897pt"})
-PhillyBands.Events.upsert_event(%{external_artist: "TAUK / MJT the Band", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-02-14 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/tauk-156663"})
-PhillyBands.Events.upsert_event(%{external_artist: "King Slender / Memory Entry / Detach The Lands / Mt. Ida", venue: "Cousin Danny's", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://www.instagram.com/cousindannyslounge/?hl=en"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sound Tribe Sector 9 / Thought Process", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-02-22 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/sts9-vv1aovnavgac5fg0"})
-PhillyBands.Events.upsert_event(%{external_artist: "Benee / Bayli ", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-03-16 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/benee-particles-tour-vv1aezkuigkega514"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dance With The Dead / Magic Sword / Megan McDuffee", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-05-01 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/dance-with-the-dead-magic-sword-the-face-off-tour-2026-vv16ovnq8aaz7u15a"})
-PhillyBands.Events.upsert_event(%{external_artist: "The New Pornographers / Will Sheff (Okkervil River)", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-04-24 00:00:00], external_link: "https://www.axs.com/events/1226188/the-new-pornographers-tickets?skin=keswick&src=AEGLIVE_WROAKDTT030115VEN001&_gl=1*1h5oti*_gcl_au*MTQ4Nzc5MjM4My4xNzY0NzA2NzMw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Yolanda Adams", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-01-29 00:00:00], external_link: "https://www.bergenpac.org/events/detail/yolanda-adams"})
-PhillyBands.Events.upsert_event(%{external_artist: "Paul Anka", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-04-15 00:00:00], external_link: "https://www.bergenpac.org/events/detail/paul-anka-4"})
-PhillyBands.Events.upsert_event(%{external_artist: "Alejandro Sanz", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-04-17 00:00:00], external_link: "https://www.prucenter.com/events/alejandro-sanz"})
-PhillyBands.Events.upsert_event(%{external_artist: "Niko Moon", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-04-10 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1183898"})
-PhillyBands.Events.upsert_event(%{external_artist: "James McMurtry", venue: "White Eagle Hall", region: "New Jersey", date: ~N[2026-04-05 00:00:00], external_link: "https://wl.eventim.us/event/james-mcmurtry/671381?afflky=WhiteEagleHall"})
-PhillyBands.Events.upsert_event(%{external_artist: "Drew and Ellie Holcomb", venue: "The Colonial Theatre", region: "Philadelphia Area", date: ~N[2026-02-05 00:00:00], external_link: "https://thecolonialtheatre.com/events/live-music/drew-and-ellie-holcomb-never-gonna-let-you-go-tour/?doing_wp_cron=1764799023.0326209068298339843750"})
-PhillyBands.Events.upsert_event(%{external_artist: "Close Drive / Cheap 52 / Tucked In", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://johnnybrendas.com/event/close-drive/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Field Medic / Euphoria Again", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-04-15 00:00:00], external_link: "https://johnnybrendas.com/event/field-medic/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Brian Aubert / Che Arthur / Christopher Crooner", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-19 00:00:00], external_link: "https://johnnybrendas.com/event/brian-aubert/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sweet Pill", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-03-19 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1220406"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ape School / Flanafi / The Santo Casur", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-cfpzj"})
-PhillyBands.Events.upsert_event(%{external_artist: "Spilly Cave / Ski Club / Goings", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-01-16 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-trnxx"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tashi Dorji / Che Chen / Jamal Moore", venue: "Asian Arts Initiative", region: "Philadelphia Area", date: ~N[2026-01-28 00:00:00], external_link: "https://r5productions.com/event/tashi-dorji/asian-arts-initiative/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bahamas / Sister Ray", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-05-12 00:00:00], external_link: "https://r5productions.com/event/bahamas/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dear Season / Lowercoaster / Sharing Contest", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-08 00:00:00], external_link: "https://kungfunecktie.com/event/dear-season-lower-coaster-sharing-contest/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "AK", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-22 00:00:00], external_link: "https://kungfunecktie.com/event/ak/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Garden Roads / Neil Nathan / The No Good Crowd", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-02-14 00:00:00], external_link: "https://kungfunecktie.com/event/the-garden-roads/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Daniel Romano's Outfit / Shadow Show / Mod Lang", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-03-16 00:00:00], external_link: "https://kungfunecktie.com/event/daniel-romanos-outfit-shadow-show-mod-lang/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Glom / Snowmen", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-06-05 00:00:00], external_link: "https://kungfunecktie.com/event/glom-snowmen/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tobacco Road", venue: "Silk City Diner", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://www.silkcityphilly.com/events/1694/tobacco-road"})
-PhillyBands.Events.upsert_event(%{external_artist: "August Burns Red / The Amity Affliction", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-05-17 00:00:00], external_link: "https://www.ticketmaster.com/august-burns-red-the-amity-affliction-philadelphia-pennsylvania-05-17-2026/event/02006375DA8856A7?_gl=1*xddi5i*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bumpin Uglies", venue: "The Queen", region: "Philadelphia Area", date: ~N[2026-02-14 00:00:00], external_link: "https://thequeenwilmington.com/events/bumpin-uglies/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Wonder Years", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-12 00:00:00], external_link: "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-12-2026/event/0200637AF0F8EDAF?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "All That Remains / Born of Osiris / Dead Eyes", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-30 00:00:00], external_link: "https://www.ticketmaster.com/all-that-remains-with-special-guests-philadelphia-pennsylvania-04-30-2026/event/0200638CE5D4695B?_gl=1*1op1khl*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Old 97's", venue: "Englewood Hershey", region: "Central PA", date: ~N[2026-04-02 00:00:00], external_link: "https://www.eventbrite.com/e/old-97s-tickets-1978176945495?aff=oddtdtcreator"})
-PhillyBands.Events.upsert_event(%{external_artist: "Zachary Ross", venue: "Phantom Power", region: "Central PA", date: ~N[2026-01-02 00:00:00], external_link: "https://www.eventbrite.com/e/zachary-ross-of-man-overboard-tickets-1976602382936?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dry Kill Logic / Dizasterpiece", venue: "Phantom Power", region: "Central PA", date: ~N[2026-04-17 00:00:00], external_link: "https://www.eventbrite.com/e/dry-kill-logic-the-decades-of-distance-tour-w-dizasterpiece-tickets-1786281529139?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lacuna Coil", venue: "XL Live", region: "Central PA", date: ~N[2026-04-30 00:00:00], external_link: "https://www.ticketmaster.com/event/0200638C90549709"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Machine / estelle allen / Father Koi / angel jelly", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/estelle-allen-169423"})
-PhillyBands.Events.upsert_event(%{external_artist: "Congress The Band / Benny G / Zane Christopher", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-28 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/congress-the-band-166781"})
-PhillyBands.Events.upsert_event(%{external_artist: "Renee Christine / Lydia von Hof", venue: "Fowler Blast Furnace Room @ ArtsQuest Center", region: "Lehigh Valley", date: ~N[2026-01-30 00:00:00], external_link: "https://secure.artsquest.org/Online/seatSelect.asp?createBO%3A%3AWSmap=1&BOparam%3A%3AWSmap%3A%3AloadBestAvailable%3A%3Aperformance_ids=D843D777-F656-4220-AEC3-4DBE7A32924B&_gl=1*gwqgx8*_ga*ODA0NTgyNTkzLjE3NjQ1NTc2NzI.*_ga_TYW0039QHS*czE3NjYxNzI1MzYkbzIkZzEkdDE3NjYxNzI2MjAkajM3JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Hunter Hayes / BLÜ EYES", venue: "The Newton Theatre", region: "New Jersey", date: ~N[2026-03-29 00:00:00], external_link: "https://skypac.org/hunter-hayes/"})
-PhillyBands.Events.upsert_event(%{external_artist: "GWAR / Soulfly / King Parrot", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-03-26 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1259543"})
-PhillyBands.Events.upsert_event(%{external_artist: "JJ Grey & Mofro", venue: "Strand Theatre @ Appell Center for Performing Arts", region: "Central PA", date: ~N[2026-02-26 00:00:00], external_link: "https://tickets.appellcenter.org/10303/10304"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Commodores", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-02-06 00:00:00], external_link: "https://www.bergenpac.org/events/detail/the-commodores"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dar Williams", venue: "The Newton Theatre", region: "New Jersey", date: ~N[2026-02-05 00:00:00], external_link: "https://skypac.org/dar-williams/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tigran Hamasyan", venue: "SOPAC", region: "New Jersey", date: ~N[2026-03-15 00:00:00], external_link: "https://www.sopacnow.org/events/tigran-hamsyan-2026/"})
-PhillyBands.Events.upsert_event(%{external_artist: "MC Davo / Sabino", venue: "White Eagle Hall", region: "New Jersey", date: ~N[2026-02-04 00:00:00], external_link: "https://wl.eventim.us/event/mc-davo-and-sabino/669946?afflky=WhiteEagleHall"})
-PhillyBands.Events.upsert_event(%{external_artist: "Camera Obscura", venue: "White Eagle Hall", region: "New Jersey", date: ~N[2026-05-28 00:00:00], external_link: "https://wl.eventim.us/event/camera-obscura/670715?afflky=WhiteEagleHall"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mavis Staples", venue: "The Colonial Theatre", region: "Philadelphia Area", date: ~N[2026-02-26 00:00:00], external_link: "https://thecolonialtheatre.com/events/live-music/mavis-staples/"})
-PhillyBands.Events.upsert_event(%{external_artist: "HAFFWAY / RYMAN", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-28 00:00:00], external_link: "https://johnnybrendas.com/event/haffway-the-wither-tour/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Circle Jerks / Gorilla Biscuits", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-03 00:00:00], external_link: "https://www.ticketmaster.com/circle-jerks-gorilla-biscuits-philadelphia-pennsylvania-04-03-2026/event/02006366FAC5F26C?_gl=1*a8yt2s*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Iron & Wine / Improvement Movement", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-05-11 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1255597"})
-PhillyBands.Events.upsert_event(%{external_artist: "John Moreland / Patterson Hood", venue: "Capitol Theatre @ Appell Center for the Performing Arts", region: "Central PA", date: ~N[2026-03-22 00:00:00], external_link: "https://appellcenter.org/show/caplive-john-moreland-patterson-hood/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Melissa Etheridge", venue: "Hershey Theatre", region: "Central PA", date: ~N[2026-05-08 00:00:00], external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/melissa-etheridge/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Koffin Kats / Playboy Manbaby / Carrie Nation & The Speakeasy", venue: "Phantom Power", region: "Central PA", date: ~N[2026-02-07 00:00:00], external_link: "https://www.eventbrite.com/e/koffin-kats-w-playboy-manbaby-carrie-nation-the-speakeasy-more-tickets-1934401349509?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "Railroad Earth", venue: "XL Live", region: "Central PA", date: ~N[2026-04-24 00:00:00], external_link: "https://www.ticketmaster.com/event/02006386B54EB174"})
-PhillyBands.Events.upsert_event(%{external_artist: "LatinFest Urbano feat. Nio Garcia, Miky Woodz, Secreto, Alex Sensation, Hozwal, Romwa", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-10-18 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1129944-latinfest-urbano"})
-PhillyBands.Events.upsert_event(%{external_artist: "Joe Jordan", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/joe-jordan-168105"})
-PhillyBands.Events.upsert_event(%{external_artist: "Fantasma / Ex-Tradition / Laughing Cocks / Early Grave", venue: "Cousin Danny's", region: "Philadelphia Area", date: ~N[2026-01-07 00:00:00], external_link: "https://www.instagram.com/cousindannyslounge/?hl=en"})
-PhillyBands.Events.upsert_event(%{external_artist: "Summer Salt / Boyscott / Wabie", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-02-05 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/summer-salt-reside-north-america-tour-vv1aezkgxgkdbqb2l"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Early November / Hellogoodbye", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/the-early-november-hellogoodbye-20-years-young-vv1aezkusgkdb1tsn"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Moss", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-04-23 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/the-moss-vv1ffzbs0xjyzd5ck"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sugarhill Gang", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-01-10 00:00:00], external_link: "https://www.bergenpac.org/events/detail/sugarhill-gang"})
-PhillyBands.Events.upsert_event(%{external_artist: "Air Supply", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-03-13 00:00:00], external_link: "https://www.bergenpac.org/events/detail/air-supply-50-anniversary-celebration"})
-PhillyBands.Events.upsert_event(%{external_artist: "New Edition / Boyz II Men / Toni Braxton", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-02-13 00:00:00], external_link: "https://www.prucenter.com/events/new-edition"})
-PhillyBands.Events.upsert_event(%{external_artist: "Meshell Ndegeocello", venue: "SOPAC", region: "New Jersey", date: ~N[2026-02-05 00:00:00], external_link: "https://www.sopacnow.org/events/meshell-ndegeocello/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Machine Girl", venue: "White Eagle Hall", region: "New Jersey", date: ~N[2026-02-27 00:00:00], external_link: "https://wl.eventim.us/event/machine-girl/667908?afflky=WhiteEagleHall"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dog Fest: Armbite, Fruit Dawg, Pennydog, Dog Beach, Haunt Dog", venue: "Philly Style Pizza", region: "Philadelphia Area", date: ~N[2026-01-10 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-lcskj-9www2"})
-PhillyBands.Events.upsert_event(%{external_artist: "Rick Wakeman & Son", venue: "The Colonial Theatre", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://thecolonialtheatre.com/events/live-music/strictly-wakeman/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Added Color / NYSA / The Angies / Ranchos", venue: "Silk City Diner", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://www.silkcityphilly.com/events/1693/added-color-nysa-the-angies-ranchos"})
-PhillyBands.Events.upsert_event(%{external_artist: "DAVE", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://www.ticketmaster.com/dave-the-boy-who-played-the-philadelphia-pennsylvania-04-17-2026/event/0200635911B2BE05?_gl=1*91v5a*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Fat Mezz", venue: "The Queen", region: "Philadelphia Area", date: ~N[2026-01-23 00:00:00], external_link: "https://thequeenwilmington.com/events/fat-mezz/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Wonder Years", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-10 00:00:00], external_link: "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-10-2026/event/0200637AEB3EE93B?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Arm's Length", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-26 00:00:00], external_link: "https://www.ticketmaster.com/arms-length-theres-a-whole-world-philadelphia-pennsylvania-04-26-2026/event/02006383F2A8E6D2?_gl=1*1op1khl*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Atmosphere / Sage Francis / R. A. The Rugged Man / Kool Keith", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/atmosphere-winter-carnival-tour-2026-vv17fzbvgkxbyagn"})
-PhillyBands.Events.upsert_event(%{external_artist: "I See Stars / Mothica / Until I Wake / Diamante", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-03-02 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/i-see-stars-spin-the-wheel-tour-vv1aovnuoga2kmz4"})
-PhillyBands.Events.upsert_event(%{external_artist: "Touché Amoré", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/touche-amore-stage-four-10-year-anniversary-vv1aovnpvgau0bym"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lee Brice", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-01-24 00:00:00], external_link: "https://www.bergenpac.org/events/detail/lee-brice-acoustic"})
-PhillyBands.Events.upsert_event(%{external_artist: "moe.", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-04-11 00:00:00], external_link: "https://www.bergenpac.org/events/detail/moe"})
-PhillyBands.Events.upsert_event(%{external_artist: "B2K / Bow Wow", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-04-05 00:00:00], external_link: "https://www.prucenter.com/events/b2k-bow-wow"})
-PhillyBands.Events.upsert_event(%{external_artist: "Cheap Trick", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-03-20 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1225439"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gary Numan", venue: "White Eagle Hall", region: "New Jersey", date: ~N[2026-03-19 00:00:00], external_link: "https://wl.eventim.us/event/gary-numan/668434?afflky=WhiteEagleHall"})
-PhillyBands.Events.upsert_event(%{external_artist: "Chuck Prophet & His Cumbia Shoes", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-25 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/chuck-prophet-his-cumbia-shoes-160450"})
-PhillyBands.Events.upsert_event(%{external_artist: "Yellow Shoots / Cat Daddy", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://johnnybrendas.com/event/yellow-shoots-cat-daddy/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Coma Cinema / Trace Mountains", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-03-07 00:00:00], external_link: "https://johnnybrendas.com/event/coma-cinema-trace-mountains/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Silkworm / Come", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-05-09 00:00:00], external_link: "https://johnnybrendas.com/event/silkworm/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Carsie Blanton / Ray Drezner / Izzy True / Sad13", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-01-11 00:00:00], external_link: "https://johnnybrendas.com/event/world-cafe-live-workers-benefit/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Kashus Culpepper", venue: "The Foundry", region: "Philadelphia Area", date: ~N[2026-02-06 00:00:00], external_link: "https://www.ticketmaster.com/wxpn-welcomes-kashus-culpepper-philadelphia-pennsylvania-02-06-2026/event/02006374FF0A76D9"})
-PhillyBands.Events.upsert_event(%{external_artist: "Larry Fleet", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-02-19 00:00:00], external_link: "https://www.keswicktheatre.com/events/detail/1226177"})
-PhillyBands.Events.upsert_event(%{external_artist: "Steven Curtis Chapman", venue: "Keswick Theatre", region: "Philadelphia Area", date: ~N[2026-03-02 00:00:00], external_link: "https://www.keswicktheatre.com/events/detail/1241484"})
-PhillyBands.Events.upsert_event(%{external_artist: "Microwave", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-04-18 00:00:00], external_link: "https://www.ticketmaster.com/microwaves-much-love-10-year-anniversary-philadelphia-pennsylvania-04-18-2026/event/0200637A9A969090?_gl=1*7lueh3*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjUzMjU4NTEkbzQkZzEkdDE3NjUzMjU4NjAkajUxJGwwJGgw*_ga_H1KKSGW33X*czE3NjUzMjU4NTEkbzQkZzEkdDE3NjUzMjU4NjAkajUxJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Nothing / Full Body 2 / Cryogeyser / Violent Magic Orchestra", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-04 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1241114"})
-PhillyBands.Events.upsert_event(%{external_artist: "Snow Tha Product", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-10 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1240611"})
-PhillyBands.Events.upsert_event(%{external_artist: "Tigers Jaw", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-16 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1247128"})
-PhillyBands.Events.upsert_event(%{external_artist: "Cult Member", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-03-03 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-trnxx-sd2me"})
-PhillyBands.Events.upsert_event(%{external_artist: "Takuya Nakamura", venue: "Warehouse on Watts", region: "Philadelphia Area", date: ~N[2026-02-06 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-azxeg"})
-PhillyBands.Events.upsert_event(%{external_artist: "Evicshen", venue: "Warehouse on Watts", region: "Philadelphia Area", date: ~N[2026-03-25 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-azxeg-n9478"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Knee-Hi's / lone / Star Moles / Thank You Thank You", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-02-13 00:00:00], external_link: "https://4333collective.net/gigs/l8kwzfebctmtlfg-ayyhp-2bne2-jhxrt-lda4y-f3wn6-kkd7f-yyfle"})
-PhillyBands.Events.upsert_event(%{external_artist: "Women in Sports / Koser / Dear Forbidden", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-02-14 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-y9cm7-nngwg"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Pine / Knumears / Febuary / Ethel Meserve / Expiration Date / Static Brian / Dazey Doom", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://r5productions.com/event/the-pine/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "femtanyl / takihasdied", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-04-15 00:00:00], external_link: "https://r5productions.com/event/femtanyl/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Carly Cosgrove / Leisure Hour / Summerbruise", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://r5productions.com/event/carly-cosgrove/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Remember Sports / Cusp", venue: "The First Unitarian Church", region: "Philadelphia Area", date: ~N[2026-05-07 00:00:00], external_link: "https://r5productions.com/event/remember-sports-2/the-first-unitarian-church/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Mekons", venue: "The Latvian Society of Philadelphia", region: "Philadelphia Area", date: ~N[2026-06-05 00:00:00], external_link: "https://r5productions.com/event/mekons-2/the-latvian-society-of-philadelphia/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Black Heart Procession", venue: "Johnny Brenda's", region: "Philadelphia Area", date: ~N[2026-02-11 00:00:00], external_link: "https://johnnybrendas.com/event/the-black-heart-procession/johnny-brendas/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Flatwounds / Sunbloc / Sunstroke / Pusch", venue: "Khyber Pass Pub", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://www.eventbrite.com/e/flatwounds-sunbloc-sunstroke-pusch-tickets-1976415250217?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "Emma Jean Oakley / Vincent Michael / Nate Roy / Katie Frank", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-02 00:00:00], external_link: "https://kungfunecktie.com/event/emma-jean-oakley-vincent-micheal-nate-roy-katie-frank/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jewel Case / Dominy / Labrador", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://kungfunecktie.com/event/jewel-case/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Jet Stone Conspiracy", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-16 00:00:00], external_link: "https://kungfunecktie.com/event/ondara/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "DFL / All Torn Up! / Disappearances", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: nil})
-PhillyBands.Events.upsert_event(%{external_artist: "Dylan Reese / Ollie Joseph / Doss / Don Gadi", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-21 00:00:00], external_link: "https://kungfunecktie.com/event/dylan-reese-ollie-joseph-doss-don-gadi/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The New Connection / The Blackburns / The Tressels", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://kungfunecktie.com/event/the-new-connection-the-blackburns-the-tressels/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "RelicRhymes", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-27 00:00:00], external_link: "https://kungfunecktie.com/event/relicrhymes/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Remember Sports / Erasers / The Afterglows", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-02-21 00:00:00], external_link: "https://kungfunecktie.com/event/remember-sports-erasers-the-afterglows/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Technicolors", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-03-24 00:00:00], external_link: "https://kungfunecktie.com/event/the-technicolors/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Fuzzy Slippers / Birds? / Snowman Fight", venue: "Silk City Diner", region: "Philadelphia Area", date: ~N[2026-01-02 00:00:00], external_link: "https://www.silkcityphilly.com/events/1691/fuzzy-slippers-birds-snowman-fight"})
-PhillyBands.Events.upsert_event(%{external_artist: "Freya Skye", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-02-21 00:00:00], external_link: "https://www.ticketmaster.com/freya-skye-stars-align-tour-philadelphia-pennsylvania-02-21-2026/event/02006385D571E165?_gl=1*1i470ut*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Amyl and the Sniffers", venue: "Skyline Stage @ The Mann Center", region: "Philadelphia Area", date: ~N[2026-06-08 00:00:00], external_link: "http://highmarkmann.org/events/2026-06-08/amyl-and-sniffers"})
-PhillyBands.Events.upsert_event(%{external_artist: "GWAR", venue: "The Queen", region: "Philadelphia Area", date: ~N[2026-03-25 00:00:00], external_link: "https://thequeenwilmington.com/events/gwar/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Wonder Years", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-15 00:00:00], external_link: "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-15-2026/event/02006389DAB4C048?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Stanley Jordan", venue: "CapLive @ Appell Center for the Performing Arts", region: "Central PA", date: ~N[2026-03-14 00:00:00], external_link: "https://appellcenter.org/show/caplive-stanley-jordan/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Anne Wilson", venue: "Hershey Theatre", region: "Central PA", date: ~N[2026-04-30 00:00:00], external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/anne-wilson/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Toilet Fest 3 feat. Knub", venue: "Phantom Power", region: "Central PA", date: ~N[2026-01-17 00:00:00], external_link: "https://www.eventbrite.com/e/toilet-fest-3-w-knub-pucker-up-destructo-disk-mr-nice-guy-tickets-1974946879280?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lotus", venue: "XL Live", region: "Central PA", date: ~N[2026-04-16 00:00:00], external_link: "https://www.ticketmaster.com/event/0200635EE88AFAB2"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Maine / Grayscale / NIGHTLY / Broadside", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-04-17 00:00:00], external_link: "https://www.bowerypresents.com/shows/detail/1253397-i-love-you-but-i-chose-the-maine"})
-PhillyBands.Events.upsert_event(%{external_artist: "Andre Lawrence / mcgwn / Kidd Phantom", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-01-03 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/andre-lawrence-x-mcgwn-x-kidd-phantom-166772"})
-PhillyBands.Events.upsert_event(%{external_artist: "Weird Al Yankovic / Puddle Pity Party", venue: "Wind Creek Steel Stage at PNC Plaza", region: "Lehigh Valley", date: ~N[2026-08-04 00:00:00], external_link: "https://www.artsquest.org/event/weird-al-yankovic-bigger-weirder-2026-tour/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Jessi Uribe", venue: "bergenPAC", region: "New Jersey", date: ~N[2026-03-06 00:00:00], external_link: "https://www.bergenpac.org/events/detail/jessi-uribe-1"})
-PhillyBands.Events.upsert_event(%{external_artist: "Avery Anna", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-03-21 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1267581"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dayseeker / Northlane / Wind Walkers / sace6", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-05-03 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1229370"})
-PhillyBands.Events.upsert_event(%{external_artist: "Trhä / Barbelith / Deadyellow", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-02-06 00:00:00], external_link: "https://4333collective.net/gigs/l8kwzfebctmtlfg-ayyhp-2bne2-jhxrt-lda4y-f3wn6-kkd7f-yyfle-4tge5"})
-PhillyBands.Events.upsert_event(%{external_artist: "Geordie Greep", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-22 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/geordie-greep-169582"})
-PhillyBands.Events.upsert_event(%{external_artist: "DUNNES / Fo Daniels", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-29 00:00:00], external_link: "https://kungfunecktie.com/event/duunes-fo-daniels/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Skull Presser / Omit All / Violent Form", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://kungfunecktie.com/event/skull-presser-omit-all-violent-form/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ghostwoman", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-03-31 00:00:00], external_link: "https://kungfunecktie.com/event/ghostwoman/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Lowercase Roses / Edye Renee / Dan the Movie", venue: "Silk City Diner", region: "Philadelphia Area", date: ~N[2026-01-10 00:00:00], external_link: "https://www.silkcityphilly.com/events/1692/lowercase-roses-edye-renee-dan-the-movie"})
-PhillyBands.Events.upsert_event(%{external_artist: "Black Label Society", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-04-06 00:00:00], external_link: "https://www.ticketmaster.com/black-label-society-philadelphia-pennsylvania-04-06-2026/event/0200636AFF7E1D5C?_gl=1*91v5a*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "TOTO / Christopher Cross & The Romantics", venue: "TD Pavilion @ The Mann Center", region: "Philadelphia Area", date: ~N[2026-07-26 00:00:00], external_link: "https://highmarkmann.org/events/2026-07-26/toto"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Wonder Years", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-09 00:00:00], external_link: "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-09-2026/event/0200637AE7D5E632?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Allie X", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-19 00:00:00], external_link: "https://www.ticketmaster.com/allie-x-philadelphia-pennsylvania-04-19-2026/event/02006366CF21D39C?_gl=1*iymt0j*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Carrie Nation and the Speakeasy / Lightnin' Luke", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-02-04 00:00:00], external_link: "https://kungfunecktie.com/event/carrie-nation-and-the-speakeasy-lightnin-luke/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ella Red / Peggy", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-02-26 00:00:00], external_link: "https://kungfunecktie.com/event/ella-red-peggy/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Couch Dog", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-04-09 00:00:00], external_link: "https://kungfunecktie.com/event/couch-dog/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Circle Jerks / Gorilla Biscuits", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-04 00:00:00], external_link: "https://www.ticketmaster.com/circle-jerks-gorilla-biscuits-philadelphia-pennsylvania-04-04-2026/event/02006366014BF7C2?_gl=1*12t654a*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gabe Woodrow / Northvale / Floorbird", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-02-19 00:00:00], external_link: "https://kungfunecktie.com/event/gabe-woodrow-northvale-floorbird/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "moondoggy", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-03-18 00:00:00], external_link: "https://kungfunecktie.com/event/moondoggy/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Future Nobodies / Secret Attraction", venue: "Kung Fu Necktie", region: "Philadelphia Area", date: ~N[2026-06-13 00:00:00], external_link: "https://kungfunecktie.com/event/future-nobodies/kung-fu-necktie/philadelphia-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ole 60", venue: "The Fillmore", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://www.ticketmaster.com/ole-60-smokestack-town-tour-philadelphia-pennsylvania-02-20-2026/event/020063760733EC17?_gl=1*1i470ut*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Khalid / Lauv", venue: "Skyline Stage @ The Mann Center", region: "Philadelphia Area", date: ~N[2026-06-07 00:00:00], external_link: "https://highmarkmann.org/events/2026-06-07/khalid"})
-PhillyBands.Events.upsert_event(%{external_artist: "Aly & AJ", venue: "The Queen", region: "Philadelphia Area", date: ~N[2026-03-22 00:00:00], external_link: "https://thequeenwilmington.com/events/aly-aj-places-to-run-tour-2026/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Wonder Years", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-04-14 00:00:00], external_link: "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-14-2026/event/02006389D347BA54?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Bloodywood", venue: "Theatre of Living Arts", region: "Philadelphia Area", date: ~N[2026-05-05 00:00:00], external_link: "https://www.ticketmaster.com/bloodywood-system-of-a-brown-tour-philadelphia-pennsylvania-05-05-2026/event/02006381C311A8F0?_gl=1*1op1khl*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"})
-PhillyBands.Events.upsert_event(%{external_artist: "Luna", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-04-07 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1273332"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gubbulidis", venue: "Sherman Theater", region: "Lehigh Valley", date: ~N[2026-02-19 00:00:00], external_link: "https://shermantheater.com/event/gubbulidis/sherman-theater/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Romeo Santos / Prince Royce", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-04-22 00:00:00], external_link: "https://www.prucenter.com/events/romeo-santos-prince-royce"})
-PhillyBands.Events.upsert_event(%{external_artist: "Testament / Overkill / Destruction", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-03-28 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1263094"})
-PhillyBands.Events.upsert_event(%{external_artist: "FutureBeer & The Night Owls / Mid Sentence / Stud Wiser", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-fgrwf"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dear Maryanne / Arcadia Grey / Pretty Bitter", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-03-05 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-mfzfd-9st44-2phzm"})
-PhillyBands.Events.upsert_event(%{external_artist: "Soulive", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-24 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/soulive-160762"})
-PhillyBands.Events.upsert_event(%{external_artist: "Henrik / Abigail Osborn", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-01-03 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/henrik-vv1aezkuogkdtjqra"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sunny Day Real Estate / Pool Kids", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-01-29 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/sunny-day-real-estate-vv1kfzbg0mg7hgds"})
-PhillyBands.Events.upsert_event(%{external_artist: "Maggie Lindermann", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-02-28 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/maggie-lindemann-vv1aovngwgag8nhl"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Greyboy Allstars", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-03-04 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/greyboy-allstars-vv1aovn8nga1wauf"})
-PhillyBands.Events.upsert_event(%{external_artist: "Cupcakke", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-03-27 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/cupcakke-18-vv17fzbzgks7erpp"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sir Chloe / Suzy Clue", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-04-22 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/sir-chloe-vvg1fzbcukv_q9"})
-PhillyBands.Events.upsert_event(%{external_artist: "Thornhill / 156/Silence / Fox Lake / Vianova", venue: "Brooklyn Bowl", region: "Philadelphia Area", date: ~N[2026-05-15 00:00:00], external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/revolver-presents-thornhill-the-mercia-tour-vv17fzbzgkrj_yfx"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dry Cleaning / YHWH Nailgun", venue: "Union Transfer", region: "Philadelphia Area", date: ~N[2026-05-06 00:00:00], external_link: "https://www.utphilly.com/events/detail/?event_id=1174868"})
-PhillyBands.Events.upsert_event(%{external_artist: "Collective Soul", venue: "Hershey Theatre", region: "Central PA", date: ~N[2026-04-03 00:00:00], external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/collective-soul/"})
-PhillyBands.Events.upsert_event(%{external_artist: "(Sp)Lit / Gangrenous Flesh Consumption / Deep Rest / Streets of Rage", venue: "Phantom Power", region: "Central PA", date: ~N[2026-01-03 00:00:00], external_link: "https://www.eventbrite.com/e/split-w-gangrenous-flesh-consumption-deep-rest-streets-of-rage-tickets-1967843517935?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "BBMAK", venue: "Phantom Power", region: "Central PA", date: ~N[2026-04-23 00:00:00], external_link: "https://www.eventbrite.com/e/bbmak-tickets-1978124238848?aff=ebdsoporgprofile"})
-PhillyBands.Events.upsert_event(%{external_artist: "Thievery Corporation", venue: "Franklin Music Hall", region: "Philadelphia Area", date: ~N[2026-04-04 00:00:00], external_link: "https://www.axs.com/events/1264228/thievery-corporation-21-event-tickets?skin=fmh"})
-PhillyBands.Events.upsert_event(%{external_artist: "Saults ", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-05-16 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/saults-169291"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Band Memo / Free Whenever", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-06 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/the-band-memo-free-whenever-165635"})
-PhillyBands.Events.upsert_event(%{external_artist: "Dogs In A Pile", venue: "Sherman Theater", region: "Lehigh Valley", date: ~N[2026-04-10 00:00:00], external_link: "https://shermantheater.com/event/dogs-in-a-pile-friday/sherman-theater/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Megan Moroney", venue: "Prudential Center", region: "New Jersey", date: ~N[2026-07-10 00:00:00], external_link: "https://www.prucenter.com/events/megan-moroney"})
-PhillyBands.Events.upsert_event(%{external_artist: "CLUTCH / Corrosion of Conformity / JD Pinkus", venue: "Starland Ballroom", region: "New Jersey", date: ~N[2026-04-09 00:00:00], external_link: "https://www.starlandballroom.com/events/detail/1252639"})
-PhillyBands.Events.upsert_event(%{external_artist: "Home Star / Armbite", venue: "Ortlieb's", region: "Philadelphia Area", date: ~N[2026-01-17 00:00:00], external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-924wy"})
-PhillyBands.Events.upsert_event(%{external_artist: "Clarion / Forest / Bed", venue: "Ukie Club", region: "Philadelphia Area", date: ~N[2026-04-19 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-trnxx-hacyz"})
-PhillyBands.Events.upsert_event(%{external_artist: "Soulive", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-04-25 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/soulive-160762"})
-PhillyBands.Events.upsert_event(%{external_artist: "John Moreland / Patterson Hood", venue: "White Eagle Hall", region: "New Jersey", date: ~N[2026-03-17 00:00:00], external_link: "https://wl.eventim.us/event/john-moreland-patterson-hood/673366?afflky=WhiteEagleHall"})
-PhillyBands.Events.upsert_event(%{external_artist: "Colleen Green / Cassie Ramone", venue: "Philly Style Pizza", region: "Philadelphia Area", date: ~N[2026-01-30 00:00:00], external_link: "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-lcskj-9www2-839nn"})
-PhillyBands.Events.upsert_event(%{external_artist: "Hunter Hayes / BLÜ EYES", venue: "Ardmore Music Hall", region: "Philadelphia Area", date: ~N[2026-03-28 00:00:00], external_link: "https://www.tixr.com/groups/ardmoremusichall/events/hunter-hayes-165527"})
-PhillyBands.Events.upsert_event(%{external_artist: "Humilitarian / Adventure Lost / Caring Less", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-13 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/humilitarian-adventure-lost-157978"})
-PhillyBands.Events.upsert_event(%{external_artist: "Gibbous Moon / Alright Junior", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-20 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/gibbous-moon-alright-junior-166951"})
-PhillyBands.Events.upsert_event(%{external_artist: "June Divided / Sleep Cycles / Modern Culture", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-02-21 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/june-divided-sleep-cycles-167903"})
-PhillyBands.Events.upsert_event(%{external_artist: "Amelia Day", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-13 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/amelia-day-165634"})
-PhillyBands.Events.upsert_event(%{external_artist: "Steph Strings", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-19 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/steph-strings-north-american-tour-2026-169147"})
-PhillyBands.Events.upsert_event(%{external_artist: "Ridge Runners / Lunison", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-20 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/ridge-runners-lunison-167438"})
-PhillyBands.Events.upsert_event(%{external_artist: "Haunt / Intranced", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-22 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/haunt-with-intranced-169315"})
-PhillyBands.Events.upsert_event(%{external_artist: "Flamingosis", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-26 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/flamingosis-167668"})
-PhillyBands.Events.upsert_event(%{external_artist: "Valencia Grace", venue: "MilkBoy", region: "Philadelphia Area", date: ~N[2026-03-28 00:00:00], external_link: "https://www.tixr.com/groups/milkboy/events/valencia-grace-168328"})
-PhillyBands.Events.upsert_event(%{external_artist: "Sug Daniels / Antar Goodwin / Lexxie Mathis", venue: "Kennett Flash", region: "Philadelphia Area", date: ~N[2026-02-22 00:00:00], external_link: "https://kennettflash.org/event/roots-revival-roadshow/kennett-flash/kennett-square-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Here Again / New Damage / Lowball", venue: "Kennett Flash", region: "Philadelphia Area", date: ~N[2026-01-31 00:00:00], external_link: "https://kennettflash.org/event/metal-night-here-again-new-damage-lowball/kennett-flash/kennett-square-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Katie Barbato / Julie Webb", venue: "Kennett Flash", region: "Philadelphia Area", date: ~N[2026-01-24 00:00:00], external_link: "https://kennettflash.org/event/katie-barbato-singer-songwriter-showcase/kennett-flash/kennett-square-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "The Wild Hymns", venue: "Kennett Flash", region: "Philadelphia Area", date: ~N[2026-01-16 00:00:00], external_link: "https://kennettflash.org/event/the-wild-hymns-with-special-guest-nick-lurwick/kennett-flash/kennett-square-pennsylvania/"})
-PhillyBands.Events.upsert_event(%{external_artist: "Hiroya Tsukamoto", venue: "Kennett Flash", region: "Philadelphia Area", date: ~N[2026-01-09 00:00:00], external_link: "https://kennettflash.org/event/a-journey-through-strings-and-stories-hiroya-tsukamoto-2/kennett-flash/kennett-square-pennsylvania/"})
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Maná",
+  venue: "Xfinity Mobile Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://www.wellsfargocenterphilly.com/events/detail/mana-03-2026"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ray LaMontagne",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-09-12 00:00:00],
+  external_link:
+    "https://concerts.livenation.com/wxpn-welcomes-ray-lamontagne-trouble-20th-philadelphia-pennsylvania-09-13-2025/event/020062679D025F0F?_gl=1*1r8uqeg*_ga*Mzc0NTgyNDM5LjE3MzEwOTQyMDk.*_ga_0CBQHKECVW*MTc0MjQwOTE4NS4xNC4xLjE3NDI0MDkxODguMC4wLjA.*_gcl_au*MTczNTc0NDc1NS4xNzQyNDA5MTg1*_ga_H1KKSGW33X*MTc0MjQwOTE4NS4xNC4xLjE3NDI0MDkxODguNTcuMC4w*_ga_C1T806G4DF*MTc0MjQwOTE4NS4xMi4xLjE3NDI0MDkxODguNTcuMC4w"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ray LaMontagne",
+  venue: "F.M. Kirby Center for the Performing Arts",
+  region: "Lehigh Valley",
+  date: ~N[2026-09-09 02:00:00],
+  external_link: "https://kirbycenter.org/show/ray-lamontagne/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Church",
+  venue: "The Colonial Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-27 00:00:00],
+  external_link:
+    "https://thecolonialtheatre.com/events/live-music/the-church-the-singles-1980-2025/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Calum Scott",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-22 00:00:00],
+  external_link:
+    "https://concerts.livenation.com/calum-scott-the-avenoir-tour-2026-philadelphia-pennsylvania-04-22-2026/event/02006284B0576A3B?_gl=1*chghdp*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_0V4QWN65W8*MTc0NTQ1NzMxNS4zLjEuMTc0NTQ1NzU1Ni4wLjAuMA..*_gcl_au*MTA0MTQyMjU3MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*MTc0NTQ1NzMxNS4zLjEuMTc0NTQ1NzM3OC41OS4wLjA.*_ga_H1KKSGW33X*MTc0NTQ1NzMxNS4zLjEuMTc0NTQ1NzM3OC41OS4wLjA.&_ga=2.137287216.1256760193.1745457398-2115339791.1741457100"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Brandon Lake",
+  venue: "Xfinity Mobile Arena",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-12 00:00:00],
+  external_link: "https://www.wellsfargocenterphilly.com/events/detail/brandon-lake-3-12"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Yo-Yo Ma / Dalia Stasevska",
+  venue: "Marian Anderson Hall @ The Kimmel Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-14 00:00:00],
+  external_link:
+    "https://www.ensembleartsphilly.org/tickets-and-events/philadelphia-orchestra/2025-26-season/yo-yo-ma-returns"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Cate Le Bon",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-13 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1006285"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lord of the Lost / The Birthday Massacre",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-20 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/lord-of-the-lost-the-birthday-philadelphia-pennsylvania-01-20-2026/event/020062B5C8B35121?_gl=1*wxzhs7*_gcl_au*MTg0NTY3MjY3Ny4xNzQ5MjQzMjM4*_ga*MTAzMjIzMDQxNy4xNzQ5MjQzMjM4*_ga_C1T806G4DF*czE3NDkyNDMyMzgkbzEkZzEkdDE3NDkyNDMyNTMkajQ1JGwwJGgw*_ga_H1KKSGW33X*czE3NDkyNDMyMzgkbzEkZzEkdDE3NDkyNDMyNTMkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kim Richey",
+  venue: "Jersey Shore Arts Center - Palaia Theater",
+  region: "New Jersey",
+  date: ~N[2026-05-16 00:00:00],
+  external_link: "https://jerseyshoreartscenter.ticketleap.com/kim-richey/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lucy Kaplansky",
+  venue: "Jersey Shore Arts Center - Palaia Theater",
+  region: "New Jersey",
+  date: ~N[2026-04-18 00:00:00],
+  external_link: "https://jerseyshoreartscenter.ticketleap.com/lucy-kaplansky/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Joy Clark",
+  venue: "Jersey Shore Arts Center - Palaia Theater",
+  region: "New Jersey",
+  date: ~N[2026-03-21 00:00:00],
+  external_link: "https://jerseyshoreartscenter.ticketleap.com/joy-clark/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Shannon McNally and Band",
+  venue: "Jersey Shore Arts Center - Palaia Theater",
+  region: "New Jersey",
+  date: ~N[2026-02-28 00:00:00],
+  external_link: "https://jerseyshoreartscenter.ticketleap.com/shannon-mcnally/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Anthony D'Amato of Fantastic Cat (solo) ",
+  venue: "Jersey Shore Arts Center - Palaia Theater",
+  region: "New Jersey",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://jerseyshoreartscenter.ticketleap.com/nathan-graham-and-band/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Barr Brothers",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-19 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/the-barr-brothers-141921"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Levity",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/levity-presents-lasership-philadelphia-pennsylvania-01-23-2026/event/020062D7ECAE66DB?_gl=1*u0i99h*_gcl_au*MzgzMTc4Nzg3LjE3NTA5Nzg2Mzc.*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NTMyOTE2MzUkbzExJGcxJHQxNzUzMjkxNjU4JGozNyRsMCRoMA..*_ga_H1KKSGW33X*czE3NTMyOTE2MzUkbzExJGcxJHQxNzUzMjkxNjU4JGozNyRsMCRoMA..&_ga=2.7645810.1182538113.1753291682-2115339791.1741457100"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Loudon Wainwright III / Chris Smither",
+  venue: "Zellerbach Theater at Penn Live Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link: "https://pennlivearts.org/event/LoudonChris"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Low Cut Connie",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-30 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/low-cut-connie-151802"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Low Cut Connie",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-31 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/low-cut-connie-151802"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lettuce",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/lettuce-148712"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lettuce",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/lettuce-148712"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jared Freid",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/jared-freid-the-table-for-one-philadelphia-pennsylvania-01-09-2026/event/020062D49FC96BCE?_gl=1*1g5yoyj*_gcl_au*MTUwMzQzNTczOC4xNzU1MTAwMDcy*_ga*NzcyNjkzMDM1LjE3NTUxMDAwNzE.*_ga_C1T806G4DF*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw*_ga_H1KKSGW33X*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lauren Spencer Smith",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-18 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/lauren-spencer-smith-the-art-of-philadelphia-pennsylvania-02-18-2026/event/020062BD2C0081BA?_gl=1*1g5yoyj*_gcl_au*MTUwMzQzNTczOC4xNzU1MTAwMDcy*_ga*NzcyNjkzMDM1LjE3NTUxMDAwNzE.*_ga_C1T806G4DF*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw*_ga_H1KKSGW33X*czE3NTUxMDAwNzEkbzEkZzEkdDE3NTUxMDAwNzQkajU3JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "shame",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-16 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/89317572/shame-philadelphia-the-first-unitarian-church?partner_id=100&_gl=1*73blye*_ga*OTQ3OTIwMzMxLjE3NTU1NTAyOTI.*_ga_6T50PMF8HM*czE3NTU1NTAyOTIkbzEkZzEkdDE3NTU1NTA1MTQkajYwJGwwJGgw*_ga_20QQYQHBVX*czE3NTU1NTAyOTIkbzEkZzEkdDE3NTU1NTA1MTQkajYwJGwwJGgxMTY5NDY1OTQw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Modern Nature",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/modern-nature-152999"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Marissa Nadler",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-15 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/marissa-nadler-153713"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Vertical Current",
+  venue: "The Clef Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-26 00:00:00],
+  external_link:
+    "https://clefclubofjazz.org/event/vertical-current-jazz-cultural-voices-concert-series"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "112",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/112-room-112-tour-philadelphia-pennsylvania-01-30-2026/event/02006315C1944447?_gl=1*ngiko5*_gcl_au*NzYwNDc4MTUxLjE3NTIzNjAyMTk.*_ga*NDg2MjYyNjA4LjE3NTIzNjAyMTg.*_ga_C1T806G4DF*czE3NTYxNjQ5NDAkbzMkZzEkdDE3NTYxNjQ5NjkkajMxJGwwJGgw*_ga_H1KKSGW33X*czE3NTYxNjQ5NDEkbzMkZzEkdDE3NTYxNjQ5NjgkajMzJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Julianna Riolino",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-18 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/julianna-riolino/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Peter Hook & The Light",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-09-07 00:00:00],
+  external_link: "https://www.axs.com/events/1097905/peter-hook-the-light-tickets"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Eliza McLamb",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-26 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/eliza-mclamb-good-story-tour-philadelphia-pennsylvania-04-26-2026/event/02006308F537461B?_gl=1*11kljlw*_gcl_au*MTM3OTM3MTkwMS4xNzU0NjA5NDc5*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NTY0NDYzMTEkbzEwJGcxJHQxNzU2NDQ2MzM0JGozNyRsMCRoMA..*_ga_H1KKSGW33X*czE3NTY0NDYzMTEkbzExJGcxJHQxNzU2NDQ2MzM0JGozNyRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "East Nash Grass",
+  venue: "Weis Center Concert Hall",
+  region: "Central PA",
+  date: ~N[2026-02-05 00:00:00],
+  external_link:
+    "https://www.bucknell.edu/life-bucknell/arts-performances/weis-center-performing-arts/2025-26-season/east-nash-grass"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Author / Punisher / King Yosef / Black Magnet",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-01 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-mfzfd"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "bbno$",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-10 00:00:00],
+  external_link: "https://www.bowerypresents.com/shows/detail/1095101-bbno"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The High Kings",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-12 00:00:00],
+  external_link: "https://www.keswicktheatre.com/events/detail/1129931"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Youth Fountain",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-08 00:00:00],
+  external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Curtis Harding",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-22 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/curtis-harding/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Margo Price",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/margo-price-wild-at-heart-tour-philadelphia-pennsylvania-02-20-2026/event/02006341A32D3B23"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Belair Lip Bombs / dust",
+  venue: "PhilaMOCA",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-11 00:00:00],
+  external_link:
+    "https://r5productions.com/event/the-belair-lip-bombs/philamoca/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Jacksons",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-02-21 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/the-jacksons"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Acid Bath / Baroness / The Skull",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1125853"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Steve Forbert & The New Renditions",
+  venue: "New Hope Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link: "https://newhopewinery.com/event/steve-forbert-the-new-renditions/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Greg Freeman",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-27 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-6dpwf-x559b"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Moonchild",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-03 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moonchild-161376"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Electric Light Orchestra",
+  venue: "Lansdowne Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link:
+    "https://thelansdownetheater.com/event/the-orchestra-starring-electric-light-orchestra-elo-part-ii-former-members/lansdowne-theater/lansdowne-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Last Dinner Party / Florence Road",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-15 00:00:00],
+  external_link: "https://www.bowerypresents.com/shows/detail/1178609-the-last-dinner-party"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Last Dinosaurs",
+  venue: "The Stone Pony",
+  region: "New Jersey",
+  date: ~N[2026-03-26 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0000634ED0077788"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Letdown. / Blame My Youth / YOUTHYEAR / LUCHIANO",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-19 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/letdown--160237"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jillith Fair",
+  venue: "The Fallser Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://thefallserclub.com/event/jillith-fair-loving-jill-sobule/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gary Numan",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-18 00:00:00],
+  external_link: "https://www.keswicktheatre.com/events/detail/1183845"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Foo Fighters / Queens of the Stone Age",
+  venue: "Lincoln Financial Field",
+  region: "Philadelphia Area",
+  date: ~N[2026-08-13 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/02006355290D9782"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Conan Gray / Esha Tewari",
+  venue: "Xfinity Mobile Arena",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-02 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/event/30006351286181F9?utm_source=WEB&utm_medium=XMAWEBSITE&utm_campaign=CONANGRAY0302&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mat Kerekes / Shallow Alcove / Beeson",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-09 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/mat-kerekes-luna-and-the-wild-philadelphia-pennsylvania-02-09-2026/event/02006342E7DF7690?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mary Fahl",
+  venue: "New Hope Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-14 00:00:00],
+  external_link: "https://newhopewinery.com/event/mary-fahl-3/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Louis Tomlinson / The Beaches",
+  venue: "Skyline Stage @ The Mann Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-07-11 00:00:00],
+  external_link: "https://highmarkmann.org/events/2026-07-11/louis-tomlinson"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Vincent Mason",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-25 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/monster-energy-outbreak-tour-presents-vincent-philadelphia-pennsylvania-04-25-2026/event/0200635016EEB772?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Machine Girl",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-28 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1183855"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Snarky Puppy",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1154993"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Melody's Echo Chamber",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-13 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1157064"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Nathan Evans and the Saint Phnx Band",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-02 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/ardmoremusichall/events/nathan-evans-and-the-saint-phnx-band-160219"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "JOSEPH",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-01 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/joseph-163692"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "HighSchool",
+  venue: "PhilaMOCA",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-27 00:00:00],
+  external_link: "https://r5productions.com/event/highschool/philamoca/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Endea Owens & The Cookout",
+  venue: "Perelman Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-28 00:00:00],
+  external_link:
+    "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/endea-owens-and-the-cookout"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lady Blackbird",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-07 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/lady-blackbird-8466im"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Algebra Blessett",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-18 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/algebra-blessett-5f4pfn"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Aliah Sheffield",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-15 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/aliah-sheffield-piyvmz"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Neko Case",
+  venue: "The Queen",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-16 00:00:00],
+  external_link: "https://thequeenwilmington.com/events/neko-case-neon-grey-midnight-green-tour/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Whitney",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-14 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/whitney-157061"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Zara Larsson / Amelia Moore",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-30 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/zara-larsson-midnight-sun-tour-2026-philadelphia-pennsylvania-03-30-2026/event/0200631BBC05293C?_gl=1*1jpmej7*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NTc2MjEwOTQkbzE0JGcxJHQxNzU3NjIxMTEzJGo0MSRsMCRoMA..*_ga_H1KKSGW33X*czE3NTc2MjEwOTQkbzE0JGcxJHQxNzU3NjIxMTEzJGo0MSRsMCRoMA..&_ga=2.195362281.431103427.1757621430-2115339791.1741457100"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "mclusky",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-10 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/mclusky-157306"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Yonder Mountain String Band",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-21 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/ardmoremusichall/events/yonder-mountain-string-band-156553"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Teeth",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-27 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/the-teeth/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mariah the Scientist",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-24 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/mariah-the-scientist-hearts-sold-separately-philadelphia-pennsylvania-02-24-2026/event/02006322F3E08661?_gl=1*1upjp8b*_ga*NDg2MjYyNjA4LjE3NTIzNjAyMTg.*_ga_C1T806G4DF*czE3NTg5MTI3MTQkbzQkZzEkdDE3NTg5MTI3MjQkajUwJGwwJGgw*_ga_H1KKSGW33X*czE3NTg5MTI3MTQkbzQkZzEkdDE3NTg5MTI3MjMkajUxJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Opeth / Katatonia",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-07 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/opeth-the-last-will-and-testament-philadelphia-pennsylvania-02-07-2026/event/02006333948840D1?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gurriers",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-14 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/gurriers-151128"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Chris Thile",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-06 00:00:00],
+  external_link: "https://www.keswicktheatre.com/events/detail/1138037"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Westerman",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-20 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/westerman-philadelphia-pennsylvania-03-20-2026/event/0200633A90004033?_gl=1*yl3855*_ga*MTIwNjYyODk1OC4xNzU5NDM5NzY1*_ga_C1T806G4DF*czE3NTk0Mzk3NjUkbzEkZzEkdDE3NTk0Mzk3NzgkajQ3JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0Mzk3NjUkbzEkZzEkdDE3NTk0Mzk3NzgkajQ3JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Taper's Choice / Rich Ruth",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/taper-s-choice-154608"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Don Was & The Pan-Detroit Ensemble",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-14 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/ardmoremusichall/events/don-was-the-pan-detroit-ensemble-154604"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Julianna Barwick / Mary Lattimore",
+  venue: "The Sanctuary @ The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-20 00:00:00],
+  external_link:
+    "https://r5productions.com/event/julianna-barwick-mary-lattimore/the-sanctuary-of-the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Rural Alberta Advantage",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-18 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/the-rural-alberta-advantage-2/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "CIV / Into Another / Orange 9mm / The Great American Typewriter / Wild Reed",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/civ-161917"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Movement / Tropidelic",
+  venue: "The Stone Pony",
+  region: "New Jersey",
+  date: ~N[2026-01-29 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/00006333B40B1EBE"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Landon Conrath / Abby Holliday",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-06 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/landon-conrath-157575"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tinzo + Jojo",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-06 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/tinzo-jojo-plur-tour-philadelphia-pennsylvania-03-06-2026/event/02006344FD128250?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Paper Kites",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-08 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-paper-kites-if-you-go-philadelphia-pennsylvania-05-08-2026/event/02006338A4603D88?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Peaches / Model/Actriz",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-01 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1171657"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lotus",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-18 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1198184"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Wolfmother",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-30 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1210655"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "moe.",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-04 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moe--159836"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Goldie Boutilier",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://r5productions.com/event/goldie-boutilier/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ben Arnold",
+  venue: "The Kelly Center",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-31 00:00:00],
+  external_link: "https://www.ticketleap.events/tickets/kellycenter/12312025"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Adam Ezra Group",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-29 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/the-adam-ezra-group-pmcgmn"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "El Debarge",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-08 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/el-debarge-z8kthp"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Najee",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/najee-iokeua"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Eric Hutchinson",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link:
+    "https://citywinery.com/philadelphia/events/eric-hutchinson-repeating-myself-tour-5uocgo"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Hayley Williams / Water From Your Eyes",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-06 00:00:00],
+  external_link:
+    "https://www.bowerypresents.com/greater-philly/shows/detail/1219919-hayley-williams-at-a-bachelorette-party"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Blackwater Holylight",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-26 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/blackwater-holylight-2/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Schur",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-14 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/schur-160651"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Nobu Woods",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-08 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/nobu-woods-165341"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dale Watson and His Lone Stars",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link: "https://www.st94.com/events/dale-watson/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jesse Welles",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-04 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/jesse-welles-under-the-powerlines-2026-philadelphia-pennsylvania-03-04-2026/event/0200630DB714292D"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dark Star Orchestra",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-30 00:00:00],
+  external_link: "https://www.bowerypresents.com/shows/detail/1132559-dark-star-orchestra"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "dodie",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-27 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/dodie-philadelphia-pennsylvania-02-27-2026/event/0200630CE3192EB0?_gl=1*8ffqyv*_ga*MTU2MDc1MjIwNy4xNzUzMzI0OTAx*_ga_C1T806G4DF*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw*_ga_H1KKSGW33X*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rascal Flatts / Chris Lane / Lauren Alaina",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-01-30 00:00:00],
+  external_link: "https://www.prucenter.com/events/rascal-flatts"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Madison Cunningham",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-02 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/madison-cunningham-156899"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "49th & Main",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-03 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/49th-main-philadelphia-pennsylvania-04-03-2026/event/0200632C927B2150?_gl=1*1mpqyg9*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NTg5MDc4NjgkbzEzJGcxJHQxNzU4OTA3ODg3JGo0MSRsMCRoMA..*_ga_H1KKSGW33X*czE3NTg5MDc4NjgkbzE0JGcxJHQxNzU4OTA3ODg3JGo0MSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Alex Sampson",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-18 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/alex-sampson-philadelphia-pennsylvania-02-18-2026/event/020063429BB14A41?_gl=1*dfifkk*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NjAwNDk3MDUkbzE0JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA..*_ga_H1KKSGW33X*czE3NjAwNDk3MDUkbzE1JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Bacon Brothers",
+  venue: "Strand Theatre @ Appell Center for the Performing Arts",
+  region: "Central PA",
+  date: ~N[2026-01-23 00:00:00],
+  external_link: "https://appellcenter.org/show/the-bacon-brothers/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kenny Wayne Shepherd Band",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-03-10 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/kenny-wayne-shepherd-band"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Nine Inch Nails",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-02-14 00:00:00],
+  external_link: "https://www.prucenter.com/events/nine-inch-nails"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jeremy Jordan / Age of Madness",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/jeremy-jordan-age-of-madness-philadelphia-pennsylvania-04-17-2026/event/02006349B8A55127?_gl=1*vh1idf*_ga*MTIwNjYyODk1OC4xNzU5NDM5NzY1*_ga_C1T806G4DF*czE3NjA1NTY2MDckbzIkZzEkdDE3NjA1NTY2ODYkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjA1NTY2MDckbzIkZzEkdDE3NjA1NTY2ODYkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Acopia",
+  venue: "Warehouse on Watts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-14 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-kyb83-ceds7-4n7xr-2b3wp-ft2b2"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Glitterer / Graham Hunt / Prize Horse",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-12 00:00:00],
+  external_link: "https://r5productions.com/event/glitterer-3/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Runo Plum",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-10 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/runo-plum/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rich Vos / Jim Florentine",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link: "https://www.keswicktheatre.com/events/detail/1137151"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kayo Dot",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-10 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/kayo-dot-157715"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Briscoe",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-25 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/briscoe-160288"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sudan Archives",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-27 00:00:00],
+  external_link:
+    "https://www.axs.com/nz/events/1165462/sudan-archives-tickets?_gl=1*19ydxez*_gcl_au*ODk0NTE3MTAxLjE3NjA0NTQ5MzU."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Echo & The Bunnymen",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-07 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/echo-the-bunnymen-more-songs-to-philadelphia-pennsylvania-06-07-2026/event/0200634F937780CD"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Florence + The Machine / Sofia Isella",
+  venue: "Xfinity Mobile Arena",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-25 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/event/30006356EAB56F66?utm_source=WEB&utm_medium=XMAWEBSITE&utm_campaign=FLORENCE0425&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Seahaven",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-05 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/seahaven-performing-winter-forever-in-full-philadelphia-pennsylvania-02-05-2026/event/0200635492C3249C?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Griffin House",
+  venue: "New Hope Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-21 00:00:00],
+  external_link: "https://newhopewinery.com/event/griffin-house-2/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Chet Faker",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-29 00:00:00],
+  external_link: "https://utphilly.com/events/detail/?event_id=1192936"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rich Brian",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-24 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/rich-brian-where-is-my-head-philadelphia-pennsylvania-02-24-2026/event/02006331BFA243B7?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Liz Longley",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-19 00:00:00],
+  external_link:
+    "https://citywinery.com/philadelphia/events/rising-sun-presents-liz-longley-4i56en"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ye Vagabonds",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-02 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/ye-vagabonds/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Wild Pink / Dead Gowns",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/wild-pink-164530"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Ramona Flowers",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/the-ramona-flowers-164486"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Livingston Taylor",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-08 00:00:00],
+  external_link: "https://www.st94.com/events/livingston-taylor-3/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "State Champs",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-18 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/state-champs-around-the-world-and-philadelphia-pennsylvania-01-18-2026/event/0200634AB9A75739?_gl=1*v4xxgo*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "PONY / Star 99",
+  venue: "Warehouse on Watts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-26 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-fphsl"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Josh Ritter",
+  venue: "The Grand",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-06 00:00:00],
+  external_link: "https://www.thegrandwilmington.org/productions/9182-josh-ritter/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Neko Case",
+  venue: "Archer Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/wxpn-welcomes-neko-case-neon-grey-allentown-pennsylvania-01-17-2026/event/30006307FCFB5FEC?_gl=1*p4ex2t*_ga*OTU2MjgwNTY5LjE3NTY4NDUwNTU.*_ga_C1T806G4DF*czE3NTY4NDUwNTQkbzEkZzEkdDE3NTY4NDUwNTYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NTY4NDUwNTQkbzEkZzEkdDE3NTY4NDUwNTYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Elovaters / Collie Buddz / JARV",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://www.bowerypresents.com/shows/detail/1133193-the-elovaters"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Peter McPoland",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-28 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/peter-mcpoland-big-lucky-tour-philadelphia-pennsylvania-02-28-2026/event/0200631A31116A93?_gl=1*8ffqyv*_ga*MTU2MDc1MjIwNy4xNzUzMzI0OTAx*_ga_C1T806G4DF*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw*_ga_H1KKSGW33X*czE3NTc2MjI3NjEkbzUkZzEkdDE3NTc2MjI3NzQkajQ3JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Cardi B",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-03-28 00:00:00],
+  external_link: "https://www.prucenter.com/events/cardi-b"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "HEALTH x Carpenter Brut / Desire",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-19 00:00:00],
+  external_link: "https://www.bowerypresents.com/shows/detail/1147874-health-x-carpenter-brut"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Afternoon Bike Ride",
+  venue: "Silk City",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link: "https://www.silkcityphilly.com/events/1645/afternoon-bike-ride"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Motion City Soundtrack / Say Anything",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/say-anything-and-motion-city-soundtrack-philadelphia-pennsylvania-01-31-2026/event/02006333A1E94CC4?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mike Viola / Drumming Bird",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-04 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/mike-viola-157568"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Saxsquatch",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-12 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/saxsquatch-159280"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kayhan Kalhor",
+  venue: "Annenberg Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-08 00:00:00],
+  external_link: "https://pennlivearts.org/event/KayhanKalhor"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Beats Antique",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-21 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/beats-antique-159607"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist:
+    "Sing Us Home Festival feat. The Menzingers, The Mountain Goats, Dave Hause & The Mermaid, and more",
+  venue: "Venice Island",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-03 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/singushomefest/events/sing-us-home-festival-2026-159027"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dry Cleaning / YHWH Nailgun",
+  venue: "Union Trnasfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link:
+    "https://www.axs.com/nz/events/1174868/dry-cleaning-tickets?_gl=1*13ylp84*_gcl_au*ODk0NTE3MTAxLjE3NjA0NTQ5MzU."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jason Isbell and the 400 Unit",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-18 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/wxpn-welcomes-jason-isbell-and-the-philadelphia-pennsylvania-02-18-2026/event/02006354EAC27343"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mia Asano",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-26 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/mia-asano-162673"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Samm Henshaw",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-06 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/samm-henshaw-presents-it-could-be-philadelphia-pennsylvania-03-06-2026/event/0200635094D78253?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Iron Maiden",
+  venue: "Hersheypark Stadium",
+  region: "Central PA",
+  date: ~N[2026-09-15 00:00:00],
+  external_link: "https://www.hersheyentertainment.com/hersheypark-stadium/events/iron-maiden/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "O.A.R. / Gavin DeGraw / Lisa Loeb",
+  venue: "TD Pavilion @ The Mann Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-07-25 00:00:00],
+  external_link: "https://highmarkmann.org/events/2026-07-25/oar"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Amber Mark",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/amber-mark-presents-the-pretty-idea-philadelphia-pennsylvania-03-07-2026/event/02006348CD8665E2?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "ALLEYCVT / Steller / Tazu",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1146705"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Evan Honer / Nicholas Jamerson",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-10 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1150430"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Oklou",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-28 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1203572"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Getdown Services",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-55fh6-3te8k-dnmyb-9kyj5-2jml3"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "moe.",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-05 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moe--159836"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rio Kosta",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-24 00:00:00],
+  external_link:
+    "https://r5productions.com/event/rio-kosta/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kurt Elling",
+  venue: "Perelman Theater @ The Kimmel Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-27 00:00:00],
+  external_link:
+    "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/kurt-elling"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kindred The Family Soul",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-31 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/kindred-the-family-soul-nye-mjnucv"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Los Lonely Boys",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-10 00:00:00],
+  external_link:
+    "https://citywinery.com/philadelphia/events/an-evening-of-song-and-stories-with-los-lonely-b-95lg9w"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Heather Maloney / Hayley Reardon",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/heather-maloney-quu26y"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Todd Barry",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-03 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/todd-barry-8drr1b"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Prison Affair / Snõõper ",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-05 00:00:00],
+  external_link:
+    "https://r5productions.com/event/prison-affair-sn%c3%b5%c3%b5per/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "KANSAS",
+  venue: "The Grand",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link: "https://www.thegrandwilmington.org/productions/9153-kansas/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gabe Dixon / Cumberland Honey",
+  venue: "Strand Theatre @ Appell Center for the Performing Arts",
+  region: "Central PA",
+  date: ~N[2026-01-30 00:00:00],
+  external_link: "https://appellcenter.org/show/caplive-gabe-dixon/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "ZZ Ward / McKinley James",
+  venue: "Musikfest Café",
+  region: "Lehigh Valley",
+  date: ~N[2026-03-19 00:00:00],
+  external_link: "https://www.artsquest.org/event/zz-ward/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kenny Wayne Shepherd",
+  venue: "Wind Creek Event Center",
+  region: "Lehigh Valley",
+  date: ~N[2026-03-06 00:00:00],
+  external_link: "https://www.windcreekeventcenter.com/events/kenny-wayne-shepherd/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Strumbellas",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/the-strumbellas-148553"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "SPRINTS",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-07 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/sprints/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Weval",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/weval-chorophobia-album-release-tour-philadelphia-pennsylvania-01-30-2026/event/0200631CBD0F2F15?_gl=1*xsiv5x*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NTc2MzYxNjYkbzEyJGcxJHQxNzU3NjM2MTgzJGo0MyRsMCRoMA..*_ga_H1KKSGW33X*czE3NTc2MzYxNjYkbzEzJGcxJHQxNzU3NjM2MTgzJGo0MyRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Drink The Sea",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-19 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/drink-the-sea-156786"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Michael Nau / Magic Tuber Stringband",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-27 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/michael-nau-2/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Electric Guest / SNACKTIME",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-07 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1124160"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Michael Shannon & Jason Narducy and Friends play R.E.M.’s Lifes Rich Pageant",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-04 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1138019"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "GoldFord",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-19 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1146309"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "JADE",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-16 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/jade-thats-showbiz-baby-the-tour-philadelphia-pennsylvania-02-16-2026/event/02006333AA4553C4?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ashnikko",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-13 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/ashnikko-smoochies-tour-philadelphia-pennsylvania-05-13-2026/event/0200632C9ACC269B?_gl=1*1wn2mse*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_H1KKSGW33X*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA..*_ga_C1T806G4DF*czE3NTg5MTc1MjQkbzE1JGcxJHQxNzU4OTE3NTM1JGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "God Bullies",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-16 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/god-bullies-158371"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ratboys / Florry",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-03 00:00:00],
+  external_link: "https://r5productions.com/event/ratboys-2/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Patrick Watson",
+  venue: "Arden Gild Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-21 00:00:00],
+  external_link:
+    "https://dice.fm/event/xe5ypa-patrick-watson-uh-oh-tour-21st-mar-arden-gild-hall-wilmington-tickets?pid=36d2aee9&_branch_match_id=1489821457631060515&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S8xNzc1TjJNTEy2NLYvyEyxNTZLMUpMTbVUqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAmw%2BD7EgAAAA%3D"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Yonder Mountain String Band",
+  venue: "XL Live",
+  region: "Central PA",
+  date: ~N[2026-02-18 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0200633697051ECF"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Spiritual Camp",
+  venue: "PhilaMOCA",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-01 00:00:00],
+  external_link:
+    "https://r5productions.com/event/spiritual-cramp/philamoca/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Isaiah Collier / Keyon Harrold",
+  venue: "Annenberg Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://pennlivearts.org/event/IsaiahKeyon"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Loudon Wainwright III / Chris Smither",
+  venue: "Annenberg Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link: "https://pennlivearts.org/event/LoudonChris"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gregory Alan Isakov",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-22 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/an-intimate-acoustic-evening-with-gregory-philadelphia-pennsylvania-01-22-2026/event/0200632BED954DE7?_gl=1*1deaku5*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sabaton",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-11 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/sabaton-legends-on-tour-philadelphia-pennsylvania-03-11-2026/event/0200632AC5B43896?_gl=1*1deaku5*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Raye",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-19 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/raye-this-tour-may-contain-new-philadelphia-pennsylvania-04-19-2026/event/02006330BB5E4270?_gl=1*1deaku5*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NTk0NDA0MDkkbzIkZzEkdDE3NTk0NDA0ODAkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Say She She / Katzú Oso",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-18 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/say-she-she-156557"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist:
+    "Sing Us Home Festival feat. The Menzingers, The Mountain Goats, Dave Hause & The Mermaid, and more",
+  venue: "Venice Island",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-01 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/singushomefest/events/sing-us-home-festival-2026-159027"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist:
+    "Sing Us Home Festival feat. The Menzingers, The Mountain Goats, Dave Hause & The Mermaid, and more",
+  venue: "Venice Island",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-02 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/singushomefest/events/sing-us-home-festival-2026-159027"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Felice Brothers",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-02 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/wxpn-welcomes-the-felice-brothers-vv1aezkgygkd-cghb"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mo Lowda & the Humble",
+  venue: "Tellus 360",
+  region: "Central PA",
+  date: ~N[2026-05-09 00:00:00],
+  external_link:
+    "https://www.tellus360.com/events/wxpn-welcomes-mo-lowda-the-humble-tailing-the-ghost-tour/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sam Greenfield",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-24 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/sam-greenfield-philadelphia-pennsylvania-04-24-2026/event/0200633A9BB74FEF?_gl=1*dfifkk*_ga*MTQ4MzMxNTk3Mi4xNzQ1OTg1NTE2*_ga_C1T806G4DF*czE3NjAwNDk3MDUkbzE0JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA..*_ga_H1KKSGW33X*czE3NjAwNDk3MDUkbzE1JGcxJHQxNzYwMDQ5NzA5JGo1NiRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Melrose Avenue / Autumn Kings / Stray View",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-24 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/melrose-avenue-160209"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Arturo O'Farrill",
+  venue: "Annenberg Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-08 00:00:00],
+  external_link: "https://pennlivearts.org/event/ArturoOFarrill"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Margo Price",
+  venue: "Strand Theatre at Appell Center for Performing Arts",
+  region: "Central PA",
+  date: ~N[2026-02-12 00:00:00],
+  external_link: "https://appellcenter.org/show/margo-price-wild-at-heart-tour/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Maddie & Tae",
+  venue: "Sherman Theater",
+  region: "Lehigh Valley",
+  date: ~N[2026-02-28 00:00:00],
+  external_link: "https://shermantheater.com/event/maddie-tae-love-light-tour/sherman-theater/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Nothing More / Catch Your Breath / Archers / Doobie",
+  venue: "Wind Creek Event Center",
+  region: "Lehigh Valley",
+  date: ~N[2026-02-21 00:00:00],
+  external_link: "https://www.windcreekeventcenter.com/events/nothing-more/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Queensrÿche",
+  venue: "The Newton Theatre",
+  region: "New Jersey",
+  date: ~N[2026-01-15 00:00:00],
+  external_link: "https://skypac.org/queensryche/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Wakeman & Son",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-03-25 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/rick-wakeman-1"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Format / Ben Kweller / Adult Moms",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-28 00:00:00],
+  external_link: "https://www.bowerypresents.com/shows/detail/1165157-the-format"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Subtronics / Juelz / Seth David / Blossom",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-06 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/subtronics-fibonacci-tour-2026-with-special-philadelphia-pennsylvania-03-06-2026/event/02006346D99734FD?_gl=1*h77d1e*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw*_ga_H1KKSGW33X*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tim Kubart and the Space Cadets",
+  venue: "Annenberg Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-03 00:00:00],
+  external_link: "https://pennlivearts.org/event/timkubart"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sabrina Claudio",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-28 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/sabrina-claudio-fall-in-love-with-philadelphia-pennsylvania-03-28-2026/event/0200635DD620CB06?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dry Cleaning / YHWH Nailgun",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1174868"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Alice Phoebe Lou / John Andrews",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-14 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1188572"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "CMAT",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-12 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1210736"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Railroad Earth",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/railroad-earth-162444"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Joy Formidable / Shy Western / Rhydian Dafydd",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-08 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/the-joy-formidable-160339"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Maria Somerville",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-25 00:00:00],
+  external_link:
+    "https://r5productions.com/event/maria-somerville/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rhiannon Giddens",
+  venue: "Miller Theater @ The Kimmel Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-05 00:00:00],
+  external_link:
+    "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/rhiannon-giddens"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Joseph Arthur",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-01 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/joseph-arthur-h8pqil"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Maysa",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link:
+    "https://citywinery.com/philadelphia/events/maysas-blue-velvet-soul-experience-l9j7lj"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mohini Dey",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-11 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/mohini-dey-x3hw8n"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Emily Scott Robinson",
+  venue: "City Winery",
+  region: nil,
+  date: ~N[2026-04-03 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/emily-scott-robinson-tzxo90"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Noah Rinker",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-21 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/noah-rinker-philadelphia-pennsylvania-02-21-2026/event/02006363C7F2A45A?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mei Semones",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-16 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/mei-semones-philadelphia-pennsylvania-04-16-2026/event/02006365970D8CCD?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Eidola / Nerv / Astronoid",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/eidola-148310"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Turnpike Troubadours / Robert Earl Keen",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-05 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/turnpike-troubadours-wild-america-tour-philadelphia-pennsylvania-02-05-2026/event/0200635E0D16C2C2?_gl=1*odtwxf*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "EMM / Bentley Robles",
+  venue: "Nikki Lopez",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-22 00:00:00],
+  external_link:
+    "https://www.ticketweb.com/event/emm-bentley-robles-nikki-lopez-philly-tickets/14579533"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Hudson Freeman",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-02 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-mfzfd-9st44"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Say Anything / Motion City Soundtrack",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-02-06 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1146302"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Outlaws / Artimus Pyle Band",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-27 00:00:00],
+  external_link: "https://www.keswicktheatre.com/events/detail/1178428"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sports",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-04 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/sports-160526"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "LaMP",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-22 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/ardmoremusichall/events/lamp-russ-lawton-scott-metzger-ray-paczkowski--159659"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Matt Pryor / Small Uncle",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-10 00:00:00],
+  external_link: "https://r5productions.com/event/matt-pryor-2/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Teeth",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-28 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/the-teeth-night-two/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rainbow Kitten Surprise / Common People",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-14 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/rainbow-kitten-surprise-bones-north-american-philadelphia-pennsylvania-03-14-2026/event/02006350E85BA600?_gl=1*8usaly*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjE1MDAwMjckbzEkZzEkdDE3NjE1MDAwMzMkajU0JGwwJGgw*_ga_H1KKSGW33X*czE3NjE1MDAwMjckbzEkZzEkdDE3NjE1MDAwMzMkajU0JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dean Johnson / Lily Seabird",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/dean-johnson-160840"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Divorce / MacBuck",
+  venue: "Milkboy",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-02 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/divorce-139289"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "St. Paul & the Broken Bones",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-23 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/st-paul-the-broken-bones-philadelphia-pennsylvania-04-23-2026/event/02006343943F2F40"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Doja Cat",
+  venue: "Xfinity Mobile Arena",
+  region: "Philadelphia Area",
+  date: ~N[2026-11-29 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/event/3000633AC3E34D89?utm_source=WEB&utm_medium=XMAWEB&utm_campaign=DOJACAT1129&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Natalie Jane",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-22 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/natalie-jane-158468"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Alexander Stewart",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-18 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/alexander-stewart-what-if-tour-philadelphia-pennsylvania-03-18-2026/event/02006356C13E850F?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Record Company",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-27 00:00:00],
+  external_link: "http://utphilly.com/events/detail/?event_id=1186014"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gary Numan",
+  venue: "The Queen",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-15 00:00:00],
+  external_link: "https://thequeenwilmington.com/events/gary-numan/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Hayley Williams / Water From Your Eyes",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-07 00:00:00],
+  external_link:
+    "https://www.bowerypresents.com/greater-philly/shows/detail/1219921-hayley-williams-at-a-bachelorette-party"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sheer Mag / Dirty Fences / Nancy / The Smarthearts",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-01 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/sheer-mag-3/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tyler Ramsey / Carl Broemel ",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-22 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/milkboy/events/tyler-ramsey-carl-broemel-celestun-tour-163443"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Cory Branan",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-01 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/cory-branan-164088"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ana Popovic",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-10 00:00:00],
+  external_link: "https://www.st94.com/events/ana-popovic-4/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Umphrey's McGEE",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-13 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/umphreys-mcgee-skys-the-limit-tour-philadelphia-pennsylvania-02-13-2026/event/02006350D4F29FE4?_gl=1*2dxw0w*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jack Johnson / Hermanos Gutiérrez",
+  venue: "TD Pavilion @ The Mann Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-27 00:00:00],
+  external_link: "https://highmarkmann.org/events/2026-06-27/jack-johnson"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ruel",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-23 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/ruel-kicking-my-feet-tour-philadelphia-pennsylvania-02-23-2026/event/02006365C8DE96C4?_gl=1*14jeebr*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "INJI",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-13 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1225288"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Melvin Seals / JGB",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-01 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/melvin-seals-jgb-159614"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Duane Betts / Palmetto Motel",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-23 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/ardmoremusichall/events/duane-betts-palmetto-motel-163690"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Arts Fishing Club",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-19 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/arts-fishing-club/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dinosaur Pile-Up ",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/dinosaur-pileup-philadelphia-pennsylvania-02-20-2026/event/0200636E9824BB16?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bryant Barnes / RealestK",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-25 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/bryant-barnes-presents-solace-tour-philadelphia-pennsylvania-03-25-2026/event/02006354DCE46AAF?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dirty Three",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-02 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/dirty-three-146886"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Agriculture/ Knoll / Nina Ryser",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/agriculture-147082"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bandits On The Run / Driftwood Soldier",
+  venue: "Nikki Lopez",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-08 00:00:00],
+  external_link:
+    "https://www.ticketweb.com/event/bandits-on-the-run-driftwood-nikki-lopez-philly-tickets/14727623"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Buffalo Traffic Jam",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-18 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/buffalo-traffic-jam-sold-out--165809"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Skullcrusher",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/skullcrusher-2/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Subtronics / AHEE / Dennett / St. Mary",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/subtronics-fibonacci-tour-2026-with-special-philadelphia-pennsylvania-03-07-2026/event/02006346DA673520?_gl=1*h77d1e*_ga*MTIyODU4NTU5Mi4xNzU1NzIyODcx*_ga_C1T806G4DF*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw*_ga_H1KKSGW33X*czE3NjA1NTY4MzEkbzMkZzEkdDE3NjA1NTY4NDEkajUwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Yumi Zouma / Ducks Ltd.",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-01 00:00:00],
+  external_link: "https://r5productions.com/event/yumi-zouma/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Noah Guthrie",
+  venue: "The Kelly Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-07 00:00:00],
+  external_link: "https://www.ticketleap.events/tickets/kellycenter/02072026"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Slambovian Circus of Dreams",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-30 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/the-slambovian-circus-zlwiwx"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "El Debarge",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/el-debarge-lwyigl"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ariella & Nicholas",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/ariella-nicolaas-7yxqbu"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Daniel Powter",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-22 00:00:00],
+  external_link:
+    "https://citywinery.com/philadelphia/events/daniel-powter-20-year-anniversary-of-bad-day-lvi9lb"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "MIKA",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-05 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/mika-spinning-out-tour-north-america-philadelphia-pennsylvania-05-05-2026/event/0200636D928AB445?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "HANABIE.",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-21 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/hanabie-north-america-tour-2026-philadelphia-pennsylvania-03-21-2026/event/02006365360DA235?_gl=1*mqqcjg*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Drain / No Pressure / Haywire / Secret World",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-27 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1220824"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Fat Mezz / Apple Juice Jones",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-15 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/fat-mezz-164508"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Keller Williams",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-04 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/keller-williams-154674"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sessa / Kolumbo",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-08 00:00:00],
+  external_link: "https://johnnybrendas.com/event/sessa/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Antarctigo Vespucci / Golden Apples",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-07 00:00:00],
+  external_link: "https://r5productions.com/event/antarctigo-vespucci/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Billy F Gibbons and the BFG Band",
+  venue: "The Grand",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-06 00:00:00],
+  external_link: "https://www.thegrandwilmington.org/productions/9168-billy-gibbons/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Hives",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-16 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-hives-philadelphia-pennsylvania-03-16-2026/event/02006343B01750A3?_gl=1*d4lghr*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjQ1NTQ5NTEkbzMkZzEkdDE3NjQ1NTQ5NTkkajUyJGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1NTQ5NTEkbzMkZzEkdDE3NjQ1NTQ5NTkkajUyJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Daniel Donato's Cosmic Country",
+  venue: "XL Live",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-03 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0200636A1A708F2C"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Boy George / Culture Club",
+  venue: "Wind Creek Event Center",
+  region: "Lehigh Valley",
+  date: ~N[2026-02-28 00:00:00],
+  external_link: "https://www.windcreekeventcenter.com/events/boy-george-culture-club/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Moontower",
+  venue: "Nikki Lopez",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-21 00:00:00],
+  external_link: "https://www.ticketweb.com/event/moontower-nikki-lopez-philly-tickets/14703143"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mike Dawes",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/mike-dawes-160446"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Brandi Carlile / The Head And The Heart",
+  venue: "Xfinity Mobil Arena",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-10 00:00:00],
+  external_link: nil
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Just Mustard",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-29 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/just-mustard/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Joe Russo's Almost Dead",
+  venue: "Stone Pony Summer Stage",
+  region: "New Jersey",
+  date: ~N[2026-05-22 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/00006331D7F03427"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Twen ",
+  venue: "Milkboy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-18 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/twen-146584"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Samples",
+  venue: "118 North",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-31 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/118north/events/the-samples-new-years-eve-celebration-158527"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Melissa Etheridge",
+  venue: "The Hershey Theatre",
+  region: "Central PA",
+  date: ~N[2026-05-08 00:00:00],
+  external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/melissa-etheridge/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bad Omens / Beartooth / PRESIDENT",
+  venue: "Xfinity Mobile Arena",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/event/30006356DDD46AB8?utm_source=WEB&utm_medium=XMAWEBSITE&utm_campaign=BADOMENS0313&_gl=1*1x5yjye*_gcl_au*MjA4MDQzMTY0Mi4xNzYxODU0Nzg0*_ga*MTQ3NzAxMjQ4NC4xNzYxODU0Nzg0*_ga_2X5Q2J1M51*czE3NjE4NTQ3ODQkbzEkZzAkdDE3NjE4NTQ3ODQkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Elucid / DJ Haram",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-04 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/elucid-dj-haram-philadelphia-pennsylvania-02-04-2026/event/0200635BA74F85B4?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "WITCHZ",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-02 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/witchz-presents-enter-afterlife-world-tour-philadelphia-pennsylvania-04-02-2026/event/02006356AA8E733A?_gl=1*aq26bv*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjE4NjU1NjkkbzE2JGcxJHQxNzYxODY1NTgwJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Chris Barron (of Spin Doctors)",
+  venue: "118 North",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-25 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/118north/events/chris-barron-of-spin-doctors--162521"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jessie J",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-27 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/jessie-j-no-secrets-tour-philadelphia-pennsylvania-01-27-2026/event/02006357AAF06C53?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jim E. Brown / My Wife's An Angel",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-16 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/jim-e-brown/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Art Brut",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-06 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/art-brut-bang-bang-rock-and-roll-plus-greatest-hits/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Dirty Grass Players",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-27 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/the-dirty-grass-players-161803"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jamie Fine",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-03 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/jamie-fine-163789"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Chávez / Ismaily / Saunier",
+  venue: "Solar Myth",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-08 00:00:00],
+  external_link:
+    "https://dice.fm/event/mx5xmk-chvez-ismaily-saunier-8th-jan-solar-myth-philadelphia-tickets?pid=efdf5368&_branch_match_id=1520547053822000896&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S8yTDVLSzEzTEpLMrIvyEyxTU1LSTM1NrNQqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAFsHgxkgAAAA%3D"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Joyce Manor / Militarie Gun / Teen Mortgage / Combat",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-22 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/alt-1045-presents-joyce-manor-militarie-philadelphia-pennsylvania-03-22-2026/event/02006342DE8C73C6?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Two Feet",
+  venue: "The Queen",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-16 00:00:00],
+  external_link: "https://thequeenwilmington.com/events/two-feet-the-next-steps-tour/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Quarters",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-14 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/quarters-philadelphia-pennsylvania-03-14-2026/event/02006366BC91C2A6?_gl=1*14jeebr*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Peter Hook & the Light",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-09-07 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1097905"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Infamous Stringdusters / Fireside Collective",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-21 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/ardmoremusichall/events/the-infamous-stringdusters-160319"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Thing",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-29 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/the-thing-2/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Marlon Magnée (of La Femme)",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-09-09 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/marlon-magn%c3%a9e-of-la-femme/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Capstan",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-15 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/capstan-cultural-divide-10-year-anniversary-philadelphia-pennsylvania-03-15-2026/event/0200636DA24EC998?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Naïka",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-11 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/na-ka-165559"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Caiola (of Mo Lowda & The Humble)",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-20 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/undergroundarts/events/caiola-of-mo-lowda-the-humble--165410"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Boys Like Girls / iDKHOW / Arrows In Action",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-09 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/boys-like-girls-the-soundtrack-of-philadelphia-pennsylvania-04-09-2026/event/02006354EBA3738C?_gl=1*1to4tkw*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Wheel / Sound and Shape",
+  venue: "Nikki Lopez",
+  region: nil,
+  date: ~N[2026-02-16 00:00:00],
+  external_link:
+    "https://www.ticketweb.com/event/wheel-sound-and-nikki-lopez-philly-tickets/14707813"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Buffchick / Ezra Glatt",
+  venue: "Warehouse on Watts",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-mgny5"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Summer Set",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-summer-set-philadelphia-pennsylvania-03-13-2026/event/0200635CE339B8F1?_gl=1*1v0nydt*_ga*MjA5MTYzMTgwMy4xNzQ3MzYxNDUy*_ga_C1T806G4DF*czE3NjIzNjUxODYkbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw*_ga_H1KKSGW33X*czE3NjIzNjUxODckbzMkZzEkdDE3NjIzNjU0NDMkajU5JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "DRAMA",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1157604"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Brook & The Bluff",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-31 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1192971"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "NewDad / Freak Slug",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-30 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1168745"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Luciano / Tabernacle Band / Luv Smith",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-11 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/luciano-163207"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "moe. ",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/moe--159836"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Monaleo",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-15 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/monaleo-philadelphia-pennsylvania-02-15-2026/event/0200635009F3B16D?_gl=1*2dxw0w*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "redveil",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-21 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/redveil-philadelphia-pennsylvania-02-21-2026/event/02006365A688B927?_gl=1*14jeebr*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Growlers",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-21 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1229685"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Langhorne Slim",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-15 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/langhorne-slim-156668"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Shadowgrass",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-10 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/shadowgrass-163139"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Traitrs",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-12 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/traitrs/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dexter and The Moonrocks",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-05 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/dexter-and-the-moonrocks-philadelphia-pennsylvania-03-05-2026/event/0200636697329B80?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Red Rum Club",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-30 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/red-rum-club-philadelphia-pennsylvania-04-30-2026/event/0200636AD738DF55?_gl=1*1r5t4fy*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ediola / Nerv / Astronoid",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-14 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/eidola-148310"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Miguel",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-21 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/miguel-caos-tour-philadelphia-pennsylvania-02-21-2026/event/02006354EB4A7365?_gl=1*1to4tkw*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Murder Junkies / Rubbish / Sloppy Bitches / Bad To Worse",
+  venue: "Nikki Lopez",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link:
+    "https://www.ticketweb.com/event/hostile-city-oi-council-presents-nikki-lopez-philly-tickets/14721393"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Fireworks Gospel",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-13 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-55fh6-3te8k-dnmyb-9kyj5-hbe3d"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jonathan Butler",
+  venue: "City Winery",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-04 00:00:00],
+  external_link: "https://citywinery.com/philadelphia/events/jonathan-butler-4hwrgf"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bad Bad Hats",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-01 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/bad-bad-hats-2/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Magnolia & Johnson Electric Co.",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-09 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/magnolia-johnson-electric-co/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Anthms / Cheer Up Dusty / Altarboy / My Cousin's Girlfriend's House",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-28 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/anthms-164949"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Adjust the Sails",
+  venue: "Nikki Lopez",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-15 00:00:00],
+  external_link:
+    "https://www.ticketweb.com/event/adjust-the-sails-nikki-lopez-philly-tickets/14711973"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Snow Strippers",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-14 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/snow-strippers-philadelphia-pennsylvania-01-14-2026/event/02006365E691D2F3?_gl=1*v4xxgo*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Stephen Wilson Jr.",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-25 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/stephen-wilson-jr-gary-the-torch-philadelphia-pennsylvania-03-25-2026/event/02006366CBA3CF45?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Perfume Genius",
+  venue: "The Sanctuary @ The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-01 00:00:00],
+  external_link:
+    "https://r5productions.com/event/perfume-genius-duo/the-sanctuary-of-the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jimmy Webb",
+  venue: "The Grand",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://www.thegrandwilmington.org/productions/8951-jimmy-webb/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Marty Stuart & His Fabulous Superlatives / Molly Tuttle",
+  venue: "Strand Theatre",
+  region: "Central PA",
+  date: ~N[2026-02-14 00:00:00],
+  external_link: "https://appellcenter.org/show/marty-stuart-molly-tuttle/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tom Rush",
+  venue: "Musikfest Café",
+  region: "Lehigh Valley",
+  date: ~N[2026-03-21 00:00:00],
+  external_link:
+    "https://www.artsquest.org/event/an-evening-with-tom-rush-accompanied-by-matt-nakoa/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Charley Crockett",
+  venue: "Wind Creek Event Center",
+  region: "Lehigh Valley",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://www.windcreekeventcenter.com/events/charley-crockett/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Everything Yes",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-07 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/everything-yes-160301"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Del Water Gap",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/del-water-gap-chasing-the-chimera-philadelphia-pennsylvania-01-24-2026/event/02006348274D8832?_gl=1*v4xxgo*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bob Moses / Cannons",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-10 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/bob-moses-cannons-afterglow-tour-philadelphia-pennsylvania-04-10-2026/event/0200634F3302B783?_gl=1*1i7050z*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_H1KKSGW33X*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw*_ga_C1T806G4DF*czE3NjQwMTI0NTckbzEkZzEkdDE3NjQwMTI0NzIkajQ1JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jordan Ward",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-20 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/jordan-ward-presents-the-apartment-tour-philadelphia-pennsylvania-03-20-2026/event/02006366E835E4F7?_gl=1*mqqcjg*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw*_ga_H1KKSGW33X*czE3NjQwMTYyNTQkbzEkZzEkdDE3NjQwMTYyNzEkajQzJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gogol Bordello",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-24 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1229711"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Big Benny Bailey / The Hill Country Devil / Reese Florence",
+  venue: "The Fallser Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-13 00:00:00],
+  external_link:
+    "https://thefallserclub.com/event/big-benny-bailey-ep-release-party-with-the-hill-country-devil-and-reese-florence/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "James McMurtry",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-26 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/james-mcmurtry-160344"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Flyte",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-07 00:00:00],
+  external_link: "https://johnnybrendas.com/event/flyte/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Fire From The Gods/ For the Fallen Dreams / VRSTY / Divide The Fall",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-03 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/fire-from-the-gods-the-human-philadelphia-pennsylvania-02-03-2026/event/0200636DF9FEC294?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Yellow Days",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-17 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/yellow-days-rock-and-a-hard-philadelphia-pennsylvania-03-17-2026/event/0200635C953C893C?_gl=1*b1zink*_ga*MjExNTMzOTc5MS4xNzQxNDU3MTAw*_ga_C1T806G4DF*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA..*_ga_H1KKSGW33X*czE3NjQwMjU3NDAkbzE3JGcxJHQxNzY0MDI1NzUxJGo0OSRsMCRoMA.."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Nude Party / Tobacco City",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-27 00:00:00],
+  external_link: "https://www.tixr.com/groups/undergroundarts/events/the-nude-party-161547"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist:
+    "The Annual Marley Birthday Bash ft. Mighty Mystic / Wareika Hill / Ras Jem / Solomonic Sound\u00A0",
+  venue: "Underground Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-05 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/undergroundarts/events/the-annual-marley-birthday-bash-ft-mighty-mystic-164774"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Waxahatchee / MJ Lenderman / Brennan Wedl",
+  venue: "The Met",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-18 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/waxahatchee-mj-lenderman-with-special-guest-philadelphia-pennsylvania-04-18-2026/event/02006367AA36BE5E?_gl=1*1to4tkw*_ga*MzA0MjU5MDExLjE3NjE1MDAwMjc.*_ga_C1T806G4DF*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw*_ga_H1KKSGW33X*czE3NjQ1MjkwMTMkbzMkZzEkdDE3NjQ1MjkwMjkkajQ0JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Anastasia Coope / Autobahn / Body Liars / The Place Lives",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-19 00:00:00],
+  external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-x5f8c"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Flyingfish / Loveletter",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-17 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sword II",
+  venue: "Warehouse on Watts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-19 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-xwswh"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sharp Pins / Te Vista",
+  venue: "Jerry's on Front",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link:
+    "https://r5productions.com/event/sharp-pins/jerrys-on-front/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Leo Kottke",
+  venue: "The Grand",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-14 00:00:00],
+  external_link: "https://www.thegrandwilmington.org/productions/9085-leo-kottke/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tom Hamilton",
+  venue: "XL Live",
+  region: "Central PA",
+  date: ~N[2026-01-29 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0200634DC7F16C48"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rob Thomas",
+  venue: "Wind Creek Event Center",
+  region: "Lehigh Valley",
+  date: ~N[2026-01-16 00:00:00],
+  external_link: "https://www.windcreekeventcenter.com/events/rob-thomas/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dead Boys",
+  venue: "Nikki Lopez",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link: "https://www.ticketweb.com/event/dead-boys-nikki-lopez-philly-tickets/14667893"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Riverside / My Favorite / Polaroid Fade",
+  venue: "PhilaMOCA",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/45294056?_gl=1*9th8wo*_ga*NjgzNzc2NzcwLjE3NjQ1NTQyODQ.*_ga_YQH4P4GGFF*czE3NjQ1NTQyODQkbzEkZzAkdDE3NjQ1NTQyODQkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Shane Smith and the Saints",
+  venue: "XL Live",
+  region: "Central PA",
+  date: ~N[2026-02-12 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0200635482A51BAF"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Diana Krall",
+  venue: "Wind Creek Event Center",
+  region: "Lehigh Valley",
+  date: ~N[2026-02-13 00:00:00],
+  external_link: "https://www.windcreekeventcenter.com/events/diana-krall-2/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Addison Grace / Sushi Soucy",
+  venue: "Nikki Lopez",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-08 00:00:00],
+  external_link:
+    "https://www.ticketweb.com/event/addison-grace-sushi-soucy-nikki-lopez-philly-tickets/14703463"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Nunslaughter",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/nunslaughter-158490"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "76th Street",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-19 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/76th-street-164517"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Scratch",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-10 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/the-scratch-164125"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Snacktime",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2025-12-31 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/snacktime-21-vv1aovnbwgagacnj"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Clap Your Hands Say Yeah",
+  venue: "Philadelphia Ethical Society",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link:
+    "https://r5productions.com/event/clap-your-hands-say-yeah-piano-voice/philadelphia-ethical-society/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist:
+    "On A Winter's Night feat. Cliff Eberhardt, John Gorka, Lucy Kaplansky & Patty Larkin",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-25 00:00:00],
+  external_link:
+    "https://www.st94.com/events/on-a-winters-night-featuring-cliff-eberhardt-john-gorka-lucy-kaplansky-patty-larkin/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Josh Ritter",
+  venue: "West Art",
+  region: "Central PA",
+  date: ~N[2026-01-25 00:00:00],
+  external_link: "https://www.westartlanc.com/events/live-at-west-art-an-evening-with-josh-ritter"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "G. Love & Special Sauce / Makua Rothman",
+  venue: "Mickey's Black Box",
+  region: "Central PA",
+  date: ~N[2026-01-27 00:00:00],
+  external_link: "https://mickeysblackbox.com/event/g-love-special-sauce/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ben Arnold / James Maddock",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-27 00:00:00],
+  external_link: "https://www.st94.com/events/wxpn-welcomes-ben-arnold-james-maddock/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "G. Love & Special Sauce / Makua Rothman",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link:
+    "https://www.st94.com/events/g-love-special-sauce-lemonade-20th-anniversary-tour-with-special-guest-makua/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Marty Stuart & Molly Tuttle",
+  venue: "F.M. Kirby Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-13 00:00:00],
+  external_link:
+    "https://kirbycenter.org/show/marty-stuart-molly-tuttle-cosmic-twang-guitars-on-fire/?gad_source=1&gad_campaignid=23277202791&gbraid=0AAAAADAXqhz02HR6DywzxlUkfTZ8HAfoM&gclid=Cj0KCQiAubrJBhCbARIsAHIdxD9XAN1632cwqwc6ZqokY9r9svZ177WQQjoKnKG5mVgV2EQ32ej-U7gaAsPIEALw_wcB"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Alejandro Escovedo & The Electric Saints",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-19 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/78995150/wxpn-welcomes-alejandro-escovedo-the-electric-saints-sellersville-sellersville-theater-1894?_gl=1*1prmcvf*_gcl_au*OTg5MDcxMDQ0LjE3NjQ2OTg3Mjc.*_ga*NTcxMDg4NjQ2LjE3NjQ2OTg3Mjc.*_ga_4PHVE2WDGX*czE3NjQ2OTg3MjYkbzEkZzEkdDE3NjQ3MDA3NzkkajMzJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Heavenly / Lightheaded / Swansea Sound",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/78665011/heavenly-philadelphia-johnny-brendas?partner_id=100&_gl=1*13968s*_ga*MTkyNzM4MzkzNC4xNzYwNDU1MDAw*_ga_QG5WHQ48L9*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMA..*_ga_ZN6VN3GQER*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMTQ1MzM1NjA3NQ..*_ga_FCSCLPJM3L*czE3NjQ3MDExNDAkbzE1JGcxJHQxNzY0NzAxMTgyJGoxOCRsMCRoMA..&_ga=2.78809492.1247178320.1764701140-1927383934.1760455000"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dominic Angelella & Eric Slick / The Tisburys / Twin Princess",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/48473965/hardcore-friends-show-philadelphia-johnny-brendas?partner_id=100&_gl=1*13968s*_ga*MTkyNzM4MzkzNC4xNzYwNDU1MDAw*_ga_QG5WHQ48L9*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMA..*_ga_ZN6VN3GQER*czE3NjQ3MDUzNTckbzE2JGcwJHQxNzY0NzA1MzU3JGo2MCRsMCRoMTQ1MzM1NjA3NQ..*_ga_FCSCLPJM3L*czE3NjQ3MDExNDAkbzE1JGcxJHQxNzY0NzAxMTgyJGoxOCRsMCRoMA..&_ga=2.78809492.1247178320.1764701140-1927383934.1760455000"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lyle Lovett and John Hiatt",
+  venue: "Lansdowne Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-12 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/99769488/lyle-lovett-and-john-hiatt-together-on-stage-lansdowne-lansdowne-theater?partner_id=100&_gl=1*1d3bqk*_ga*NTUzNDc4MzgyLjE3NjQ3MDEwNjQ.*_ga_SPX33KW1CK*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxODk0NDE5MDQz*_ga_CZDZTZF9HG*czE3NjQ3MDEwNjQkbzEkZzEkdDE3NjQ3MDEwNzMkajUxJGwwJGgw*_ga_XPKMCZJK6D*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxNjYxOTY2MzE.*_gcl_au*OTQwNzg1MS4xNzY0NzAxMDY0"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Graham Nash",
+  venue: "Lansdowne Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-04 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/55094314/graham-nash-lansdowne-lansdowne-theater?partner_id=100&_gl=1*wjgsns*_ga*NTUzNDc4MzgyLjE3NjQ3MDEwNjQ.*_ga_SPX33KW1CK*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwOTQkajI5JGwwJGgxODk0NDE5MDQz*_ga_CZDZTZF9HG*czE3NjQ3MDEwNjQkbzEkZzEkdDE3NjQ3MDEwOTQkajMwJGwwJGgw*_ga_XPKMCZJK6D*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxNjYxOTY2MzE.*_gcl_au*OTQwNzg1MS4xNzY0NzAxMDY0"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Joe Jackson",
+  venue: "Lansdowne Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-07-17 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/54681773/joe-jackson-lansdowne-lansdowne-theater?partner_id=100&_gl=1*5tvhdt*_ga*NTUzNDc4MzgyLjE3NjQ3MDEwNjQ.*_ga_SPX33KW1CK*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwOTQkajI5JGwwJGgxODk0NDE5MDQz*_ga_CZDZTZF9HG*czE3NjQ3MDEwNjQkbzEkZzEkdDE3NjQ3MDEwOTQkajMwJGwwJGgw*_ga_XPKMCZJK6D*czE3NjQ3MDEwNjMkbzEkZzEkdDE3NjQ3MDEwNzMkajUwJGwwJGgxNjYxOTY2MzE.*_gcl_au*OTQwNzg1MS4xNzY0NzAxMDY0"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Cat Power",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-08 00:00:00],
+  external_link:
+    "https://www.axs.com/events/1210724/cat-power-tickets?_gl=1*imzb55*_gcl_au*ODk0NTE3MTAxLjE3NjA0NTQ5MzU."
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Alejandro Escovedo & The Electric Saints",
+  venue: "Arden Gild Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link:
+    "https://dice.fm/event/6dxn82-wxpn-welcomes-alejandro-escovedo-the-electric-saints-20th-feb-arden-gild-hall-wilmington-tickets?pid=36d2aee9&_branch_match_id=1364963258442528850&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c8wt7A0TzNItDQwsbQvyEyxNTZLMUpMTbVUqytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAKHNokEgAAAA%3D"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Shemekia Copeland",
+  venue: "Sellersville Theater",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-18 00:00:00],
+  external_link:
+    "https://www.etix.com/ticket/p/88134560/wxpn-welcomes-shemekia-copeland-sellersville-sellersville-theater-1894?_gl=1*1rz2xxi*_gcl_au*OTg5MDcxMDQ0LjE3NjQ2OTg3Mjc.*_ga*NTcxMDg4NjQ2LjE3NjQ2OTg3Mjc.*_ga_4PHVE2WDGX*czE3NjQ2OTg3MjYkbzEkZzEkdDE3NjQ3MDA5NTEkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tyler Childers",
+  venue: "Hersheypark Stadium",
+  region: "Central PA",
+  date: ~N[2026-06-11 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0200637ABB20C7BA"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rhiannon Giddens",
+  venue: "Miller Theater @ Ensemble Arts Philly",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-05 00:00:00],
+  external_link:
+    "https://www.ensembleartsphilly.org/series-and-subscriptions/jazz-series/rhiannon-giddens"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mt. Joy",
+  venue: "Freedom Mortgage Pavilion",
+  region: "New Jersey",
+  date: ~N[2026-09-25 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/mt-joy-2026-celebrating-10-years-camden-new-jersey-09-25-2026/event/0200637490A59865?_gl=1*10i5bfy*_ga*NTM2NTkyNzA4LjE3NjQ3MDY5NDc.*_ga_H1KKSGW33X*czE3NjQ3MDY5NDckbzEkZzEkdDE3NjQ3MDY5NDkkajU4JGwwJGgw*_ga_C1T806G4DF*czE3NjQ3MDY5NDckbzEkZzEkdDE3NjQ3MDY5NDkkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Band Perry",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-01-11 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/the-band-perry"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Melissa Etheridge",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-04-10 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/melissa-etheridge-2"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bad Omens",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-03-10 00:00:00],
+  external_link: "https://www.prucenter.com/events/bad-omens"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Early November / Hellogoodbye",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-02-27 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1231964"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "St. Lucia",
+  venue: "White Eagle Hall",
+  region: "New Jersey",
+  date: ~N[2026-03-13 00:00:00],
+  external_link: "https://wl.eventim.us/event/st-lucia/672183?afflky=WhiteEagleHall"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ben Quad / Riley! / Footballhead / Aren't We Amphibians",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-y9cm7"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bone Weapon / Dridge / Spellhammer / Nunnery",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/bone-weapon-dridge/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Antlers",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-22 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/the-antlers/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Blood Cultures",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-05 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/blood-cultures/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ryan Davis & The Roadhouse Band / Rosali",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-03 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1242079"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Born Without Bones / twentythreenineteen",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-27 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-7dkyg"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Treasure Pains / Lowercoaster / Boy Name Sue / At Night",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/l8kwzfebctmtlfg-ayyhp-2bne2-jhxrt-lda4y-f3wn6-kkd7f"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Oceanator / Hit Like A Girl / Universal Girlfriend / Frances Quinlan",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-06 00:00:00],
+  external_link:
+    "https://r5productions.com/event/no-more-dysphoria-vii/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "White Reaper / Drug Church / Public Opinion",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-02 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1265254"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jake Owen / Kendell Marvel",
+  venue: "Strand Theatre @ Appell Center for the Performing Arts",
+  region: "Central PA",
+  date: ~N[2026-02-28 00:00:00],
+  external_link: "https://appellcenter.org/show/jake-owen/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Puscifer / Dave Hill",
+  venue: "Hershey Theatre",
+  region: "Central PA",
+  date: ~N[2026-04-08 00:00:00],
+  external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/puscifer/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Slick Rick / Shaw Calhoune",
+  venue: "Phantom Power",
+  region: "Central PA",
+  date: ~N[2026-01-11 00:00:00],
+  external_link:
+    "https://www.eventbrite.com/e/slick-rick-w-shaw-calhoune-tickets-1967180777661?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ballyhoo! / Artikal Sound System",
+  venue: "XL Live",
+  region: "Central PA",
+  date: ~N[2026-03-07 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/02006378EB38BACC"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Slaughter To Prevail / Whitechapel / Attila",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-10 00:00:00],
+  external_link:
+    "https://www.axs.com/events/1253413/slaughter-to-prevail-north-america-2026-tickets?skin=fmh"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Al Olender",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-26 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/al-olender-168895"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Train / George Pippen",
+  venue: "Wind Creek Steel Stage at PNC Plaza",
+  region: "Lehigh Valley",
+  date: ~N[2026-08-03 00:00:00],
+  external_link: "https://www.artsquest.org/event/train/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dogs In A Pile",
+  venue: "Sherman Theater",
+  region: "Lehigh Valley",
+  date: ~N[2026-04-11 00:00:00],
+  external_link: "https://shermantheater.com/event/dogs-in-a-pile-saturday/sherman-theater/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "South Orange International Blues Fest",
+  venue: "SOPAC",
+  region: "New Jersey",
+  date: ~N[2026-02-06 00:00:00],
+  external_link:
+    "https://sopacnow.my.salesforce-sites.com/ticket/?_gl=1*1vssmh4*_ga*ODUyODgyNDQ2LjE3NjY0NDUxNjA.*_ga_QHQ5G80DZ3*czE3NjY0NDUxNTkkbzEkZzEkdDE3NjY0NDUxNjQkajU1JGwwJGgw#/instances/a0FPa0000035mNFMAY/sectionGroups/a0bPa000004GT5NIAW"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Reverend Horton Heat / Black Joe Lewis / Piñata Protest",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-04-15 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1261318"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sun God / Lowercase Roses / Pontiac Flare / Milk Dud",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-25 00:00:00],
+  external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-x5f8c-897pt"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "TAUK / MJT the Band",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-14 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/tauk-156663"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "King Slender / Memory Entry / Detach The Lands / Mt. Ida",
+  venue: "Cousin Danny's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link: "https://www.instagram.com/cousindannyslounge/?hl=en"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sound Tribe Sector 9 / Thought Process",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-22 00:00:00],
+  external_link: "https://www.brooklynbowl.com/philadelphia/events/detail/sts9-vv1aovnavgac5fg0"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Benee / Bayli ",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-16 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/benee-particles-tour-vv1aezkuigkega514"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dance With The Dead / Magic Sword / Megan McDuffee",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-01 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/dance-with-the-dead-magic-sword-the-face-off-tour-2026-vv16ovnq8aaz7u15a"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The New Pornographers / Will Sheff (Okkervil River)",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-24 00:00:00],
+  external_link:
+    "https://www.axs.com/events/1226188/the-new-pornographers-tickets?skin=keswick&src=AEGLIVE_WROAKDTT030115VEN001&_gl=1*1h5oti*_gcl_au*MTQ4Nzc5MjM4My4xNzY0NzA2NzMw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Yolanda Adams",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-01-29 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/yolanda-adams"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Paul Anka",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-04-15 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/paul-anka-4"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Alejandro Sanz",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-04-17 00:00:00],
+  external_link: "https://www.prucenter.com/events/alejandro-sanz"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Niko Moon",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-04-10 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1183898"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "James McMurtry",
+  venue: "White Eagle Hall",
+  region: "New Jersey",
+  date: ~N[2026-04-05 00:00:00],
+  external_link: "https://wl.eventim.us/event/james-mcmurtry/671381?afflky=WhiteEagleHall"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Drew and Ellie Holcomb",
+  venue: "The Colonial Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-05 00:00:00],
+  external_link:
+    "https://thecolonialtheatre.com/events/live-music/drew-and-ellie-holcomb-never-gonna-let-you-go-tour/?doing_wp_cron=1764799023.0326209068298339843750"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Close Drive / Cheap 52 / Tucked In",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/close-drive/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Field Medic / Euphoria Again",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-15 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/field-medic/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Brian Aubert / Che Arthur / Christopher Crooner",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-19 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/brian-aubert/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sweet Pill",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-19 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1220406"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ape School / Flanafi / The Santo Casur",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-cfpzj"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Spilly Cave / Ski Club / Goings",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-16 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-trnxx"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tashi Dorji / Che Chen / Jamal Moore",
+  venue: "Asian Arts Initiative",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-28 00:00:00],
+  external_link: "https://r5productions.com/event/tashi-dorji/asian-arts-initiative/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bahamas / Sister Ray",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-12 00:00:00],
+  external_link: "https://r5productions.com/event/bahamas/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dear Season / Lowercoaster / Sharing Contest",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-08 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/dear-season-lower-coaster-sharing-contest/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "AK",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-22 00:00:00],
+  external_link: "https://kungfunecktie.com/event/ak/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Garden Roads / Neil Nathan / The No Good Crowd",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-14 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/the-garden-roads/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Daniel Romano's Outfit / Shadow Show / Mod Lang",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-16 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/daniel-romanos-outfit-shadow-show-mod-lang/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Glom / Snowmen",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-05 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/glom-snowmen/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tobacco Road",
+  venue: "Silk City Diner",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link: "https://www.silkcityphilly.com/events/1694/tobacco-road"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "August Burns Red / The Amity Affliction",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-17 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/august-burns-red-the-amity-affliction-philadelphia-pennsylvania-05-17-2026/event/02006375DA8856A7?_gl=1*xddi5i*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bumpin Uglies",
+  venue: "The Queen",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-14 00:00:00],
+  external_link: "https://thequeenwilmington.com/events/bumpin-uglies/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Wonder Years",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-12 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-12-2026/event/0200637AF0F8EDAF?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "All That Remains / Born of Osiris / Dead Eyes",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-30 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/all-that-remains-with-special-guests-philadelphia-pennsylvania-04-30-2026/event/0200638CE5D4695B?_gl=1*1op1khl*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Old 97's",
+  venue: "Englewood Hershey",
+  region: "Central PA",
+  date: ~N[2026-04-02 00:00:00],
+  external_link: "https://www.eventbrite.com/e/old-97s-tickets-1978176945495?aff=oddtdtcreator"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Zachary Ross",
+  venue: "Phantom Power",
+  region: "Central PA",
+  date: ~N[2026-01-02 00:00:00],
+  external_link:
+    "https://www.eventbrite.com/e/zachary-ross-of-man-overboard-tickets-1976602382936?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dry Kill Logic / Dizasterpiece",
+  venue: "Phantom Power",
+  region: "Central PA",
+  date: ~N[2026-04-17 00:00:00],
+  external_link:
+    "https://www.eventbrite.com/e/dry-kill-logic-the-decades-of-distance-tour-w-dizasterpiece-tickets-1786281529139?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lacuna Coil",
+  venue: "XL Live",
+  region: "Central PA",
+  date: ~N[2026-04-30 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0200638C90549709"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Machine / estelle allen / Father Koi / angel jelly",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/estelle-allen-169423"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Congress The Band / Benny G / Zane Christopher",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-28 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/congress-the-band-166781"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Renee Christine / Lydia von Hof",
+  venue: "Fowler Blast Furnace Room @ ArtsQuest Center",
+  region: "Lehigh Valley",
+  date: ~N[2026-01-30 00:00:00],
+  external_link:
+    "https://secure.artsquest.org/Online/seatSelect.asp?createBO%3A%3AWSmap=1&BOparam%3A%3AWSmap%3A%3AloadBestAvailable%3A%3Aperformance_ids=D843D777-F656-4220-AEC3-4DBE7A32924B&_gl=1*gwqgx8*_ga*ODA0NTgyNTkzLjE3NjQ1NTc2NzI.*_ga_TYW0039QHS*czE3NjYxNzI1MzYkbzIkZzEkdDE3NjYxNzI2MjAkajM3JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Hunter Hayes / BLÜ EYES",
+  venue: "The Newton Theatre",
+  region: "New Jersey",
+  date: ~N[2026-03-29 00:00:00],
+  external_link: "https://skypac.org/hunter-hayes/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "GWAR / Soulfly / King Parrot",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-03-26 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1259543"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "JJ Grey & Mofro",
+  venue: "Strand Theatre @ Appell Center for Performing Arts",
+  region: "Central PA",
+  date: ~N[2026-02-26 00:00:00],
+  external_link: "https://tickets.appellcenter.org/10303/10304"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Commodores",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-02-06 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/the-commodores"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dar Williams",
+  venue: "The Newton Theatre",
+  region: "New Jersey",
+  date: ~N[2026-02-05 00:00:00],
+  external_link: "https://skypac.org/dar-williams/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tigran Hamasyan",
+  venue: "SOPAC",
+  region: "New Jersey",
+  date: ~N[2026-03-15 00:00:00],
+  external_link: "https://www.sopacnow.org/events/tigran-hamsyan-2026/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "MC Davo / Sabino",
+  venue: "White Eagle Hall",
+  region: "New Jersey",
+  date: ~N[2026-02-04 00:00:00],
+  external_link: "https://wl.eventim.us/event/mc-davo-and-sabino/669946?afflky=WhiteEagleHall"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Camera Obscura",
+  venue: "White Eagle Hall",
+  region: "New Jersey",
+  date: ~N[2026-05-28 00:00:00],
+  external_link: "https://wl.eventim.us/event/camera-obscura/670715?afflky=WhiteEagleHall"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mavis Staples",
+  venue: "The Colonial Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-26 00:00:00],
+  external_link: "https://thecolonialtheatre.com/events/live-music/mavis-staples/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "HAFFWAY / RYMAN",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-28 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/haffway-the-wither-tour/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Circle Jerks / Gorilla Biscuits",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-03 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/circle-jerks-gorilla-biscuits-philadelphia-pennsylvania-04-03-2026/event/02006366FAC5F26C?_gl=1*a8yt2s*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Iron & Wine / Improvement Movement",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-11 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1255597"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "John Moreland / Patterson Hood",
+  venue: "Capitol Theatre @ Appell Center for the Performing Arts",
+  region: "Central PA",
+  date: ~N[2026-03-22 00:00:00],
+  external_link: "https://appellcenter.org/show/caplive-john-moreland-patterson-hood/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Melissa Etheridge",
+  venue: "Hershey Theatre",
+  region: "Central PA",
+  date: ~N[2026-05-08 00:00:00],
+  external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/melissa-etheridge/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Koffin Kats / Playboy Manbaby / Carrie Nation & The Speakeasy",
+  venue: "Phantom Power",
+  region: "Central PA",
+  date: ~N[2026-02-07 00:00:00],
+  external_link:
+    "https://www.eventbrite.com/e/koffin-kats-w-playboy-manbaby-carrie-nation-the-speakeasy-more-tickets-1934401349509?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Railroad Earth",
+  venue: "XL Live",
+  region: "Central PA",
+  date: ~N[2026-04-24 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/02006386B54EB174"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist:
+    "LatinFest Urbano feat. Nio Garcia, Miky Woodz, Secreto, Alex Sensation, Hozwal, Romwa",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-10-18 00:00:00],
+  external_link: "https://www.bowerypresents.com/shows/detail/1129944-latinfest-urbano"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Joe Jordan",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/joe-jordan-168105"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Fantasma / Ex-Tradition / Laughing Cocks / Early Grave",
+  venue: "Cousin Danny's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-07 00:00:00],
+  external_link: "https://www.instagram.com/cousindannyslounge/?hl=en"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Summer Salt / Boyscott / Wabie",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-05 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/summer-salt-reside-north-america-tour-vv1aezkgxgkdbqb2l"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Early November / Hellogoodbye",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/the-early-november-hellogoodbye-20-years-young-vv1aezkusgkdb1tsn"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Moss",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-23 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/the-moss-vv1ffzbs0xjyzd5ck"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sugarhill Gang",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-01-10 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/sugarhill-gang"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Air Supply",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-03-13 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/air-supply-50-anniversary-celebration"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "New Edition / Boyz II Men / Toni Braxton",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-02-13 00:00:00],
+  external_link: "https://www.prucenter.com/events/new-edition"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Meshell Ndegeocello",
+  venue: "SOPAC",
+  region: "New Jersey",
+  date: ~N[2026-02-05 00:00:00],
+  external_link: "https://www.sopacnow.org/events/meshell-ndegeocello/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Machine Girl",
+  venue: "White Eagle Hall",
+  region: "New Jersey",
+  date: ~N[2026-02-27 00:00:00],
+  external_link: "https://wl.eventim.us/event/machine-girl/667908?afflky=WhiteEagleHall"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dog Fest: Armbite, Fruit Dawg, Pennydog, Dog Beach, Haunt Dog",
+  venue: "Philly Style Pizza",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-10 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-lcskj-9www2"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Rick Wakeman & Son",
+  venue: "The Colonial Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link: "https://thecolonialtheatre.com/events/live-music/strictly-wakeman/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Added Color / NYSA / The Angies / Ranchos",
+  venue: "Silk City Diner",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link: "https://www.silkcityphilly.com/events/1693/added-color-nysa-the-angies-ranchos"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "DAVE",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/dave-the-boy-who-played-the-philadelphia-pennsylvania-04-17-2026/event/0200635911B2BE05?_gl=1*91v5a*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Fat Mezz",
+  venue: "The Queen",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-23 00:00:00],
+  external_link: "https://thequeenwilmington.com/events/fat-mezz/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Wonder Years",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-10 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-10-2026/event/0200637AEB3EE93B?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Arm's Length",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-26 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/arms-length-theres-a-whole-world-philadelphia-pennsylvania-04-26-2026/event/02006383F2A8E6D2?_gl=1*1op1khl*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Atmosphere / Sage Francis / R. A. The Rugged Man / Kool Keith",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/atmosphere-winter-carnival-tour-2026-vv17fzbvgkxbyagn"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "I See Stars / Mothica / Until I Wake / Diamante",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-02 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/i-see-stars-spin-the-wheel-tour-vv1aovnuoga2kmz4"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Touché Amoré",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/touche-amore-stage-four-10-year-anniversary-vv1aovnpvgau0bym"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lee Brice",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/lee-brice-acoustic"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "moe.",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-04-11 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/moe"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "B2K / Bow Wow",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-04-05 00:00:00],
+  external_link: "https://www.prucenter.com/events/b2k-bow-wow"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Cheap Trick",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-03-20 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1225439"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gary Numan",
+  venue: "White Eagle Hall",
+  region: "New Jersey",
+  date: ~N[2026-03-19 00:00:00],
+  external_link: "https://wl.eventim.us/event/gary-numan/668434?afflky=WhiteEagleHall"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Chuck Prophet & His Cumbia Shoes",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-25 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/ardmoremusichall/events/chuck-prophet-his-cumbia-shoes-160450"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Yellow Shoots / Cat Daddy",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/yellow-shoots-cat-daddy/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Coma Cinema / Trace Mountains",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-07 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/coma-cinema-trace-mountains/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Silkworm / Come",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-09 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/silkworm/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Carsie Blanton / Ray Drezner / Izzy True / Sad13",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-11 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/world-cafe-live-workers-benefit/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Kashus Culpepper",
+  venue: "The Foundry",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-06 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/wxpn-welcomes-kashus-culpepper-philadelphia-pennsylvania-02-06-2026/event/02006374FF0A76D9"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Larry Fleet",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-19 00:00:00],
+  external_link: "https://www.keswicktheatre.com/events/detail/1226177"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Steven Curtis Chapman",
+  venue: "Keswick Theatre",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-02 00:00:00],
+  external_link: "https://www.keswicktheatre.com/events/detail/1241484"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Microwave",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-18 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/microwaves-much-love-10-year-anniversary-philadelphia-pennsylvania-04-18-2026/event/0200637A9A969090?_gl=1*7lueh3*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjUzMjU4NTEkbzQkZzEkdDE3NjUzMjU4NjAkajUxJGwwJGgw*_ga_H1KKSGW33X*czE3NjUzMjU4NTEkbzQkZzEkdDE3NjUzMjU4NjAkajUxJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Nothing / Full Body 2 / Cryogeyser / Violent Magic Orchestra",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-04 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1241114"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Snow Tha Product",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-10 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1240611"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Tigers Jaw",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-16 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1247128"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Cult Member",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-03 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-trnxx-sd2me"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Takuya Nakamura",
+  venue: "Warehouse on Watts",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-06 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-azxeg"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Evicshen",
+  venue: "Warehouse on Watts",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-25 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-slf3m-f3cj5-7xl4b-jydaa-ntc5t-b2pk3-4pz8n-jbgzc-8e4z4-azxeg-n9478"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Knee-Hi's / lone / Star Moles / Thank You Thank You",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-13 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/l8kwzfebctmtlfg-ayyhp-2bne2-jhxrt-lda4y-f3wn6-kkd7f-yyfle"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Women in Sports / Koser / Dear Forbidden",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-14 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-y9cm7-nngwg"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist:
+    "The Pine / Knumears / Febuary / Ethel Meserve / Expiration Date / Static Brian / Dazey Doom",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link: "https://r5productions.com/event/the-pine/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "femtanyl / takihasdied",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-15 00:00:00],
+  external_link: "https://r5productions.com/event/femtanyl/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Carly Cosgrove / Leisure Hour / Summerbruise",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link: "https://r5productions.com/event/carly-cosgrove/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Remember Sports / Cusp",
+  venue: "The First Unitarian Church",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-07 00:00:00],
+  external_link: "https://r5productions.com/event/remember-sports-2/the-first-unitarian-church/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Mekons",
+  venue: "The Latvian Society of Philadelphia",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-05 00:00:00],
+  external_link:
+    "https://r5productions.com/event/mekons-2/the-latvian-society-of-philadelphia/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Black Heart Procession",
+  venue: "Johnny Brenda's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-11 00:00:00],
+  external_link:
+    "https://johnnybrendas.com/event/the-black-heart-procession/johnny-brendas/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Flatwounds / Sunbloc / Sunstroke / Pusch",
+  venue: "Khyber Pass Pub",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link:
+    "https://www.eventbrite.com/e/flatwounds-sunbloc-sunstroke-pusch-tickets-1976415250217?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Emma Jean Oakley / Vincent Michael / Nate Roy / Katie Frank",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-02 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/emma-jean-oakley-vincent-micheal-nate-roy-katie-frank/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jewel Case / Dominy / Labrador",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/jewel-case/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Jet Stone Conspiracy",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-16 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/ondara/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "DFL / All Torn Up! / Disappearances",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link: nil
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dylan Reese / Ollie Joseph / Doss / Don Gadi",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-21 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/dylan-reese-ollie-joseph-doss-don-gadi/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The New Connection / The Blackburns / The Tressels",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/the-new-connection-the-blackburns-the-tressels/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "RelicRhymes",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-27 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/relicrhymes/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Remember Sports / Erasers / The Afterglows",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-21 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/remember-sports-erasers-the-afterglows/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Technicolors",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-24 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/the-technicolors/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Fuzzy Slippers / Birds? / Snowman Fight",
+  venue: "Silk City Diner",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-02 00:00:00],
+  external_link: "https://www.silkcityphilly.com/events/1691/fuzzy-slippers-birds-snowman-fight"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Freya Skye",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-21 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/freya-skye-stars-align-tour-philadelphia-pennsylvania-02-21-2026/event/02006385D571E165?_gl=1*1i470ut*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Amyl and the Sniffers",
+  venue: "Skyline Stage @ The Mann Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-08 00:00:00],
+  external_link: "http://highmarkmann.org/events/2026-06-08/amyl-and-sniffers"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "GWAR",
+  venue: "The Queen",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-25 00:00:00],
+  external_link: "https://thequeenwilmington.com/events/gwar/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Wonder Years",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-15 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-15-2026/event/02006389DAB4C048?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Stanley Jordan",
+  venue: "CapLive @ Appell Center for the Performing Arts",
+  region: "Central PA",
+  date: ~N[2026-03-14 00:00:00],
+  external_link: "https://appellcenter.org/show/caplive-stanley-jordan/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Anne Wilson",
+  venue: "Hershey Theatre",
+  region: "Central PA",
+  date: ~N[2026-04-30 00:00:00],
+  external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/anne-wilson/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Toilet Fest 3 feat. Knub",
+  venue: "Phantom Power",
+  region: "Central PA",
+  date: ~N[2026-01-17 00:00:00],
+  external_link:
+    "https://www.eventbrite.com/e/toilet-fest-3-w-knub-pucker-up-destructo-disk-mr-nice-guy-tickets-1974946879280?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lotus",
+  venue: "XL Live",
+  region: "Central PA",
+  date: ~N[2026-04-16 00:00:00],
+  external_link: "https://www.ticketmaster.com/event/0200635EE88AFAB2"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Maine / Grayscale / NIGHTLY / Broadside",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-17 00:00:00],
+  external_link:
+    "https://www.bowerypresents.com/shows/detail/1253397-i-love-you-but-i-chose-the-maine"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Andre Lawrence / mcgwn / Kidd Phantom",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-03 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/milkboy/events/andre-lawrence-x-mcgwn-x-kidd-phantom-166772"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Weird Al Yankovic / Puddle Pity Party",
+  venue: "Wind Creek Steel Stage at PNC Plaza",
+  region: "Lehigh Valley",
+  date: ~N[2026-08-04 00:00:00],
+  external_link: "https://www.artsquest.org/event/weird-al-yankovic-bigger-weirder-2026-tour/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Jessi Uribe",
+  venue: "bergenPAC",
+  region: "New Jersey",
+  date: ~N[2026-03-06 00:00:00],
+  external_link: "https://www.bergenpac.org/events/detail/jessi-uribe-1"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Avery Anna",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-03-21 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1267581"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dayseeker / Northlane / Wind Walkers / sace6",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-05-03 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1229370"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Trhä / Barbelith / Deadyellow",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-06 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/l8kwzfebctmtlfg-ayyhp-2bne2-jhxrt-lda4y-f3wn6-kkd7f-yyfle-4tge5"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Geordie Greep",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-22 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/geordie-greep-169582"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "DUNNES / Fo Daniels",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-29 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/duunes-fo-daniels/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Skull Presser / Omit All / Violent Form",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/skull-presser-omit-all-violent-form/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ghostwoman",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-31 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/ghostwoman/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Lowercase Roses / Edye Renee / Dan the Movie",
+  venue: "Silk City Diner",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-10 00:00:00],
+  external_link:
+    "https://www.silkcityphilly.com/events/1692/lowercase-roses-edye-renee-dan-the-movie"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Black Label Society",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-06 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/black-label-society-philadelphia-pennsylvania-04-06-2026/event/0200636AFF7E1D5C?_gl=1*91v5a*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "TOTO / Christopher Cross & The Romantics",
+  venue: "TD Pavilion @ The Mann Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-07-26 00:00:00],
+  external_link: "https://highmarkmann.org/events/2026-07-26/toto"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Wonder Years",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-09 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-09-2026/event/0200637AE7D5E632?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Allie X",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-19 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/allie-x-philadelphia-pennsylvania-04-19-2026/event/02006366CF21D39C?_gl=1*iymt0j*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Carrie Nation and the Speakeasy / Lightnin' Luke",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-04 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/carrie-nation-and-the-speakeasy-lightnin-luke/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ella Red / Peggy",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-26 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/ella-red-peggy/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Couch Dog",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-09 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/couch-dog/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Circle Jerks / Gorilla Biscuits",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-04 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/circle-jerks-gorilla-biscuits-philadelphia-pennsylvania-04-04-2026/event/02006366014BF7C2?_gl=1*12t654a*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gabe Woodrow / Northvale / Floorbird",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-19 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/gabe-woodrow-northvale-floorbird/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "moondoggy",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-18 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/moondoggy/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Future Nobodies / Secret Attraction",
+  venue: "Kung Fu Necktie",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-13 00:00:00],
+  external_link:
+    "https://kungfunecktie.com/event/future-nobodies/kung-fu-necktie/philadelphia-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ole 60",
+  venue: "The Fillmore",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/ole-60-smokestack-town-tour-philadelphia-pennsylvania-02-20-2026/event/020063760733EC17?_gl=1*1i470ut*_ga*NjUyOTYzNTMwLjE3NjQwMTI0NTY.*_ga_C1T806G4DF*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw*_ga_H1KKSGW33X*czE3NjU4NDA1ODIkbzUkZzAkdDE3NjU4NDA1ODIkajYwJGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Khalid / Lauv",
+  venue: "Skyline Stage @ The Mann Center",
+  region: "Philadelphia Area",
+  date: ~N[2026-06-07 00:00:00],
+  external_link: "https://highmarkmann.org/events/2026-06-07/khalid"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Aly & AJ",
+  venue: "The Queen",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-22 00:00:00],
+  external_link: "https://thequeenwilmington.com/events/aly-aj-places-to-run-tour-2026/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Wonder Years",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-14 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/the-wonder-years-philadelphia-pennsylvania-04-14-2026/event/02006389D347BA54?_gl=1*1gshqex*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Bloodywood",
+  venue: "Theatre of Living Arts",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-05 00:00:00],
+  external_link:
+    "https://www.ticketmaster.com/bloodywood-system-of-a-brown-tour-philadelphia-pennsylvania-05-05-2026/event/02006381C311A8F0?_gl=1*1op1khl*_ga*Njc4OTUxODguMTc2NDAxNjI1Mw..*_ga_C1T806G4DF*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw*_ga_H1KKSGW33X*czE3NjYwMDgzMDQkbzMkZzEkdDE3NjYwMDgzMDYkajU4JGwwJGgw"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Luna",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-07 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1273332"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gubbulidis",
+  venue: "Sherman Theater",
+  region: "Lehigh Valley",
+  date: ~N[2026-02-19 00:00:00],
+  external_link: "https://shermantheater.com/event/gubbulidis/sherman-theater/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Romeo Santos / Prince Royce",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-04-22 00:00:00],
+  external_link: "https://www.prucenter.com/events/romeo-santos-prince-royce"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Testament / Overkill / Destruction",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-03-28 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1263094"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "FutureBeer & The Night Owls / Mid Sentence / Stud Wiser",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-fgrwf"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dear Maryanne / Arcadia Grey / Pretty Bitter",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-05 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-87wjh-rzhc2-3bx3x-49s75-mfzfd-9st44-2phzm"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Soulive",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-24 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/soulive-160762"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Henrik / Abigail Osborn",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-03 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/henrik-vv1aezkuogkdtjqra"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sunny Day Real Estate / Pool Kids",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-29 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/sunny-day-real-estate-vv1kfzbg0mg7hgds"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Maggie Lindermann",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-28 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/maggie-lindemann-vv1aovngwgag8nhl"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Greyboy Allstars",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-04 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/greyboy-allstars-vv1aovn8nga1wauf"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Cupcakke",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-27 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/cupcakke-18-vv17fzbzgks7erpp"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sir Chloe / Suzy Clue",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-22 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/sir-chloe-vvg1fzbcukv_q9"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Thornhill / 156/Silence / Fox Lake / Vianova",
+  venue: "Brooklyn Bowl",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-15 00:00:00],
+  external_link:
+    "https://www.brooklynbowl.com/philadelphia/events/detail/revolver-presents-thornhill-the-mercia-tour-vv17fzbzgkrj_yfx"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dry Cleaning / YHWH Nailgun",
+  venue: "Union Transfer",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-06 00:00:00],
+  external_link: "https://www.utphilly.com/events/detail/?event_id=1174868"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Collective Soul",
+  venue: "Hershey Theatre",
+  region: "Central PA",
+  date: ~N[2026-04-03 00:00:00],
+  external_link: "https://www.hersheyentertainment.com/hershey-theatre/events/collective-soul/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "(Sp)Lit / Gangrenous Flesh Consumption / Deep Rest / Streets of Rage",
+  venue: "Phantom Power",
+  region: "Central PA",
+  date: ~N[2026-01-03 00:00:00],
+  external_link:
+    "https://www.eventbrite.com/e/split-w-gangrenous-flesh-consumption-deep-rest-streets-of-rage-tickets-1967843517935?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "BBMAK",
+  venue: "Phantom Power",
+  region: "Central PA",
+  date: ~N[2026-04-23 00:00:00],
+  external_link: "https://www.eventbrite.com/e/bbmak-tickets-1978124238848?aff=ebdsoporgprofile"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Thievery Corporation",
+  venue: "Franklin Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-04 00:00:00],
+  external_link:
+    "https://www.axs.com/events/1264228/thievery-corporation-21-event-tickets?skin=fmh"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Saults ",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-05-16 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/saults-169291"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Band Memo / Free Whenever",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-06 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/the-band-memo-free-whenever-165635"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Dogs In A Pile",
+  venue: "Sherman Theater",
+  region: "Lehigh Valley",
+  date: ~N[2026-04-10 00:00:00],
+  external_link: "https://shermantheater.com/event/dogs-in-a-pile-friday/sherman-theater/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Megan Moroney",
+  venue: "Prudential Center",
+  region: "New Jersey",
+  date: ~N[2026-07-10 00:00:00],
+  external_link: "https://www.prucenter.com/events/megan-moroney"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "CLUTCH / Corrosion of Conformity / JD Pinkus",
+  venue: "Starland Ballroom",
+  region: "New Jersey",
+  date: ~N[2026-04-09 00:00:00],
+  external_link: "https://www.starlandballroom.com/events/detail/1252639"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Home Star / Armbite",
+  venue: "Ortlieb's",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-17 00:00:00],
+  external_link: "https://4333collective.net/gigs/7cg5p3n2myzh4s2-zfdkh-rhf5n-924wy"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Clarion / Forest / Bed",
+  venue: "Ukie Club",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-19 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-sa47n-c78sk-trnxx-hacyz"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Soulive",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-04-25 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/soulive-160762"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "John Moreland / Patterson Hood",
+  venue: "White Eagle Hall",
+  region: "New Jersey",
+  date: ~N[2026-03-17 00:00:00],
+  external_link:
+    "https://wl.eventim.us/event/john-moreland-patterson-hood/673366?afflky=WhiteEagleHall"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Colleen Green / Cassie Ramone",
+  venue: "Philly Style Pizza",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-30 00:00:00],
+  external_link:
+    "https://4333collective.net/gigs/3e8e4c6sxfnyztz-lmjg8-5b85t-jjw8z-3w9kd-p8fwm-kkdy8-njc37-nt3nm-267xl-zagbl-r8dr7-99962-c3m7p-3kzcs-b2999-85et9-5fgtf-9a8px-lcskj-9www2-839nn"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Hunter Hayes / BLÜ EYES",
+  venue: "Ardmore Music Hall",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-28 00:00:00],
+  external_link: "https://www.tixr.com/groups/ardmoremusichall/events/hunter-hayes-165527"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Humilitarian / Adventure Lost / Caring Less",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-13 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/humilitarian-adventure-lost-157978"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Gibbous Moon / Alright Junior",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-20 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/gibbous-moon-alright-junior-166951"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "June Divided / Sleep Cycles / Modern Culture",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-21 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/june-divided-sleep-cycles-167903"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Amelia Day",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-13 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/amelia-day-165634"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Steph Strings",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-19 00:00:00],
+  external_link:
+    "https://www.tixr.com/groups/milkboy/events/steph-strings-north-american-tour-2026-169147"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Ridge Runners / Lunison",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-20 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/ridge-runners-lunison-167438"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Haunt / Intranced",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-22 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/haunt-with-intranced-169315"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Flamingosis",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-26 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/flamingosis-167668"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Valencia Grace",
+  venue: "MilkBoy",
+  region: "Philadelphia Area",
+  date: ~N[2026-03-28 00:00:00],
+  external_link: "https://www.tixr.com/groups/milkboy/events/valencia-grace-168328"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Sug Daniels / Antar Goodwin / Lexxie Mathis",
+  venue: "Kennett Flash",
+  region: "Philadelphia Area",
+  date: ~N[2026-02-22 00:00:00],
+  external_link:
+    "https://kennettflash.org/event/roots-revival-roadshow/kennett-flash/kennett-square-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Here Again / New Damage / Lowball",
+  venue: "Kennett Flash",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-31 00:00:00],
+  external_link:
+    "https://kennettflash.org/event/metal-night-here-again-new-damage-lowball/kennett-flash/kennett-square-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Katie Barbato / Julie Webb",
+  venue: "Kennett Flash",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-24 00:00:00],
+  external_link:
+    "https://kennettflash.org/event/katie-barbato-singer-songwriter-showcase/kennett-flash/kennett-square-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "The Wild Hymns",
+  venue: "Kennett Flash",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-16 00:00:00],
+  external_link:
+    "https://kennettflash.org/event/the-wild-hymns-with-special-guest-nick-lurwick/kennett-flash/kennett-square-pennsylvania/"
+})
+
+PhillyBands.Events.upsert_event(%{
+  external_artist: "Hiroya Tsukamoto",
+  venue: "Kennett Flash",
+  region: "Philadelphia Area",
+  date: ~N[2026-01-09 00:00:00],
+  external_link:
+    "https://kennettflash.org/event/a-journey-through-strings-and-stories-hiroya-tsukamoto-2/kennett-flash/kennett-square-pennsylvania/"
+})
