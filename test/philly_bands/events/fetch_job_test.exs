@@ -126,8 +126,7 @@ defmodule PhillyBands.Events.FetchJobTest do
         {:ok, %{status: 500, body: "Internal Server Error"}}
       end)
 
-      # Should log error and return :ok (since it's a job)
-      assert FetchJob.run() == :ok
+      assert {:error, "Failed to fetch page 1: \"Unexpected status: 500\""} = FetchJob.fetch_all()
     end
 
     test "handles HTTP client errors" do
@@ -136,8 +135,7 @@ defmodule PhillyBands.Events.FetchJobTest do
         {:error, :timeout}
       end)
 
-      # Should log error and return :ok
-      assert FetchJob.run() == :ok
+      assert {:error, "Failed to fetch page 1: :timeout"} = FetchJob.fetch_all()
     end
 
     test "handles malformed JSON" do

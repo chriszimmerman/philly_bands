@@ -10,6 +10,7 @@
         name="region"
         id="region"
         class="mt-2 block w-full rounded-md border-zinc-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+        onchange="this.form.submit()"
       >
         <option value="all" selected={@region == "all"}>All Regions</option>
         <%= for r <- @regions do %>
@@ -17,7 +18,6 @@
         <% end %>
       </select>
     </div>
-    <.button type="submit">Filter</.button>
   </form>
 </div>
 

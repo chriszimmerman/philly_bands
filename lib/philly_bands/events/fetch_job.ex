@@ -10,24 +10,41 @@ defmodule PhillyBands.Events.FetchJob do
 
   def run do
     Logger.info("Starting event fetch job...")
-    fetch_page(1)
-    Logger.info("Event fetch job completed.")
+
+    case fetch_all() do
+      {:ok, count} ->
+        Logger.info("Event fetch job completed. Processed #{count} events.")
+        :ok
+
+      {:error, reason} ->
+        Logger.error("Event fetch job failed: #{reason}")
+        :ok
+    end
   end
 
-  defp fetch_page(page) do
+  @doc """
+  Fetches all events and returns the result without logging errors.
+  Useful for testing or programmatic usage.
+  """
+  def fetch_all do
+    fetch_page(1, 0)
+  end
+
+  defp fetch_page(page, acc_count) do
     Logger.info("Fetching page #{page}...")
     url = "#{@base_url}?page=#{page}&per_page=#{@per_page}&_embed=true&order=asc&orderby=date"
 
     case make_request(url) do
       {:ok, [_ | _] = events} ->
-        process_events(events)
-        fetch_page(page + 1)
+        processed_count = process_events(events)
+        fetch_page(page + 1, acc_count + processed_count)
 
       {:ok, []} ->
         Logger.info("No more events to fetch.")
+        {:ok, acc_count}
 
       {:error, reason} ->
-        Logger.error("Failed to fetch page #{page}: #{inspect(reason)}")
+        {:error, "Failed to fetch page #{page}: #{inspect(reason)}"}
     end
   end
 
@@ -57,17 +74,28 @@ defmodule PhillyBands.Events.FetchJob do
   end
 
   defp process_events(events) do
-    Enum.each(events, fn event_data ->
+    Enum.reduce(events, 0, fn event_data, acc ->
       attrs = map_event_data(event_data)
 
-      case Events.upsert_event(attrs) do
-        {:ok, _event} ->
-          :ok
+      if valid_event_attrs?(attrs) do
+        case Events.upsert_event(attrs) do
+          {:ok, _event} ->
+            acc + 1
 
-        {:error, changeset} ->
-          Logger.error("Failed to insert event: #{inspect(changeset.errors)}")
+          {:error, changeset} ->
+            Logger.error("Failed to insert event: #{inspect(changeset.errors)}")
+            acc
+        end
+      else
+        Logger.debug("Skipping invalid event data: #{inspect(attrs)}")
+        acc
       end
     end)
+  end
+
+  defp valid_event_attrs?(attrs) do
+    # Matches requirements in Event.changeset: external_artist, venue, date
+    attrs[:external_artist] && attrs[:venue] && attrs[:date]
   end
 
   defp map_event_data(data) do
