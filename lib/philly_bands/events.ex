@@ -12,9 +12,11 @@ defmodule PhillyBands.Events do
     per_page = 30
     offset = (page - 1) * per_page
     region = params["region"]
+    now = NaiveDateTime.local_now()
 
     Event
     |> filter_by_region(region)
+    |> where([e], e.date >= ^now)
     |> order_by([e], [asc: e.date, asc: e.external_artist])
     |> limit(^per_page)
     |> offset(^offset)

@@ -1,5 +1,6 @@
 defmodule PhillyBandsWeb.EventControllerTest do
   use PhillyBandsWeb.ConnCase
+  use Patch
 
   import PhillyBands.EventsFixtures
 
@@ -49,6 +50,20 @@ defmodule PhillyBandsWeb.EventControllerTest do
       
       assert response =~ ~r/2026-01-09.*2026-01-10.*2026-01-10/s
       assert response =~ ~r/C.*A.*B/s
+    end
+
+    test "filters out past events", %{conn: conn} do
+      # Mock current date to 2026-01-01
+      Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
+
+      future_event = event_fixture(external_artist: "Future Artist", date: ~N[2026-01-02 20:00:00])
+      past_event = event_fixture(external_artist: "Past Artist", date: ~N[2025-12-31 20:00:00])
+
+      conn = get(conn, ~p"/events")
+      response = html_response(conn, 200)
+      
+      assert response =~ future_event.external_artist
+      refute response =~ past_event.external_artist
     end
   end
 end

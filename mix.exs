@@ -54,6 +54,7 @@ defmodule PhillyBands.MixProject do
       {:swoosh, "~> 1.5"},
       {:finch, "~> 0.13"},
       {:mox, "~> 1.0", only: :test},
+      {:patch, "~> 0.13.0", only: :test},
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.26"},
