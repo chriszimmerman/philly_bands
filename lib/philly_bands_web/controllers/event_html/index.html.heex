@@ -3,8 +3,19 @@
 </.header>
 
 <div class="mt-8">
-  <form method="get" action={~p"/events"} class="flex gap-4 items-end">
-    <div class="flex-grow">
+  <form method="get" action={~p"/events"} class="flex flex-col sm:flex-row gap-4 items-end">
+    <div class="w-full sm:flex-grow">
+      <.label for="search">Search</.label>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        value={@search}
+        placeholder="Artist or venue..."
+        class="mt-2 block w-full rounded-md border-zinc-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      />
+    </div>
+    <div class="w-full sm:w-auto">
       <.label for="region">Filter by Region</.label>
       <select
         name="region"
@@ -17,6 +28,9 @@
           <option value={r} selected={r == @region}>{r}</option>
         <% end %>
       </select>
+    </div>
+    <div class="w-full sm:w-auto">
+      <.button type="submit">Search</.button>
     </div>
   </form>
 </div>
@@ -36,7 +50,7 @@
 <div class="mt-8 flex justify-center items-center gap-2">
   <%= if @page > 1 do %>
     <.link
-      navigate={~p"/events?page=#{@page - 1}&region=#{@region}"}
+      navigate={~p"/events?page=#{@page - 1}&region=#{@region}&search=#{@search}"}
       class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
     >
       &larr;
@@ -51,7 +65,7 @@
         </span>
       <% else %>
         <.link
-          navigate={~p"/events?page=#{p}&region=#{@region}"}
+          navigate={~p"/events?page=#{p}&region=#{@region}&search=#{@search}"}
           class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
         >
           {p}
@@ -62,7 +76,7 @@
 
   <%= if @page < @total_pages do %>
     <.link
-      navigate={~p"/events?page=#{@page + 1}&region=#{@region}"}
+      navigate={~p"/events?page=#{@page + 1}&region=#{@region}&search=#{@search}"}
       class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
     >
       &rarr;

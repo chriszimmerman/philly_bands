@@ -16,6 +16,7 @@ defmodule PhillyBands.Events do
 
     Event
     |> filter_by_region(region)
+    |> filter_by_search(params["search"])
     |> filter_by_user_trackings(params["user_id"])
     |> where([e], e.date >= ^now)
     |> order_by([e], asc: e.date, asc: e.external_artist)
@@ -30,6 +31,7 @@ defmodule PhillyBands.Events do
 
     Event
     |> filter_by_region(region)
+    |> filter_by_search(params["search"])
     |> filter_by_user_trackings(params["user_id"])
     |> where([e], e.date >= ^now)
     |> Repo.aggregate(:count)
@@ -41,6 +43,16 @@ defmodule PhillyBands.Events do
 
   defp filter_by_region(query, region) do
     from e in query, where: e.region == ^region
+  end
+
+  defp filter_by_search(query, nil), do: query
+  defp filter_by_search(query, ""), do: query
+
+  defp filter_by_search(query, search_term) do
+    search_pattern = "%#{search_term}%"
+
+    from e in query,
+      where: ilike(e.external_artist, ^search_pattern)
   end
 
   defp filter_by_user_trackings(query, nil), do: query

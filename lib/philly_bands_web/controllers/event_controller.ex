@@ -16,7 +16,8 @@ defmodule PhillyBandsWeb.EventController do
       regions: regions,
       page: page,
       total_pages: total_pages,
-      region: params["region"] || "all"
+      region: params["region"] || "all",
+      search: params["search"] || ""
     )
   end
 end

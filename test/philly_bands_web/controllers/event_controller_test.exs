@@ -24,7 +24,7 @@ defmodule PhillyBandsWeb.EventControllerTest do
       response = html_response(conn, 200)
       assert response |> Floki.parse_document!() |> Floki.find("tbody tr") |> length() == 5
       assert response =~ "page=1"
-      assert response =~ "/events?page=1&amp;region=all"
+      assert response =~ "/events?page=1&amp;region=all&amp;search="
     end
 
     test "filters by region", %{conn: conn} do
@@ -40,6 +40,28 @@ defmodule PhillyBandsWeb.EventControllerTest do
       response = html_response(conn, 200)
       assert response =~ "Artist A"
       assert response =~ "Artist B"
+    end
+
+    test "filters by search", %{conn: conn} do
+      event_fixture(external_artist: "The War on Drugs", venue: "The Fillmore")
+      event_fixture(external_artist: "Radiohead", venue: "Madison Square Garden")
+
+      # Search by artist
+      conn = get(conn, ~p"/events?search=war")
+      response = html_response(conn, 200)
+      assert response =~ "The War on Drugs"
+      refute response =~ "Radiohead"
+
+      # Search by venue (should no longer match)
+      conn = get(conn, ~p"/events?search=square")
+      response = html_response(conn, 200)
+      refute response =~ "Radiohead"
+      refute response =~ "The War on Drugs"
+
+      # Case insensitive artist search
+      conn = get(conn, ~p"/events?search=THE")
+      response = html_response(conn, 200)
+      assert response =~ "The War on Drugs"
     end
 
     test "lists all events in order", %{conn: conn} do
