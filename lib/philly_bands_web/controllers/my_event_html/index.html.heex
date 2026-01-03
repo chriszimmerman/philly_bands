@@ -37,7 +37,7 @@
   <div>
     <%= if @page > 1 do %>
       <.link
-        navigate={~p"/my_events?page={@page - 1}&region={@region}"}
+        navigate={~p"/my_events?page=#{@page - 1}&region=#{@region}"}
         class="text-sm font-semibold leading-6 text-zinc-900"
       >
         &larr; Previous Page
@@ -50,7 +50,7 @@
   <div>
     <%= if length(@events) == 30 do %>
       <.link
-        navigate={~p"/my_events?page={@page + 1}&region={@region}"}
+        navigate={~p"/my_events?page=#{@page + 1}&region=#{@region}"}
         class="text-sm font-semibold leading-6 text-zinc-900"
       >
         Next Page &rarr;

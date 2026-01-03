@@ -22,6 +22,7 @@ defmodule PhillyBandsWeb.EventControllerTest do
       response = html_response(conn, 200)
       assert response |> Floki.parse_document!() |> Floki.find("tbody tr") |> length() == 5
       assert response =~ "Previous Page"
+      assert response =~ "/events?page=1&amp;region=all"
     end
 
     test "filters by region", %{conn: conn} do
