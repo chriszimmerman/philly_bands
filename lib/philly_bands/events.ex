@@ -24,6 +24,17 @@ defmodule PhillyBands.Events do
     |> Repo.all()
   end
 
+  def count_events(params \\ %{}) do
+    region = params["region"]
+    now = NaiveDateTime.local_now()
+
+    Event
+    |> filter_by_region(region)
+    |> filter_by_user_trackings(params["user_id"])
+    |> where([e], e.date >= ^now)
+    |> Repo.aggregate(:count)
+  end
+
   defp filter_by_region(query, nil), do: query
   defp filter_by_region(query, ""), do: query
   defp filter_by_region(query, "all"), do: query

@@ -6,6 +6,8 @@ defmodule PhillyBandsWeb.EventControllerTest do
 
   describe "index" do
     test "lists events with pagination", %{conn: conn} do
+      PhillyBands.Repo.delete_all(PhillyBands.Events.Event)
+
       for i <- 1..35 do
         event_fixture(external_artist: "Artist #{i}", date: ~N[2026-01-09 20:00:00])
       end
@@ -16,12 +18,12 @@ defmodule PhillyBandsWeb.EventControllerTest do
 
       # Should only show 30 events
       assert response |> Floki.parse_document!() |> Floki.find("tbody tr") |> length() == 30
-      assert response =~ "Next Page"
+      assert response =~ "page=2"
 
       conn = get(conn, ~p"/events?page=2")
       response = html_response(conn, 200)
       assert response |> Floki.parse_document!() |> Floki.find("tbody tr") |> length() == 5
-      assert response =~ "Previous Page"
+      assert response =~ "page=1"
       assert response =~ "/events?page=1&amp;region=all"
     end
 

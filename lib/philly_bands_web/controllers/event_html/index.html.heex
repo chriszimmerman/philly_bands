@@ -33,28 +33,39 @@
   </:action>
 </.table>
 
-<div class="mt-8 flex justify-between items-center">
-  <div>
-    <%= if @page > 1 do %>
-      <.link
-        navigate={~p"/events?page=#{@page - 1}&region=#{@region}"}
-        class="text-sm font-semibold leading-6 text-zinc-900"
-      >
-        &larr; Previous Page
-      </.link>
+<div class="mt-8 flex justify-center items-center gap-2">
+  <%= if @page > 1 do %>
+    <.link
+      navigate={~p"/events?page=#{@page - 1}&region=#{@region}"}
+      class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
+    >
+      &larr;
+    </.link>
+  <% end %>
+
+  <%= if @total_pages > 1 do %>
+    <%= for p <- max(1, @page - 5)..min(@total_pages, @page + 5) do %>
+      <%= if p == @page do %>
+        <span class="px-3 py-1 text-sm font-bold rounded-md bg-indigo-600 text-white">
+          {p}
+        </span>
+      <% else %>
+        <.link
+          navigate={~p"/events?page=#{p}&region=#{@region}"}
+          class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
+        >
+          {p}
+        </.link>
+      <% end %>
     <% end %>
-  </div>
-  <div class="text-sm text-zinc-600">
-    Page {@page}
-  </div>
-  <div>
-    <%= if length(@events) == 30 do %>
-      <.link
-        navigate={~p"/events?page=#{@page + 1}&region=#{@region}"}
-        class="text-sm font-semibold leading-6 text-zinc-900"
-      >
-        Next Page &rarr;
-      </.link>
-    <% end %>
-  </div>
+  <% end %>
+
+  <%= if @page < @total_pages do %>
+    <.link
+      navigate={~p"/events?page=#{@page + 1}&region=#{@region}"}
+      class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
+    >
+      &rarr;
+    </.link>
+  <% end %>
 </div>
