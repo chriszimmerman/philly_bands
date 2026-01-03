@@ -44,4 +44,23 @@ defmodule PhillyBandsWeb.MyEventControllerTest do
       assert response |> Floki.parse_document!() |> Floki.find("tbody tr") |> length() == 0
     end
   end
+
+  describe "grouping" do
+    test "groups events by month", %{conn: conn} do
+      user = user_fixture()
+      tracking_fixture(user_id: user.id, artist: "Artist")
+
+      event1 = event_fixture(external_artist: "Artist A", date: ~N[2026-01-09 20:00:00])
+      event2 = event_fixture(external_artist: "Artist B", date: ~N[2026-02-10 20:00:00])
+
+      conn = log_in_user(conn, user)
+      conn = get(conn, ~p"/my_events")
+      response = html_response(conn, 200)
+
+      assert response =~ "January 2026"
+      assert response =~ "February 2026"
+      assert response =~ event1.external_artist
+      assert response =~ event2.external_artist
+    end
+  end
 end

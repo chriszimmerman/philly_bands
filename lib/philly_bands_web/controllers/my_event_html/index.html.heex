@@ -21,17 +21,23 @@
   </form>
 </div>
 
-<.table id="events" rows={@events}>
-  <:col :let={event} label="Date">{Calendar.strftime(event.date, "%Y-%m-%d")}</:col>
-  <:col :let={event} label="Artist">{event.external_artist}</:col>
-  <:col :let={event} label="Venue">{event.venue}</:col>
-  <:col :let={event} label="Region">{event.region}</:col>
-  <:action :let={event}>
-    <.link href={event.external_link} target="_blank" class="text-blue-600 hover:underline">
-      Tickets
-    </.link>
-  </:action>
-</.table>
+<%= for {{year, month}, events} <- Enum.sort(@grouped_events) do %>
+  <h2 class="mt-12 text-xl font-bold text-zinc-900 border-b border-zinc-200 pb-2">
+    {Calendar.strftime(Date.new!(year, month, 1), "%B %Y")}
+  </h2>
+
+  <.table id={"events-#{year}-#{month}"} rows={events}>
+    <:col :let={event} label="Date">{Calendar.strftime(event.date, "%d")}</:col>
+    <:col :let={event} label="Artist">{event.external_artist}</:col>
+    <:col :let={event} label="Venue">{event.venue}</:col>
+    <:col :let={event} label="Region">{event.region}</:col>
+    <:action :let={event}>
+      <.link href={event.external_link} target="_blank" class="text-blue-600 hover:underline">
+        Tickets
+      </.link>
+    </:action>
+  </.table>
+<% end %>
 
 <div class="mt-8 flex justify-center items-center gap-2">
   <%= if @page > 1 do %>

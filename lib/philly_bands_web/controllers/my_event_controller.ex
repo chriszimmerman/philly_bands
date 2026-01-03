@@ -8,6 +8,7 @@ defmodule PhillyBandsWeb.MyEventController do
     params = Map.put(params, "user_id", user.id)
 
     events = Events.list_events(params)
+    grouped_events = Enum.group_by(events, fn event -> {event.date.year, event.date.month} end)
     total_events = Events.count_events(params)
     regions = Events.list_regions()
     page = String.to_integer(params["page"] || "1")
@@ -16,6 +17,7 @@ defmodule PhillyBandsWeb.MyEventController do
 
     render(conn, :index,
       events: events,
+      grouped_events: grouped_events,
       regions: regions,
       page: page,
       total_pages: total_pages,
