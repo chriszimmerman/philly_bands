@@ -1,18 +1,20 @@
 # PhillyBands
 
-To start your Phoenix server:
+This is a Phoenix LiveView app that allows users to search for bands in the Philadelphia area.
+
+## Setup
+
+To setup the app:
 
   * Run `mix setup` to install and setup dependencies
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Populating data in the app
 
-## Learn more
+There is a job that will call the API on WXPN's site and populate the database with the results. After you start the server with `iex -S mix phx.server`, run the job like this:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```elixir
+PhillyBands.Events.FetchJob.run
+```
