@@ -9,7 +9,7 @@ defmodule PhillyBands.Events.FetchJobTest do
 
   @event_json %{
     "acf" => %{
-      "date" => "2026-01-09 20:00:00",
+      "date" => "2026-02-09 20:00:00",
       "external_artist" => "Test Artist",
       "external_link" => "https://example.com/tickets",
       "venue" => "Test Venue"
@@ -45,7 +45,7 @@ defmodule PhillyBands.Events.FetchJobTest do
       assert event.external_artist == "Test Artist"
       assert event.venue == "Test Venue"
       assert event.region == "Philadelphia Area"
-      assert event.date == ~N[2026-01-09 20:00:00]
+      assert event.date == ~N[2026-02-09 20:00:00]
     end
 
     test "handles pagination" do
@@ -83,7 +83,7 @@ defmodule PhillyBands.Events.FetchJobTest do
         Events.create_event(%{
           external_artist: "Test Artist",
           venue: "Test Venue",
-          date: ~N[2026-01-09 20:00:00]
+          date: ~N[2026-02-09 20:00:00]
         })
 
       PhillyBands.HTTPClientMock
@@ -101,8 +101,8 @@ defmodule PhillyBands.Events.FetchJobTest do
     end
 
     test "handles various date formats" do
-      event1 = put_in(@event_json, ["acf", "date"], "2026-01-09 20:00")
-      event2 = put_in(@event_json, ["acf", "date"], "2026-01-10")
+      event1 = put_in(@event_json, ["acf", "date"], "2026-02-09 20:00")
+      event2 = put_in(@event_json, ["acf", "date"], "2026-02-10")
 
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, _url ->
@@ -116,8 +116,8 @@ defmodule PhillyBands.Events.FetchJobTest do
 
       events = Events.list_events() |> Enum.sort_by(& &1.date)
       assert length(events) == 2
-      assert Enum.at(events, 0).date == ~N[2026-01-09 20:00:00]
-      assert Enum.at(events, 1).date == ~N[2026-01-10 00:00:00]
+      assert Enum.at(events, 0).date == ~N[2026-02-09 20:00:00]
+      assert Enum.at(events, 1).date == ~N[2026-02-10 00:00:00]
     end
 
     test "handles unexpected status codes" do

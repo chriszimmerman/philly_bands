@@ -11,7 +11,7 @@ defmodule PhillyBands.EventsFixtures do
       external_artist: unique_event_artist(),
       venue: "The Fillmore",
       region: "Philadelphia Area",
-      date: ~N[2026-01-09 20:00:00],
+      date: ~N[2026-02-09 20:00:00],
       external_link: "https://example.com/event"
     })
   end

@@ -9,7 +9,7 @@ defmodule PhillyBandsWeb.EventControllerTest do
       PhillyBands.Repo.delete_all(PhillyBands.Events.Event)
 
       for i <- 1..35 do
-        event_fixture(external_artist: "Artist #{i}", date: ~N[2026-01-09 20:00:00])
+        event_fixture(external_artist: "Artist #{i}", date: ~N[2026-02-09 20:00:00])
       end
 
       conn = get(conn, ~p"/events")
@@ -65,15 +65,15 @@ defmodule PhillyBandsWeb.EventControllerTest do
     end
 
     test "lists all events in order", %{conn: conn} do
-      _event1 = event_fixture(external_artist: "B", date: ~N[2026-01-10 20:00:00])
-      _event2 = event_fixture(external_artist: "A", date: ~N[2026-01-10 20:00:00])
-      _event3 = event_fixture(external_artist: "C", date: ~N[2026-01-09 20:00:00])
+      _event1 = event_fixture(external_artist: "B", date: ~N[2026-02-10 20:00:00])
+      _event2 = event_fixture(external_artist: "A", date: ~N[2026-02-10 20:00:00])
+      _event3 = event_fixture(external_artist: "C", date: ~N[2026-02-09 20:00:00])
 
       conn = get(conn, ~p"/events")
       response = html_response(conn, 200)
       assert response =~ "Listing Events"
 
-      assert response =~ ~r/2026-01-09.*2026-01-10.*2026-01-10/s
+      assert response =~ ~r/2026-02-09.*2026-02-10.*2026-02-10/s
       assert response =~ ~r/C.*A.*B/s
     end
 
