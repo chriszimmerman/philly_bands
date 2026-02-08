@@ -2,11 +2,18 @@ defmodule PhillyBands.Events.FetchJob do
   @moduledoc """
   Background job to fetch events from the WXPN API and store them in the database.
   """
+  use Oban.Worker, queue: :default, max_attempts: 3
+
   require Logger
   alias PhillyBands.Events
 
   @base_url "https://backend.xpn.org/wp-json/wp/v2/event"
   @per_page 30
+
+  @impl Oban.Worker
+  def perform(_job) do
+    run()
+  end
 
   def run do
     Logger.info("Starting event fetch job...")

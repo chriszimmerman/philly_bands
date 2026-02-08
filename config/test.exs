@@ -40,3 +40,5 @@ config :phoenix_live_view,
   enable_expensive_runtime_checks: true
 
 config :philly_bands, :http_client, PhillyBands.HTTPClientMock
+
+config :philly_bands, Oban, testing: :manual

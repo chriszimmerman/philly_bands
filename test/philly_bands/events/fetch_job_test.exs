@@ -1,5 +1,6 @@
 defmodule PhillyBands.Events.FetchJobTest do
   use PhillyBands.DataCase
+  use Oban.Testing, repo: PhillyBands.Repo
   import Mox
 
   alias PhillyBands.Events.FetchJob
@@ -164,6 +165,17 @@ defmodule PhillyBands.Events.FetchJobTest do
       # Should not crash, just log error because external_artist is missing
       FetchJob.run()
       assert Events.list_events() == []
+    end
+  end
+
+  describe "Oban worker" do
+    test "perform/1 calls run/0" do
+      PhillyBands.HTTPClientMock
+      |> expect(:request, fn :get, _url ->
+        {:ok, %{status: 200, body: "[]"}}
+      end)
+
+      assert :ok = perform_job(FetchJob, %{})
     end
   end
 end

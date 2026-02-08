@@ -14,6 +14,7 @@ defmodule PhillyBands.Application do
       {Phoenix.PubSub, name: PhillyBands.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: PhillyBands.Finch},
+      {Oban, Application.fetch_env!(:philly_bands, Oban)},
       # Start a worker by calling: PhillyBands.Worker.start_link(arg)
       # {PhillyBands.Worker, arg},
       # Start to serve requests, typically the last entry
