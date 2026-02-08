@@ -68,7 +68,8 @@ config :philly_bands, Oban,
   plugins: [
     {Oban.Plugins.Cron,
      crontab: [
-       {"@daily", PhillyBands.Events.FetchJob}
+       {"@daily", PhillyBands.Events.FetchJob},
+       {"*/3 * * * *", PhillyBands.Events.FetchJob}
      ]}
   ]
 
