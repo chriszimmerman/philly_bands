@@ -49,18 +49,20 @@
     </.link>
   <% end %>
 
-  <%= for p <- max(1, @page - 5)..min(@total_pages, @page + 5) do %>
-    <%= if p == @page do %>
-      <span class="px-3 py-1 text-sm font-bold rounded-md bg-indigo-600 text-white">
-        {p}
-      </span>
-    <% else %>
-      <.link
-        navigate={~p"/my_events?page=#{p}&region=#{@region}"}
-        class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
-      >
-        {p}
-      </.link>
+  <%= if @total_pages > 0 do %>
+    <%= for p <- max(1, @page - 5)..min(@total_pages, @page + 5) do %>
+      <%= if p == @page do %>
+        <span class="px-3 py-1 text-sm font-bold rounded-md bg-indigo-600 text-white">
+          {p}
+        </span>
+      <% else %>
+        <.link
+          navigate={~p"/my_events?page=#{p}&region=#{@region}"}
+          class="px-3 py-1 text-sm font-semibold rounded-md border border-zinc-300 hover:bg-zinc-50"
+        >
+          {p}
+        </.link>
+      <% end %>
     <% end %>
   <% end %>
 
