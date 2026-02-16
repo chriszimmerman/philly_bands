@@ -10,14 +10,16 @@ defmodule PhillyBandsWeb.PageControllerTest do
     assert response =~ "PhillyBands"
     assert response =~ "Discover upcoming concerts"
     assert response =~ "Get started"
+    assert response =~ "This data comes from"
+    assert response =~ "https://xpn.org/concert-and-events/"
   end
 
   test "GET / as logged in user shows my events", %{conn: conn} do
     user = user_fixture()
     tracking_fixture(user_id: user.id, artist: "Green Day")
 
-    event_fixture(external_artist: "Green Day", date: ~N[2026-02-10 20:00:00])
-    event_fixture(external_artist: "Other Artist", date: ~N[2026-02-11 20:00:00])
+    event_fixture(external_artist: "Green Day", date: ~N[2026-03-10 20:00:00])
+    event_fixture(external_artist: "Other Artist", date: ~N[2026-03-11 20:00:00])
 
     conn = log_in_user(conn, user)
     conn = get(conn, ~p"/")
