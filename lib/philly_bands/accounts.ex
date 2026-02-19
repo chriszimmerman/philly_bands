@@ -6,7 +6,7 @@ defmodule PhillyBands.Accounts do
   import Ecto.Query, warn: false
   alias PhillyBands.Repo
 
-  alias PhillyBands.Accounts.{User, UserToken, UserNotifier}
+  alias PhillyBands.Accounts.{User, UserToken}
 
   ## Database getters
 
@@ -171,7 +171,7 @@ defmodule PhillyBands.Accounts do
     {encoded_token, user_token} = UserToken.build_email_token(user, "change:#{current_email}")
 
     Repo.insert!(user_token)
-    UserNotifier.deliver_update_email_instructions(user, update_email_url_fun.(encoded_token))
+    {:ok, %{to: user.email, body: update_email_url_fun.(encoded_token)}}
   end
 
   @doc """
@@ -263,7 +263,7 @@ defmodule PhillyBands.Accounts do
     else
       {encoded_token, user_token} = UserToken.build_email_token(user, "confirm")
       Repo.insert!(user_token)
-      UserNotifier.deliver_confirmation_instructions(user, confirmation_url_fun.(encoded_token))
+      {:ok, %{to: user.email, body: confirmation_url_fun.(encoded_token)}}
     end
   end
 
@@ -304,7 +304,7 @@ defmodule PhillyBands.Accounts do
       when is_function(reset_password_url_fun, 1) do
     {encoded_token, user_token} = UserToken.build_email_token(user, "reset_password")
     Repo.insert!(user_token)
-    UserNotifier.deliver_reset_password_instructions(user, reset_password_url_fun.(encoded_token))
+    {:ok, %{to: user.email, body: reset_password_url_fun.(encoded_token)}}
   end
 
   @doc """
