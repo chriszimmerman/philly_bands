@@ -7,7 +7,7 @@ defmodule PhillyBands.Events.FetchJob do
   require Logger
   alias PhillyBands.Events
 
-  @base_url "https://backend.xpn.org/wp-json/wp/v2/event"
+  @base_url "https://xpn.org/wp-json/tribe/events/v1/events"
   @per_page 30
 
   @impl Oban.Worker
@@ -39,14 +39,14 @@ defmodule PhillyBands.Events.FetchJob do
 
   defp fetch_page(page, acc_count) do
     Logger.info("Fetching page #{page}...")
-    url = "#{@base_url}?page=#{page}&per_page=#{@per_page}&_embed=true&order=asc&orderby=date"
+    url = "#{@base_url}?page=#{page}&per_page=#{@per_page}&order=asc"
 
     case make_request(url) do
-      {:ok, [_ | _] = events} ->
+      {:ok, %{"events" => [_ | _] = events}} ->
         processed_count = process_events(events)
         fetch_page(page + 1, acc_count + processed_count)
 
-      {:ok, []} ->
+      {:ok, %{"events" => []}} ->
         Logger.info("No more events to fetch.")
         {:ok, acc_count}
 
@@ -58,22 +58,32 @@ defmodule PhillyBands.Events.FetchJob do
   defp make_request(url) do
     http_client().request(:get, url)
     |> case do
-      {:ok, %{status: 200, body: body}} ->
-        {:ok, Jason.decode!(body)}
+         {:ok, %{status: 200, body: body}} ->
+           {:ok, Jason.decode!(body)}
 
-      {:ok, %{status: 400, body: body}} ->
-        # WordPress returns 400 when page number is out of bounds
-        case Jason.decode!(body) do
-          %{"code" => "rest_post_invalid_page_number"} -> {:ok, []}
-          error -> {:error, error}
-        end
+         {:ok, %{status: status, body: body}} when status in [400, 404] ->
+           # WordPress/TEC returns 400 or 404 when the page number is out of bounds,
+           # depending on version/install. Treat the known "invalid page" code as
+           # end-of-pagination; anything else on a 400 is a real error, and any
+           # other 404 body (no recognizable code) is also treated as "no more
+           # pages" since that's the only way TEC signals it here.
+           case Jason.decode(body) do
+             {:ok, %{"code" => "rest_post_invalid_page_number"}} ->
+               {:ok, %{"events" => []}}
 
-      {:ok, %{status: status}} ->
-        {:error, "Unexpected status: #{status}"}
+             {:ok, error} when status == 400 ->
+               {:error, error}
 
-      {:error, reason} ->
-        {:error, reason}
-    end
+             _ ->
+               {:ok, %{"events" => []}}
+           end
+
+         {:ok, %{status: status}} ->
+           {:error, "Unexpected status: #{status}"}
+
+         {:error, reason} ->
+           {:error, reason}
+       end
   end
 
   defp http_client do
@@ -109,28 +119,23 @@ defmodule PhillyBands.Events.FetchJob do
   end
 
   defp map_event_data(data) do
-    acf = data["acf"] || %{}
-
     %{
-      external_artist: acf["external_artist"],
-      venue: acf["venue"],
+      external_artist: data["title"],
+      venue: get_in(data, ["venue", "venue"]),
       region: extract_region(data),
-      date: parse_date(acf["date"]),
-      external_link: acf["external_link"]
+      date: parse_date(data["start_date"]),
+      external_link: data["website"] || data["url"]
     }
   end
 
   defp extract_region(data) do
-    embedded = data["_embedded"] || %{}
-    terms = embedded["wp:term"] || []
-
-    terms
-    |> List.flatten()
-    |> Enum.find(fn term -> term["taxonomy"] == "category" end)
+    data["categories"]
+    |> List.wrap()
+    |> Enum.find(fn term -> term["taxonomy"] == "tribe_events_cat" end)
     |> case do
-      nil -> nil
-      term -> term["name"]
-    end
+         nil -> nil
+         term -> term["name"]
+       end
   end
 
   defp parse_date(nil), do: nil
