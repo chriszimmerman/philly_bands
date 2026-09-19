@@ -17,4 +17,4 @@ MIX_ENV=prod mix assets.deploy
 MIX_ENV=prod mix phx.gen.release
 MIX_ENV=prod mix release --overwrite
 
-_build/prod/rel/<APP_NAME>/bin/<APP_NAME> eval "<MODULE_NAME>.Release.migrate"
+_build/prod/rel/philly_bands/bin/philly_bands eval "<MODULE_NAME>.Release.migrate"
