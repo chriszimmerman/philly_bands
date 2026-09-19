@@ -8,7 +8,6 @@ defmodule PhillyBands.Events do
   alias PhillyBands.Events.Event
 
   def list_events(params \\ %{}) do
-    PhillyBands.Events.FetchJob.run
     page = String.to_integer(params["page"] || "1")
     per_page = 30
     offset = (page - 1) * per_page
