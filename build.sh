@@ -18,3 +18,4 @@ MIX_ENV=prod mix phx.gen.release
 MIX_ENV=prod mix release --overwrite
 
 _build/prod/rel/philly_bands/bin/philly_bands eval "PhillyBands.Release.migrate"
+_build/prod/rel/philly_bands/bin/philly_bands eval "PhillyBands.Events.FetchJob.run"
