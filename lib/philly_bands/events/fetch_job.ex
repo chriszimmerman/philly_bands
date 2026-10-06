@@ -121,11 +121,19 @@ defmodule PhillyBands.Events.FetchJob do
   defp map_event_data(data) do
     %{
       external_artist: data["title"],
-      venue: get_in(data, ["venue", "venue"]),
+      venue: extract_venue(data),
       region: extract_region(data),
       date: parse_date(data["start_date"]),
       external_link: data["website"] || data["url"]
     }
+  end
+
+  defp extract_venue(data) do
+    data["venue"]
+    |> case do
+      [] -> ""
+      venue -> venue["venue"]
+       end
   end
 
   defp extract_region(data) do
