@@ -132,15 +132,18 @@ defmodule PhillyBands.Events.FetchJob do
 
   defp decode_numeric_entities(text) do
     Regex.replace(~r/&#(?:[xX]([0-9a-fA-F]+)|([0-9]+));/, text, fn
-      _entity, hex, decimal ->
-        codepoint = if hex == "", do: String.to_integer(decimal), else: String.to_integer(hex, 16)
-
-        if codepoint <= 0x10FFFF and codepoint not in 0xD800..0xDFFF do
-          <<codepoint::utf8>>
-        else
-          "&#{if(hex == "", do: decimal, else: "x" <> hex)};"
-        end
+      _entity, hex, decimal -> decode_numeric_entity(hex, decimal)
     end)
+  end
+
+  defp decode_numeric_entity(hex, decimal) do
+    codepoint = if hex == "", do: String.to_integer(decimal), else: String.to_integer(hex, 16)
+
+    if codepoint <= 0x10FFFF and codepoint not in 0xD800..0xDFFF do
+      <<codepoint::utf8>>
+    else
+      "&#{if(hex == "", do: decimal, else: "x" <> hex)};"
+    end
   end
 
   defp extract_venue(data) do
