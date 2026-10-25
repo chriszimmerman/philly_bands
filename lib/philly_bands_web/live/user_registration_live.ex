@@ -1,6 +1,5 @@
 defmodule PhillyBandsWeb.UserRegistrationLive do
   use PhillyBandsWeb, :live_view
-  require Logger
 
   alias PhillyBands.Accounts
   alias PhillyBands.Accounts.User

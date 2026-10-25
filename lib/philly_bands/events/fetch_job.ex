@@ -176,7 +176,6 @@ defmodule PhillyBands.Events.FetchJob do
       nil
     else
       {:ok, %NaiveDateTime{} = ndt} -> ndt
-      ndt when is_struct(ndt, NaiveDateTime) -> ndt
     end
   end
 
