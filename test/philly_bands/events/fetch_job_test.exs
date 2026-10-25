@@ -4,8 +4,8 @@ defmodule PhillyBands.Events.FetchJobTest do
   use Oban.Testing, repo: PhillyBands.Repo
   import Mox
 
-  alias PhillyBands.Events.FetchJob
   alias PhillyBands.Events
+  alias PhillyBands.Events.FetchJob
 
   setup :verify_on_exit!
 

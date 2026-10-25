@@ -1,9 +1,9 @@
 defmodule PhillyBandsWeb.UserAuthTest do
   use PhillyBandsWeb.ConnCase, async: true
 
-  alias Phoenix.LiveView
   alias PhillyBands.Accounts
   alias PhillyBandsWeb.UserAuth
+  alias Phoenix.LiveView
   import PhillyBands.AccountsFixtures
 
   @remember_me_cookie "_philly_bands_web_user_remember_me"

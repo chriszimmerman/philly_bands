@@ -4,8 +4,8 @@ defmodule PhillyBands.Events do
   """
 
   import Ecto.Query, warn: false
-  alias PhillyBands.Repo
   alias PhillyBands.Events.Event
+  alias PhillyBands.Repo
 
   def list_events(params \\ %{}) do
     page = String.to_integer(params["page"] || "1")
@@ -114,7 +114,7 @@ defmodule PhillyBands.Events do
   end
 
   def get_event_by_unique_attributes(attrs) do
-    # Define what makes an event unique. 
+    # Define what makes an event unique.
     # For now, let's assume external_artist, venue, and date.
     # We must ensure values are not nil for Repo.get_by
     external_artist = attrs[:external_artist]

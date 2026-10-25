@@ -18,7 +18,9 @@ defmodule PhillyBands.Repo.Migrations.DecodeNumericHtmlEntitiesInEvents do
         end)
 
       if map_size(updates) > 0 do
-        repo().update_all(from(event in "events", where: event.id == ^id), set: Map.to_list(updates))
+        repo().update_all(from(event in "events", where: event.id == ^id),
+          set: Map.to_list(updates)
+        )
       end
     end)
   end
