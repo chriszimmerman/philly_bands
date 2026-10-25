@@ -50,7 +50,10 @@
   <% end %>
 
   <%= if @total_pages > 0 do %>
-    <%= for p <- max(1, @page - 5)..min(@total_pages, @page + 5) do %>
+    <%= for p <- pagination_pages(@page, @total_pages) do %>
+      <%= if p == :ellipsis do %>
+        <span class="px-2 py-1 text-sm text-zinc-500" aria-hidden="true">…</span>
+      <% else %>
       <%= if p == @page do %>
         <span class="px-3 py-1 text-sm font-bold rounded-md bg-indigo-600 text-white">
           {p}
@@ -62,6 +65,7 @@
         >
           {p}
         </.link>
+      <% end %>
       <% end %>
     <% end %>
   <% end %>

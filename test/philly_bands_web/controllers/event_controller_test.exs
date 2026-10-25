@@ -27,6 +27,23 @@ defmodule PhillyBandsWeb.EventControllerTest do
       assert response =~ "/events?page=1&amp;region=all&amp;search="
     end
 
+    test "shows the first and last pages with an ellipsis when pagination is long", %{conn: conn} do
+      for i <- 1..361 do
+        event_fixture(external_artist: "Artist #{i}", date: ~N[2027-03-09 20:00:00])
+      end
+
+      conn = get(conn, ~p"/events")
+      response = html_response(conn, 200)
+
+      assert response =~ "/events?page=5&amp;region=all&amp;search="
+      assert response =~ "/events?page=13&amp;region=all&amp;search="
+      assert response =~ "…"
+
+      conn = get(conn, ~p"/events?page=5")
+      response = html_response(conn, 200)
+      assert response =~ ~r/page=7&amp;region=all&amp;search=.*?….*?page=13&amp;region=all&amp;search=/s
+    end
+
     test "filters by region", %{conn: conn} do
       event_fixture(region: "Region A", external_artist: "Artist A")
       event_fixture(region: "Region B", external_artist: "Artist B")
