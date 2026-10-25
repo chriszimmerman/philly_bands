@@ -4,12 +4,17 @@ defmodule PhillyBandsWeb.EventControllerTest do
 
   import PhillyBands.EventsFixtures
 
+  setup do
+    Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
+    :ok
+  end
+
   describe "index" do
     test "lists events with pagination", %{conn: conn} do
       PhillyBands.Repo.delete_all(PhillyBands.Events.Event)
 
       for i <- 1..35 do
-        event_fixture(external_artist: "Artist #{i}", date: ~N[2026-03-09 20:00:00])
+        event_fixture(external_artist: "Artist #{i}", date: ~N[2027-03-09 20:00:00])
       end
 
       conn = get(conn, ~p"/events")
@@ -41,7 +46,9 @@ defmodule PhillyBandsWeb.EventControllerTest do
 
       conn = get(conn, ~p"/events?page=5")
       response = html_response(conn, 200)
-      assert response =~ ~r/page=7&amp;region=all&amp;search=.*?….*?page=13&amp;region=all&amp;search=/s
+
+      assert response =~
+               ~r/page=7&amp;region=all&amp;search=.*?….*?page=13&amp;region=all&amp;search=/s
     end
 
     test "filters by region", %{conn: conn} do
@@ -82,22 +89,19 @@ defmodule PhillyBandsWeb.EventControllerTest do
     end
 
     test "lists all events in order", %{conn: conn} do
-      _event1 = event_fixture(external_artist: "B", date: ~N[2026-03-10 20:00:00])
-      _event2 = event_fixture(external_artist: "A", date: ~N[2026-03-10 20:00:00])
-      _event3 = event_fixture(external_artist: "C", date: ~N[2026-03-09 20:00:00])
+      _event1 = event_fixture(external_artist: "B", date: ~N[2027-03-10 20:00:00])
+      _event2 = event_fixture(external_artist: "A", date: ~N[2027-03-10 20:00:00])
+      _event3 = event_fixture(external_artist: "C", date: ~N[2027-03-09 20:00:00])
 
       conn = get(conn, ~p"/events")
       response = html_response(conn, 200)
       assert response =~ "Listing Events"
 
-      assert response =~ ~r/2026-03-09.*2026-03-10.*2026-03-10/s
+      assert response =~ ~r/2027-03-09.*2027-03-10.*2027-03-10/s
       assert response =~ ~r/C.*A.*B/s
     end
 
     test "filters out past events", %{conn: conn} do
-      # Mock current date to 2026-01-01
-      Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
-
       future_event =
         event_fixture(external_artist: "Future Artist", date: ~N[2026-01-02 20:00:00])
 

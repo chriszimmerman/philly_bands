@@ -1,5 +1,6 @@
 defmodule PhillyBands.Events.FetchJobTest do
   use PhillyBands.DataCase
+  use Patch
   use Oban.Testing, repo: PhillyBands.Repo
   import Mox
 
@@ -8,20 +9,17 @@ defmodule PhillyBands.Events.FetchJobTest do
 
   setup :verify_on_exit!
 
+  setup do
+    Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
+    :ok
+  end
+
   @event_json %{
-    "acf" => %{
-      "date" => "2026-03-09 20:00:00",
-      "external_artist" => "Test Artist",
-      "external_link" => "https://example.com/tickets",
-      "venue" => "Test Venue"
-    },
-    "_embedded" => %{
-      "wp:term" => [
-        [
-          %{"name" => "Philadelphia Area", "taxonomy" => "category"}
-        ]
-      ]
-    }
+    "title" => "Test Artist",
+    "start_date" => "2027-03-09 20:00:00",
+    "website" => "https://example.com/tickets",
+    "venue" => %{"venue" => "Test Venue"},
+    "categories" => [%{"name" => "Philadelphia Area", "taxonomy" => "tribe_events_cat"}]
   }
 
   describe "run/0" do
@@ -30,12 +28,12 @@ defmodule PhillyBands.Events.FetchJobTest do
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, url ->
         assert url =~ "page=1"
-        {:ok, %{status: 200, body: Jason.encode!([@event_json])}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => [@event_json]})}}
       end)
       # Page 2 returns empty list (or 400 with invalid page number)
       |> expect(:request, fn :get, url ->
         assert url =~ "page=2"
-        {:ok, %{status: 200, body: "[]"}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => []})}}
       end)
 
       FetchJob.run()
@@ -46,7 +44,7 @@ defmodule PhillyBands.Events.FetchJobTest do
       assert event.external_artist == "Test Artist"
       assert event.venue == "Test Venue"
       assert event.region == "Philadelphia Area"
-      assert event.date == ~N[2026-03-09 20:00:00]
+      assert event.date == ~N[2027-03-09 20:00:00]
     end
 
     test "decodes numeric HTML entities in event text" do
@@ -75,20 +73,16 @@ defmodule PhillyBands.Events.FetchJobTest do
     test "handles pagination" do
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: Jason.encode!([@event_json])}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => [@event_json]})}}
       end)
       |> expect(:request, fn :get, _url ->
         {:ok,
          %{
            status: 200,
            body:
-             Jason.encode!([
-               Map.put(
-                 @event_json,
-                 "acf",
-                 Map.put(@event_json["acf"], "external_artist", "Other Artist")
-               )
-             ])
+             Jason.encode!(%{
+               "events" => [Map.put(@event_json, "title", "Other Artist")]
+             })
          }}
       end)
       |> expect(:request, fn :get, _url ->
@@ -107,15 +101,15 @@ defmodule PhillyBands.Events.FetchJobTest do
         Events.create_event(%{
           external_artist: "Test Artist",
           venue: "Test Venue",
-          date: ~N[2026-03-09 20:00:00]
+          date: ~N[2027-03-09 20:00:00]
         })
 
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: Jason.encode!([@event_json])}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => [@event_json]})}}
       end)
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: "[]"}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => []})}}
       end)
 
       FetchJob.run()
@@ -125,23 +119,23 @@ defmodule PhillyBands.Events.FetchJobTest do
     end
 
     test "handles various date formats" do
-      event1 = put_in(@event_json, ["acf", "date"], "2026-03-09 20:00")
-      event2 = put_in(@event_json, ["acf", "date"], "2026-03-10")
+      event1 = Map.put(@event_json, "start_date", "2027-03-09 20:00")
+      event2 = Map.put(@event_json, "start_date", "2027-03-10")
 
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: Jason.encode!([event1, event2])}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => [event1, event2]})}}
       end)
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: "[]"}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => []})}}
       end)
 
       FetchJob.run()
 
       events = Events.list_events() |> Enum.sort_by(& &1.date)
       assert length(events) == 2
-      assert Enum.at(events, 0).date == ~N[2026-03-09 20:00:00]
-      assert Enum.at(events, 1).date == ~N[2026-03-10 00:00:00]
+      assert Enum.at(events, 0).date == ~N[2027-03-09 20:00:00]
+      assert Enum.at(events, 1).date == ~N[2027-03-10 00:00:00]
     end
 
     test "handles unexpected status codes" do
@@ -179,10 +173,10 @@ defmodule PhillyBands.Events.FetchJobTest do
 
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: Jason.encode!([malformed_event])}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => [malformed_event]})}}
       end)
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: "[]"}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => []})}}
       end)
 
       # Should not crash, just log error because external_artist is missing
@@ -195,7 +189,7 @@ defmodule PhillyBands.Events.FetchJobTest do
     test "perform/1 calls run/0" do
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, _url ->
-        {:ok, %{status: 200, body: "[]"}}
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => []})}}
       end)
 
       assert :ok = perform_job(FetchJob, %{})

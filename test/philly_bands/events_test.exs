@@ -1,8 +1,14 @@
 defmodule PhillyBands.EventsTest do
   use PhillyBands.DataCase
+  use Patch
 
   alias PhillyBands.Events
   import PhillyBands.EventsFixtures
+
+  setup do
+    Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
+    :ok
+  end
 
   describe "events" do
     alias PhillyBands.Events.Event

@@ -1,7 +1,13 @@
 defmodule PhillyBandsWeb.MyEventControllerTest do
   use PhillyBandsWeb.ConnCase
+  use Patch
   import PhillyBands.AccountsFixtures
   import PhillyBands.EventsFixtures
+
+  setup do
+    Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
+    :ok
+  end
 
   describe "index" do
     test "requires authentication", %{conn: conn} do
@@ -50,15 +56,15 @@ defmodule PhillyBandsWeb.MyEventControllerTest do
       user = user_fixture()
       tracking_fixture(user_id: user.id, artist: "Artist")
 
-      event1 = event_fixture(external_artist: "Artist A", date: ~N[2026-03-09 20:00:00])
-      event2 = event_fixture(external_artist: "Artist B", date: ~N[2026-04-10 20:00:00])
+      event1 = event_fixture(external_artist: "Artist A", date: ~N[2027-03-09 20:00:00])
+      event2 = event_fixture(external_artist: "Artist B", date: ~N[2027-04-10 20:00:00])
 
       conn = log_in_user(conn, user)
       conn = get(conn, ~p"/my_events")
       response = html_response(conn, 200)
 
-      assert response =~ "March 2026"
-      assert response =~ "April 2026"
+      assert response =~ "March 2027"
+      assert response =~ "April 2027"
       assert response =~ event1.external_artist
       assert response =~ event2.external_artist
     end

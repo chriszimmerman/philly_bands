@@ -1,8 +1,14 @@
 defmodule PhillyBandsWeb.PageControllerTest do
   use PhillyBandsWeb.ConnCase
+  use Patch
 
   import PhillyBands.AccountsFixtures
   import PhillyBands.EventsFixtures
+
+  setup do
+    Patch.patch(NaiveDateTime, :local_now, ~N[2026-01-01 12:00:00])
+    :ok
+  end
 
   test "GET / as guest", %{conn: conn} do
     conn = get(conn, ~p"/")
@@ -18,8 +24,8 @@ defmodule PhillyBandsWeb.PageControllerTest do
     user = user_fixture()
     tracking_fixture(user_id: user.id, artist: "Green Day")
 
-    event_fixture(external_artist: "Green Day", date: ~N[2026-03-10 20:00:00])
-    event_fixture(external_artist: "Other Artist", date: ~N[2026-03-11 20:00:00])
+    event_fixture(external_artist: "Green Day", date: ~N[2027-03-10 20:00:00])
+    event_fixture(external_artist: "Other Artist", date: ~N[2027-03-11 20:00:00])
 
     conn = log_in_user(conn, user)
     conn = get(conn, ~p"/")
