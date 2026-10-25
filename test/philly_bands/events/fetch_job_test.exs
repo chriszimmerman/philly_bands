@@ -49,6 +49,29 @@ defmodule PhillyBands.Events.FetchJobTest do
       assert event.date == ~N[2026-03-09 20:00:00]
     end
 
+    test "decodes numeric HTML entities in event text" do
+      event_json = %{
+        "title" => "Rock &#038; Roll &#044; Live",
+        "venue" => %{"venue" => "Franklin &#038; Marshall"},
+        "start_date" => "2027-03-09 20:00:00",
+        "categories" => []
+      }
+
+      PhillyBands.HTTPClientMock
+      |> expect(:request, fn :get, _url ->
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => [event_json]})}}
+      end)
+      |> expect(:request, fn :get, _url ->
+        {:ok, %{status: 200, body: Jason.encode!(%{"events" => []})}}
+      end)
+
+      FetchJob.run()
+
+      [event] = Events.list_events()
+      assert event.external_artist == "Rock & Roll , Live"
+      assert event.venue == "Franklin & Marshall"
+    end
+
     test "handles pagination" do
       PhillyBands.HTTPClientMock
       |> expect(:request, fn :get, _url ->

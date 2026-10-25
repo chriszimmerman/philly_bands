@@ -58,32 +58,32 @@ defmodule PhillyBands.Events.FetchJob do
   defp make_request(url) do
     http_client().request(:get, url)
     |> case do
-         {:ok, %{status: 200, body: body}} ->
-           {:ok, Jason.decode!(body)}
+      {:ok, %{status: 200, body: body}} ->
+        {:ok, Jason.decode!(body)}
 
-         {:ok, %{status: status, body: body}} when status in [400, 404] ->
-           # WordPress/TEC returns 400 or 404 when the page number is out of bounds,
-           # depending on version/install. Treat the known "invalid page" code as
-           # end-of-pagination; anything else on a 400 is a real error, and any
-           # other 404 body (no recognizable code) is also treated as "no more
-           # pages" since that's the only way TEC signals it here.
-           case Jason.decode(body) do
-             {:ok, %{"code" => "rest_post_invalid_page_number"}} ->
-               {:ok, %{"events" => []}}
+      {:ok, %{status: status, body: body}} when status in [400, 404] ->
+        # WordPress/TEC returns 400 or 404 when the page number is out of bounds,
+        # depending on version/install. Treat the known "invalid page" code as
+        # end-of-pagination; anything else on a 400 is a real error, and any
+        # other 404 body (no recognizable code) is also treated as "no more
+        # pages" since that's the only way TEC signals it here.
+        case Jason.decode(body) do
+          {:ok, %{"code" => "rest_post_invalid_page_number"}} ->
+            {:ok, %{"events" => []}}
 
-             {:ok, error} when status == 400 ->
-               {:error, error}
+          {:ok, error} when status == 400 ->
+            {:error, error}
 
-             _ ->
-               {:ok, %{"events" => []}}
-           end
+          _ ->
+            {:ok, %{"events" => []}}
+        end
 
-         {:ok, %{status: status}} ->
-           {:error, "Unexpected status: #{status}"}
+      {:ok, %{status: status}} ->
+        {:error, "Unexpected status: #{status}"}
 
-         {:error, reason} ->
-           {:error, reason}
-       end
+      {:error, reason} ->
+        {:error, reason}
+    end
   end
 
   defp http_client do
@@ -120,12 +120,27 @@ defmodule PhillyBands.Events.FetchJob do
 
   defp map_event_data(data) do
     %{
-      external_artist: data["title"],
-      venue: extract_venue(data),
-      region: extract_region(data),
+      external_artist: decode_numeric_entities(data["title"]),
+      venue: decode_numeric_entities(extract_venue(data)),
+      region: decode_numeric_entities(extract_region(data)),
       date: parse_date(data["start_date"]),
-      external_link: data["website"] || data["url"]
+      external_link: decode_numeric_entities(data["website"] || data["url"])
     }
+  end
+
+  defp decode_numeric_entities(nil), do: nil
+
+  defp decode_numeric_entities(text) do
+    Regex.replace(~r/&#(?:[xX]([0-9a-fA-F]+)|([0-9]+));/, text, fn
+      _entity, hex, decimal ->
+        codepoint = if hex == "", do: String.to_integer(decimal), else: String.to_integer(hex, 16)
+
+        if codepoint <= 0x10FFFF and codepoint not in 0xD800..0xDFFF do
+          <<codepoint::utf8>>
+        else
+          "&#{if(hex == "", do: decimal, else: "x" <> hex)};"
+        end
+    end)
   end
 
   defp extract_venue(data) do
@@ -133,7 +148,7 @@ defmodule PhillyBands.Events.FetchJob do
     |> case do
       [] -> ""
       venue -> venue["venue"]
-       end
+    end
   end
 
   defp extract_region(data) do
@@ -141,9 +156,9 @@ defmodule PhillyBands.Events.FetchJob do
     |> List.wrap()
     |> Enum.find(fn term -> term["taxonomy"] == "tribe_events_cat" end)
     |> case do
-         nil -> nil
-         term -> term["name"]
-       end
+      nil -> nil
+      term -> term["name"]
+    end
   end
 
   defp parse_date(nil), do: nil
